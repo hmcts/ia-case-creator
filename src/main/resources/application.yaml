@@ -19,3 +19,9 @@ idam:
 logging:
   level:
     root: ERROR
+
+feign:
+  client:
+    config:
+      default:
+        errorDecoder: uk.gov.hmcts.reform.ia.casecreator.ErrorDecoder
