@@ -1,0 +1,21 @@
+spring:
+  main:
+    web-application-type: NONE
+    allow-bean-definition-overriding: true
+    banner-mode: "off"
+  application:
+    name: SSCS-Case-Creator
+
+core_case_data:
+  caseTypeId: Asylum
+  jurisdictionId: IA
+
+idam:
+  s2s-auth:
+    microservice: iac
+    client:
+      id: ia
+
+logging:
+  level:
+    root: ERROR
