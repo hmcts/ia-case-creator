@@ -1,0 +1,29 @@
+core_case_data:
+  api:
+    url: http://ccd-data-store-api-aat.service.core-compute-aat.internal
+
+auth:
+  idam:
+    client:
+      baseUrl: http://idam-api.aat.platform.hmcts.net
+  provider:
+    service:
+      client:
+        baseUrl: http://rpe-service-auth-provider-aat.service.core-compute-aat.internal
+
+idam:
+  url: http://idam-api.aat.platform.hmcts.net
+  s2s-auth:
+    totp_secret: VDA4BC323785XTDN
+    url: http://rpe-service-auth-provider-aat.service.core-compute-aat.internal
+  oauth2:
+    user:
+      email: ia.legalrep.a.ccd@gmail.com
+      password: AldgateT0wer
+    client:
+      id: iac
+      secret: NDPH6DFQBIPA9UP7
+    redirectUrl: https://ia-case-api-aat.service.core-compute-aat.internal/oauth2/callback
+document_management:
+  url: http://dm-store-aat.service.core-compute-aat.internal
+

@@ -1,6 +1,8 @@
 package uk.gov.hmcts.reform.ia.casecreator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,6 +27,8 @@ public class CcdCaseCreator {
 
     private final IdamService idamService;
     private final CoreCaseDataApi coreCaseDataApi;
+    private final String idamToken;
+    private final String userId;
     private final String coreCaseDataJurisdictionId;
     private final String coreCaseDataCaseTypeId;
 
@@ -32,13 +36,16 @@ public class CcdCaseCreator {
     public CcdCaseCreator(IdamService idamService,
                           CoreCaseDataApi coreCaseDataApi,
                           @Value("${core_case_data.jurisdictionId}") String coreCaseDataJurisdictionId,
-                          @Value("${core_case_data.caseTypeId}") String coreCaseDataCaseTypeId
+                          @Value("${core_case_data.caseTypeId}") String coreCaseDataCaseTypeId,
+                          @Value("${idam_token}") String idamToken,
+                          @Value("${idam_user_id}") String userId
                           ) {
         this.idamService = idamService;
         this.coreCaseDataJurisdictionId = coreCaseDataJurisdictionId;
         this.coreCaseDataCaseTypeId = coreCaseDataCaseTypeId;
         this.coreCaseDataApi = coreCaseDataApi;
-
+        this.idamToken = "Bearer " + idamToken;
+        this.userId = userId;
     }
 
     private static final String ANSI_RESET = "\u001B[0m";
@@ -52,7 +59,13 @@ public class CcdCaseCreator {
     }
 
     public void createCase(String ccdDefinitionFile) throws IOException {
-        IdamTokens idamTokens = idamService.getIdamTokens();
+//        IdamTokens idamTokens = idamService.getIdamTokens();
+        String serviceAuthorizationToken = idamService.generateServiceAuthorization();
+        IdamTokens idamTokens = IdamTokens.builder()
+                .idamOauth2Token(idamToken)
+                .serviceAuthorization(serviceAuthorizationToken)
+                .userId(userId)
+                .build();
         StartEventResponse startAppeal = startCaseForCaseworker(idamTokens, "startAppeal");
 
         InputStream caseStream = (ccdDefinitionFile == null) ?
@@ -76,6 +89,17 @@ public class CcdCaseCreator {
         CaseDetails caseDetails = submitForCaseworker(idamTokens, caseDataContent);
 
         System.out.println(ANSI_BLUE + "case id: " + ANSI_RESET + caseDetails.getId());
+    }
+
+    public void loadCase(String caseId) {
+        String serviceAuthorizationToken = idamService.generateServiceAuthorization();
+        CaseDetails aCase = coreCaseDataApi.getCase(idamToken, serviceAuthorizationToken, caseId);
+
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+        String json = gson.toJson(aCase);
+
+        System.out.println(json);
     }
 
     private FileInputStream getStreamFromFile(String ccdDefinitionFile) throws FileNotFoundException {

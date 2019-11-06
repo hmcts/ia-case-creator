@@ -1,0 +1,31 @@
+core_case_data:
+  api:
+    url: http://localhost:4452
+
+auth:
+  idam:
+    client:
+      baseUrl: http://localhost:4501
+  provider:
+    service:
+      client:
+        baseUrl: http://localhost:4502
+
+idam:
+  url: http://localhost:4501
+  s2s-auth:
+    totp_secret: AAAAAAAAAAAAAAAC
+    url: http://localhost:4502
+  oauth2:
+    user:
+      email: ia-law-firm-a@fake.hmcts.net
+      password: London03
+    client:
+      id: sscs
+      secret: QM5RQQ53LZFOSIXJ
+    redirectUrl: https://localhost:9000/poc
+document_management:
+  url: http://dm-store-aat.service.core-compute-aat.internal
+
+idam_token: SET_ME
+idam_user_id: 34

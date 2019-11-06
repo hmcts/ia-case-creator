@@ -39,8 +39,16 @@ idam:
     client:
       id:
       secret: 
-    redirectUrl:    
+    redirectUrl:
+document_management:
+  url:
+
+idam_token:
+idam_user_id:
 ```
+
+**NB. For the moment the generate user token is not working. To get a user token login to CCD and copy the accessToken 
+cookie into the properties**
 
 ### Operation ###
 ```bash
@@ -52,6 +60,7 @@ Optional arguments
     --file=[Path to base json file] json file to use as the base of case leave out for a default case
     --multiple=[number] number of cases to create
     --headers just prints out auth headers
+    --load=[ccd_case_id] loads the case from CCD and prints it out
 ```
 
 To change the values entered in CCD you can provide a base JSON file of the form and set the argument --file=filename

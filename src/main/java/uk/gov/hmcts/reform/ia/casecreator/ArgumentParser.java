@@ -33,7 +33,13 @@ public class ArgumentParser {
             System.out.println("\n---------------------------- HEADERS -----------------------");
             ccdCaseLoader.getHeaders();
             System.out.println("------------------------------------------------------------\n");
-        } else {
+        } else if (hasValue(args, "load")) {
+            String caseId = getOptionalValue(args, "load");
+            System.out.println("\n------------------------- CCD case -------------------------");
+            ccdCaseLoader.loadCase(caseId);
+            System.out.println("------------------------------------------------------------\n");
+        }
+        else {
             int multiple = Integer.parseInt(getOptionalValue(args, "multiple", "1"));
             String file = getOptionalValue(args, "file");
 

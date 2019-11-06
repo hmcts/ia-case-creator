@@ -4,5 +4,27 @@
   "appellantFamilyName": "Smith",
   "appellantDateOfBirth": "1990-12-07",
   "homeOfficeReferenceNumber": "A1234567",
-  "homeOfficeDecisionDate": "2019-08-01"
+  "homeOfficeDecisionDate": "2019-08-01",
+  "subscriptions": [
+    {
+      "id": "1",
+      "value": {
+        "subscriber": "appellant",
+        "email": "test@example.com",
+        "wantsEmail": "Yes",
+        "mobileNumber": "0111111111",
+        "wantsSms": "Yes"
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "subscriber": "supporter",
+        "email": "",
+        "wantsEmail": "No",
+        "mobileNumber": "0111111111",
+        "wantsSms": "Yes"
+      }
+    }
+  ]
 }
