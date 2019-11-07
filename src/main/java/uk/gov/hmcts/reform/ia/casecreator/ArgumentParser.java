@@ -1,9 +1,10 @@
 package uk.gov.hmcts.reform.ia.casecreator;
 
+import static java.util.Objects.requireNonNull;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Set;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Component;
@@ -29,26 +30,23 @@ public class ArgumentParser {
             System.exit(0);
         }
 
+        String caseId = null;
         if (hasValue(args, "headers")) {
             System.out.println("\n---------------------------- HEADERS -----------------------");
             ccdCaseLoader.getHeaders();
             System.out.println("------------------------------------------------------------\n");
-        } else if (hasValue(args, "load")) {
-            String caseId = getOptionalValue(args, "load");
-            System.out.println("\n------------------------- CCD case -------------------------");
-            ccdCaseLoader.loadCase(caseId);
-            System.out.println("------------------------------------------------------------\n");
-        }
-        else {
+        } else {
             int multiple = Integer.parseInt(getOptionalValue(args, "multiple", "1"));
             String file = getOptionalValue(args, "file");
 
             for (int counter = 0; counter < multiple; counter++) {
                 System.out.println("\n------------------------- CCD case -------------------------");
-                ccdCaseLoader.createCase(file);
+                caseId = ccdCaseLoader.createCase(file);
                 System.out.println("------------------------------------------------------------\n");
             }
         }
+        requireNonNull(caseId);
+        ccdCaseLoader.loadCase(caseId);
     }
 
     private String getOptionalValue(ApplicationArguments args, String name) {
@@ -57,7 +55,7 @@ public class ArgumentParser {
 
     private String getOptionalValue(ApplicationArguments args, String name, String defaultValue) {
         List<String> optionValues = args.getOptionValues(name);
-        if (optionValues == null || optionValues.size() == 0) {
+        if (optionValues == null || optionValues.isEmpty()) {
             return defaultValue;
         }
 

@@ -5,6 +5,7 @@
   "appellantDateOfBirth": "1990-12-07",
   "homeOfficeReferenceNumber": "A1234567",
   "homeOfficeDecisionDate": "2019-08-01",
+  "journeyType": "aip",
   "subscriptions": [
     {
       "id": "1",
