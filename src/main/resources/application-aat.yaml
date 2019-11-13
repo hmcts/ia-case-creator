@@ -27,3 +27,6 @@ idam:
 document_management:
   url: http://dm-store-aat.service.core-compute-aat.internal
 
+idam_token: SET_ME
+idam_user_id: 42
+idam_user_role: citizen

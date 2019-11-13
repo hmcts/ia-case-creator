@@ -38,6 +38,10 @@ public class ArgumentParser {
             System.out.println("\n------------------------- CCD case -------------------------");
             ccdCaseLoader.loadCase(caseId);
             System.out.println("------------------------------------------------------------\n");
+        } else if (hasValue(args, "loadAll")) {
+            System.out.println("\n------------------------- CCD case -------------------------");
+            ccdCaseLoader.loadCases();
+            System.out.println("------------------------------------------------------------\n");
         }
         else {
             int multiple = Integer.parseInt(getOptionalValue(args, "multiple", "1"));

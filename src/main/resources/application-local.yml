@@ -21,11 +21,12 @@ idam:
       email: ia-law-firm-a@fake.hmcts.net
       password: London03
     client:
-      id: sscs
-      secret: QM5RQQ53LZFOSIXJ
-    redirectUrl: https://localhost:9000/poc
+      id: ccd_gateway
+      secret: OOOOOOOOOOOOOOOO
+    redirectUrl: https://localhost:3000/redirectUrl
 document_management:
   url: http://dm-store-aat.service.core-compute-aat.internal
 
 idam_token: SET_ME
-idam_user_id: 34
+idam_user_id: 42
+idam_user_role: citizen
