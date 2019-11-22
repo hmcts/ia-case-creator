@@ -42,6 +42,10 @@ public class ArgumentParser {
             System.out.println("\n------------------------- CCD case -------------------------");
             ccdCaseLoader.loadCases();
             System.out.println("------------------------------------------------------------\n");
+        } else if (hasValue(args, "submit")) {
+            System.out.println("\n------------------------- CCD Submit case -------------------------");
+            ccdCaseLoader.submitCase(null, "1574087903843135");
+            System.out.println("------------------------------------------------------------\n");
         }
         else {
             int multiple = Integer.parseInt(getOptionalValue(args, "multiple", "1"));

@@ -108,6 +108,51 @@ public class CcdCaseCreator {
         loadCase(caseDetails.getId() + "", idamTokens);
     }
 
+    public void submitCase(String ccdDefinitionFile, String caseId) throws IOException {
+//        IdamTokens idamTokens = idamService.getIdamTokens();
+
+        String serviceAuthorizationToken = idamService.generateServiceAuthorization();
+        IdamTokens idamTokens = IdamTokens.builder()
+            .idamOauth2Token(idamToken)
+            .serviceAuthorization(serviceAuthorizationToken)
+            .userId(userId)
+            .build();
+
+        loadCase(caseId + "", idamTokens);
+
+        StartEventResponse startAppeal = idamUserRole.equals("citizen") ?
+            startEventForCitizen(idamTokens, "submitAppeal", caseId) :
+            startEventForCaseworker(idamTokens, "submitAppeal", caseId);
+
+
+        InputStream caseStream = (ccdDefinitionFile == null) ?
+            getClass().getClassLoader().getResourceAsStream("json/ia_ccd_case.json") :
+            getStreamFromFile(ccdDefinitionFile);
+
+        String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
+
+        Map data = new ObjectMapper().readValue(iaData, Map.class);
+
+        CaseDataContent caseDataContent = CaseDataContent.builder()
+            .eventToken(startAppeal.getToken())
+            .event(Event.builder()
+                .id(startAppeal.getEventId())
+                .summary("summary")
+                .description("description")
+                .build())
+            .data(data)
+            .build();
+
+        CaseDetails caseDetails = idamUserRole.equals("citizen") ?
+            submitEventForCitizen(idamTokens, caseDataContent, caseId) :
+            submitEventForCaseworker(idamTokens, caseDataContent, caseId);
+
+        System.out.println(ANSI_BLUE + "case id: " + ANSI_RESET + caseDetails.getId());
+
+        loadCase(caseDetails.getId() + "", idamTokens);
+    }
+
+
     public void loadCase(String caseId) {
         String serviceAuthorizationToken = idamService.generateServiceAuthorization();
         IdamTokens idamTokens = IdamTokens.builder()
@@ -171,6 +216,17 @@ public class CcdCaseCreator {
                 eventId);
     }
 
+    private StartEventResponse startEventForCaseworker(IdamTokens idamTokens, String eventId, String caseId) {
+        return coreCaseDataApi.startEventForCaseWorker(
+            idamTokens.getIdamOauth2Token(),
+            idamTokens.getServiceAuthorization(),
+            idamTokens.getUserId(),
+            coreCaseDataJurisdictionId,
+            coreCaseDataCaseTypeId,
+            caseId,
+            eventId);
+    }
+
     private CaseDetails submitForCaseworker(IdamTokens idamTokens, CaseDataContent caseDataContent) {
         return coreCaseDataApi.submitForCaseworker(
                 idamTokens.getIdamOauth2Token(),
@@ -180,6 +236,19 @@ public class CcdCaseCreator {
                 coreCaseDataCaseTypeId,
                 true,
                 caseDataContent
+        );
+    }
+
+    private CaseDetails submitEventForCaseworker(IdamTokens idamTokens, CaseDataContent caseDataContent, String caseId) {
+        return coreCaseDataApi.submitEventForCaseWorker(
+            idamTokens.getIdamOauth2Token(),
+            idamTokens.getServiceAuthorization(),
+            idamTokens.getUserId(),
+            coreCaseDataJurisdictionId,
+            coreCaseDataCaseTypeId,
+            caseId,
+            true,
+            caseDataContent
         );
     }
 
@@ -193,6 +262,17 @@ public class CcdCaseCreator {
                 eventId);
     }
 
+    private StartEventResponse startEventForCitizen(IdamTokens idamTokens, String eventId, String caseId) {
+        return coreCaseDataApi.startEventForCitizen(
+            idamTokens.getIdamOauth2Token(),
+            idamTokens.getServiceAuthorization(),
+            idamTokens.getUserId(),
+            coreCaseDataJurisdictionId,
+            coreCaseDataCaseTypeId,
+            caseId,
+            eventId);
+    }
+
     private CaseDetails submitForCitizen(IdamTokens idamTokens, CaseDataContent caseDataContent) {
         return coreCaseDataApi.submitForCitizen(
                 idamTokens.getIdamOauth2Token(),
@@ -202,6 +282,19 @@ public class CcdCaseCreator {
                 coreCaseDataCaseTypeId,
                 true,
                 caseDataContent
+        );
+    }
+
+    private CaseDetails submitEventForCitizen(IdamTokens idamTokens, CaseDataContent caseDataContent, String caseId) {
+        return coreCaseDataApi.submitEventForCitizen(
+            idamTokens.getIdamOauth2Token(),
+            idamTokens.getServiceAuthorization(),
+            idamTokens.getUserId(),
+            coreCaseDataJurisdictionId,
+            coreCaseDataCaseTypeId,
+            caseId,
+            true,
+            caseDataContent
         );
     }
 }
