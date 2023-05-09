@@ -26,4 +26,4 @@ feign:
       default:
         errorDecoder: uk.gov.hmcts.reform.ia.casecreator.ErrorDecoder
 
-idam_user_role: citizen
+idam_user_role: caseworker

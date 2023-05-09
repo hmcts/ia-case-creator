@@ -20,7 +20,8 @@ import uk.gov.hmcts.reform.authorisation.generators.AuthTokenGeneratorFactory;
 @SpringBootApplication
 @EnableFeignClients(basePackages =
         {
-                "uk.gov.hmcts.reform.ccd.client",
+                "uk.gov.hmcts.reform.ccd",
+                "uk.gov.hmcts.reform.idam",
                 "uk.gov.hmcts.reform.authorisation",
                 "uk.gov.hmcts.reform.ia.casecreator"
         })

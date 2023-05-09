@@ -1,15 +1,13 @@
 package uk.gov.hmcts.reform.ia.casecreator.idam;
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 
 @FeignClient(
         name = "idam-api",
-        url = "${idam.url}"
+        url = "${idam.urlnew}"
 )
 public interface IdamApiClient {
     @RequestMapping(

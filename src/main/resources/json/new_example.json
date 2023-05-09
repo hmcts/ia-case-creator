@@ -1,0 +1,73 @@
+{
+  "email": "ia-law-firm-org2-sc@fake2.hmcts.net",
+  "checklist": {
+    "checklist1": [],
+    "checklist2": ["isNotDetained"],
+    "checklist3": [],
+    "checklist4": [],
+    "checklist5": [],
+    "checklist6": [],
+    "checklist7": []
+  },
+  "appealType": "protection",
+  "legalRepName": "legal rep name",
+  "appellantInUk": "Yes",
+  "hasNewMatters": "No",
+  "remissionType": "noRemission",
+  "searchParties": [],
+  "SearchCriteria": {
+    "SearchParties": [{
+      "id": "e5f184b3-9fd3-4d43-a660-ac76e12be488",
+      "value": {
+        "Name": "mr John Doe1",
+        "DateOfBirth": "1999-01-01",
+        "EmailAddress": "ia-law-firm-org2-sc@fake2.hmcts.net"
+      }
+    }
+    ]
+  },
+  "appellantTitle": "mr",
+  "hasOtherAppeals": "No",
+  "legalRepCompany": "Fake Org Ltd",
+  "appellantAddress": {},
+  "contactPreference": "wantsEmail",
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "appellantFamilyName": "John",
+  "appellantGivenNames": "Doe1",
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "legalRepCompanyName": "Fake Org Ltd",
+  "appellantDateOfBirth": "1999-01-01",
+  "isOutOfCountryEnabled": "Yes",
+  "appellantNationalities": [{
+    "id": "910ebf41-482e-4a84-82ea-bab90b43fc80",
+    "value": {
+      "code": "GB"
+    }
+  }
+  ],
+  "homeOfficeDecisionDate": "2023-05-03",
+  "appealGroundsProtection": {
+    "values": ["protectionHumanitarianProtection", "protectionRefugeeConvention"]
+  },
+  "deportationOrderOptions": "No",
+  "legalRepReferenceNumber": "ref",
+  "appealGroundsHumanRights": {},
+  "appellantHasFixedAddress": "No",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "homeOfficeReferenceNumber": "001234567",
+  "paAppealTypePaymentOption": "payLater",
+  "uploadTheNoticeOfDecisionDocs": [{
+    "id": "c4262e41-7d4e-4277-88bf-c6a3f64c70f6",
+    "value": {
+      "document": {
+        "document_url": "http://dm-store:8080/documents/5eb4ef0d-cb21-45d8-8a03-3895280c8b10",
+        "document_filename": "Doc1.pdf",
+        "document_binary_url": "http://dm-store:8080/documents/5eb4ef0d-cb21-45d8-8a03-3895280c8b10/binary"
+      },
+      "description": "d1"
+    }
+  }
+  ]
+}

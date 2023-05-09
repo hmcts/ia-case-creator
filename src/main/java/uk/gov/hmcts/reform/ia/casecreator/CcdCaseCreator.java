@@ -1,6 +1,9 @@
 package uk.gov.hmcts.reform.ia.casecreator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.commons.io.IOUtils;
@@ -14,6 +17,7 @@ import uk.gov.hmcts.reform.ccd.client.model.Event;
 import uk.gov.hmcts.reform.ccd.client.model.StartEventResponse;
 import uk.gov.hmcts.reform.ia.casecreator.idam.IdamService;
 import uk.gov.hmcts.reform.ia.casecreator.idam.IdamTokens;
+import uk.gov.hmcts.reform.idam.client.IdamClient;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -35,6 +39,11 @@ public class CcdCaseCreator {
     private final String coreCaseDataJurisdictionId;
     private final String coreCaseDataCaseTypeId;
 
+    private final IdamClient idamClient;
+
+    private String idamUsername;
+    private String idamPassword;
+
     @Autowired
     public CcdCaseCreator(IdamService idamService,
                           CoreCaseDataApi coreCaseDataApi,
@@ -42,7 +51,10 @@ public class CcdCaseCreator {
                           @Value("${core_case_data.caseTypeId}") String coreCaseDataCaseTypeId,
                           @Value("${idam_token}") String idamToken,
                           @Value("${idam_user_id}") String userId,
-                          @Value("${idam_user_role}") String idamUserRole
+                          @Value("${idam_user_role}") String idamUserRole,
+                          IdamClient idamClient,
+                          @Value("${migration.idam.username}") String idamUsername,
+                          @Value("${migration.idam.password}") String idamPassword
                           ) {
         this.idamService = idamService;
         this.coreCaseDataJurisdictionId = coreCaseDataJurisdictionId;
@@ -51,6 +63,9 @@ public class CcdCaseCreator {
         this.idamToken = "Bearer " + idamToken;
         this.userId = userId;
         this.idamUserRole = idamUserRole;
+        this.idamClient = idamClient;
+        this.idamUsername = idamUsername;
+        this.idamPassword = idamPassword;
 
         if (!idamUserRole.equals("citizen") && !idamUserRole.equals("caseworker")) {
             throw new IllegalArgumentException("Property idam_user_role must be either 'citizen' or 'caseworker' but was [" + idamUserRole + "]");
@@ -68,21 +83,23 @@ public class CcdCaseCreator {
     }
 
     public void createCase(String ccdDefinitionFile) throws IOException {
-//        IdamTokens idamTokens = idamService.getIdamTokens();
+        String userToken = idamClient.authenticateUser(idamUsername, idamPassword);
+        System.out.println(userToken);
+
         String serviceAuthorizationToken = idamService.generateServiceAuthorization();
         IdamTokens idamTokens = IdamTokens.builder()
-                .idamOauth2Token(idamToken)
+                .idamOauth2Token(userToken)
                 .serviceAuthorization(serviceAuthorizationToken)
                 .userId(userId)
                 .build();
 
-        StartEventResponse startAppeal = idamUserRole.equals("citizen") ?
-                startCaseForCitizen(idamTokens, "startAppeal") :
-                startCaseForCaseworker(idamTokens, "startAppeal");
+        StartEventResponse createAppeal = idamUserRole.equals("citizen") ?
+                startCaseForCitizen(idamTokens, "createDLRMCase") :
+                startCaseForCaseworker(idamTokens, "createDLRMCase");
 
 
         InputStream caseStream = (ccdDefinitionFile == null) ?
-                getClass().getClassLoader().getResourceAsStream("json/ia_ccd_case.json") :
+                getClass().getClassLoader().getResourceAsStream("json/new_example.json") :
                 getStreamFromFile(ccdDefinitionFile);
 
         String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
@@ -90,9 +107,9 @@ public class CcdCaseCreator {
         Map data = new ObjectMapper().readValue(iaData, Map.class);
 
         CaseDataContent caseDataContent = CaseDataContent.builder()
-                .eventToken(startAppeal.getToken())
+                .eventToken(createAppeal.getToken())
                 .event(Event.builder()
-                        .id(startAppeal.getEventId())
+                        .id(createAppeal.getEventId())
                         .summary("summary")
                         .description("description")
                         .build())
