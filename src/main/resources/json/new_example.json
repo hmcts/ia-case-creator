@@ -1,5 +1,14 @@
 {
   "email": "ia-law-firm-org2-sc@fake2.hmcts.net",
+  "feeCode": "FEE0238",
+  "caseFlags": [{
+    "id": "1",
+    "value": {
+      "caseFlagType": "anonymity",
+      "caseFlagAdditionalInformation": ""
+    }
+  }
+  ],
   "checklist": {
     "checklist1": [],
     "checklist2": ["isNotDetained"],
@@ -10,64 +19,425 @@
     "checklist7": []
   },
   "appealType": "protection",
-  "legalRepName": "legal rep name",
+  "directions": [{
+    "id": "5",
+    "value": {
+      "tag": "legalRepresentativeHearingRequirements",
+      "dateDue": "2023-05-27",
+      "parties": "legalRepresentative",
+      "dateSent": "2023-05-22",
+      "uniqueId": "fad68c52-2174-4181-a2e4-d9c752001f73",
+      "explanation": "The appeal is going to a hearing and you should tell the Tribunal if the appellant has any hearing requirements.\n\n# Next steps\n\nVisit the online service and use the HMCTS reference to find the case. You'll be able to submit the hearing requirements by following the instructions on the overview tab.\n\nThe Tribunal will review the hearing requirements and any requests for additional adjustments. You'll then be sent a hearing date.\n\nIf you do not submit the hearing requirements by the date indicated below, the Tribunal may not be able to accommodate the appellant's needs for the hearing.\n",
+      "directionType": "requestHearingRequirementsFeature",
+      "previousDates": []
+    }
+  }, {
+    "id": "4",
+    "value": {
+      "tag": "requestResponseReview",
+      "dateDue": "2023-05-24",
+      "parties": "legalRepresentative",
+      "dateSent": "2023-05-19",
+      "uniqueId": "aad05182-10e5-445d-a810-b923ea1a1813",
+      "explanation": "The Home Office has replied to your Appeal Skeleton Argument and evidence. You should review their response.\n\n# Next steps\n\nReview the Home Office response. If you want to respond to what they have said, you should email the Tribunal.\n\nIf you do not respond by the date indicated below, the case will automatically go to hearing.",
+      "previousDates": []
+    }
+  }, {
+    "id": "3",
+    "value": {
+      "tag": "respondentReview",
+      "dateDue": "2023-06-02",
+      "parties": "respondent",
+      "dateSent": "2023-05-19",
+      "uniqueId": "afb592bc-6349-4315-afaf-2108f88ff64c",
+      "explanation": "You have until the date indicated below to review the appellant's argument and evidence. You must explain whether the appellant makes a valid case for overturning the original decision.\n\nYou must respond to the Tribunal and tell them:\n\n- whether you oppose all or parts of the appellant's case\n- what your grounds are for opposing the case\n- which of the issues are agreed or not agreed\n- whether there are any further issues you wish to raise\n- whether you are prepared to withdraw to grant\n- whether the appeal can be resolved without a hearing\n\nNext steps\n\nIf you do not respond in time the Tribunal will decide how the case should proceed.",
+      "directionType": "requestRespondentReview",
+      "previousDates": []
+    }
+  }, {
+    "id": "2",
+    "value": {
+      "tag": "requestCaseBuilding",
+      "dateDue": "2023-06-30",
+      "parties": "legalRepresentative",
+      "dateSent": "2023-05-19",
+      "uniqueId": "ab62ec37-103b-46a4-b7af-902423bc2ea9",
+      "explanation": "You must now build your case to enable the respondent to conduct a thorough review of their decision.\n\nYou have until the date indicated below to upload your Appeal Skeleton Argument and evidence.\n\nYour Appeal Skeleton Argument must be set out in three distinct parts to include:\n\n- a concise summary of the appellant’s case\n- a schedule of issues\n- why those issues should be resolved in the appellant’s favour, by reference to the evidence you have (or plan to have) and any legal authorities you rely upon\n\n# Next steps\n\nOnce you've uploaded your Appeal Skeleton Argument and evidence, you should submit your case. The Tribunal Caseworker will review everything you've added.\n\nIf your case looks ready, the Tribunal will send it to the respondent to review.",
+      "directionType": "requestCaseBuilding",
+      "previousDates": []
+    }
+  }, {
+    "id": "1",
+    "value": {
+      "tag": "respondentEvidence",
+      "dateDue": "2023-06-02",
+      "parties": "respondent",
+      "dateSent": "2023-05-19",
+      "uniqueId": "9f4af285-d4c4-4602-a4dc-058712981c4f",
+      "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply the documents.\n\nYou must include:\n- the notice of decision\n- any other document provided to the appellant giving reasons for that decision\n- any statements of evidence\n- the application form\n- any record of interview with the appellant in relation to the decision being appealed\n- any other unpublished documents on which you rely\n- the notice of any other appealable decision made in relation to the appellant",
+      "directionType": "requestRespondentEvidence",
+      "previousDates": []
+    }
+  }
+  ],
+  "feeVersion": "2",
+  "feeAmountGbp": "14000",
+  "legalRepName": "LEGAL REP NAME",
   "appellantInUk": "Yes",
   "hasNewMatters": "No",
+  "hearingCentre": "taylorHouse",
+  "paymentStatus": "Payment pending",
   "remissionType": "noRemission",
   "searchParties": [],
+  "staffLocation": "Taylor House",
   "SearchCriteria": {
     "SearchParties": [{
-      "id": "e5f184b3-9fd3-4d43-a660-ac76e12be488",
+      "id": "d468323d-c0b1-4b6c-b0d0-e59c89af81a2",
       "value": {
-        "Name": "mr John Doe1",
+        "Name": "Mr John Doe",
         "DateOfBirth": "1999-01-01",
         "EmailAddress": "ia-law-firm-org2-sc@fake2.hmcts.net"
       }
     }
+    ],
+    "OtherCaseReferences": [{
+      "id": "09eb0eb8-49c4-4705-a763-45f1ae22c6a6",
+      "value": "PA/50019/2023"
+    }
     ]
   },
-  "appellantTitle": "mr",
+  "appellantTitle": "Mr",
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
   "hasOtherAppeals": "No",
   "legalRepCompany": "Fake Org Ltd",
   "appellantAddress": {},
+  "isAppellantMinor": "No",
+  "appellantFullName": "John Doe",
   "contactPreference": "wantsEmail",
+  "hmctsCaseCategory": "Protection",
+  "notificationsSent": [{
+    "id": "1684486507195388_APPEAL_SUBMITTED_HOME_OFFICE",
+    "value": "8955ec0a-9ad3-4f74-80ef-9abdf12df824"
+  }, {
+    "id": "1684486507195388_APPEAL_SUBMITTED_PAY_LATER_LEGAL_REP",
+    "value": "056e2d58-f7b4-4871-959f-052adb14cd04"
+  }, {
+    "id": "1684486507195388_APPEAL_SUBMITTED_APPELLANT_AIP_EMAIL",
+    "value": "3ea5848c-cacc-43dd-8ba0-04576d233e42"
+  }, {
+    "id": "1684486507195388_RESPONDENT_EVIDENCE_DIRECTION",
+    "value": "4774efff-72ea-41ac-b94d-69fea62329bc"
+  }, {
+    "id": "1684486507195388_EVIDENCE_DIRECTION_LEGAL_REPRESENTATIVE",
+    "value": "583faf6a-ca94-41cc-ad6b-95cdda965739"
+  }, {
+    "id": "1684486507195388_LEGAL_REPRESENTATIVE_REQUEST_CASE_BUILDING",
+    "value": "d7bb8c20-8c4a-401a-b3b6-563eaf681f33"
+  }, {
+    "id": "1684486507195388_CASE_SUBMITTED_LEGAL_REPRESENTATIVE",
+    "value": "46149dd2-5094-43de-a204-62622f4cadce"
+  }, {
+    "id": "1684486507195388_RESPONDENT_REVIEW_DIRECTION",
+    "value": "13267d9d-fff8-4aed-8a8e-3fb289a364d4"
+  }, {
+    "id": "1684486507195388_LEGAL_REPRESENTATIVE_RESPONDENT_REVIEW_CASE",
+    "value": "11d12a1f-c7e0-4885-a062-fb7b36cd389f"
+  }, {
+    "id": "1684486507195388_LEGAL_REPRESENTATIVE_REQUEST_RESPONSE_REVIEW",
+    "value": "55fceead-feaa-4c3c-8973-7c081a801105"
+  }, {
+    "id": "1684486507195388_LEGAL_REPRESENTATIVE_REQUEST_HEARING_REQUIREMENTS_DIRECTION",
+    "value": "eb8e39a3-1866-436b-8326-72293ae50cb8"
+  }
+  ],
   "appealOutOfCountry": "No",
-  "appellantStateless": "hasNationality",
-  "appellantFamilyName": "John",
-  "appellantGivenNames": "Doe1",
+  "appellantStateless": "isStateless",
+  "paymentAccountList": {
+    "value": {
+      "code": "PBA0087535",
+      "label": "PBA0087535"
+    },
+    "list_items": [{
+      "code": "PBA0087535",
+      "label": "PBA0087535"
+    }, {
+      "code": "PBA0087240",
+      "label": "PBA0087240"
+    }, {
+      "code": "PBA0088063",
+      "label": "PBA0088063"
+    }, {
+      "code": "PBA0087442",
+      "label": "PBA0087442"
+    }, {
+      "code": "PBAFUNC12345",
+      "label": "PBAFUNC12345"
+    }, {
+      "code": "PBAFUNC12350",
+      "label": "PBAFUNC12350"
+    }, {
+      "code": "PBAFUNC12355",
+      "label": "PBAFUNC12355"
+    }
+    ]
+  },
+  "paymentDescription": "Appeal determined with a hearing",
+  "appealReviewOutcome": "decisionMaintained",
+  "appellantFamilyName": "Doe",
+  "appellantGivenNames": "John",
   "isFeePaymentEnabled": "Yes",
   "isRemissionsEnabled": "Yes",
   "legalRepCompanyName": "Fake Org Ltd",
-  "appellantDateOfBirth": "1999-01-01",
-  "isOutOfCountryEnabled": "Yes",
-  "appellantNationalities": [{
-    "id": "910ebf41-482e-4a84-82ea-bab90b43fc80",
+  "legalRepDeclaration": ["hasDeclared"],
+  "respondentDocuments": [{
+    "id": "2",
     "value": {
-      "code": "GB"
+      "tag": "appealResponse",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/77205fca-d557-4f4a-9421-5f15d56955ef",
+        "document_filename": "db.png",
+        "document_binary_url": "http://dm-store:8080/documents/77205fca-d557-4f4a-9421-5f15d56955ef/binary"
+      },
+      "description": "appeal response doc1",
+      "dateUploaded": "2023-05-19"
+    }
+  }, {
+    "id": "1",
+    "value": {
+      "tag": "respondentEvidence",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/2a4b7f31-3dde-4807-aad5-a7b422b42d02",
+        "document_filename": "Screenshot 2022-04-25 085824.jpg",
+        "document_binary_url": "http://dm-store:8080/documents/2a4b7f31-3dde-4807-aad5-a7b422b42d02/binary"
+      },
+      "description": "ho bundle doc 1",
+      "dateUploaded": "2023-05-19"
     }
   }
   ],
-  "homeOfficeDecisionDate": "2023-05-03",
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2023-05-19",
+  "appellantDateOfBirth": "1999-01-01",
+  "feePaymentAppealType": "Yes",
+  "localAuthorityPolicy": {
+    "Organisation": {
+      "OrganisationID": "D1HRWLA"
+    },
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "appealReferenceNumber": "PA/50019/2023",
+  "appealTypeDescription": "Refusal of protection claim",
+  "caseArgumentAvailable": "Yes",
+  "caseNameHmctsInternal": "John Doe",
+  "hmctsCaseNameInternal": "John Doe",
+  "isOutOfCountryEnabled": "Yes",
+  "lastModifiedDirection": {
+    "tag": "legalRepresentativeHearingRequirements",
+    "dateDue": "2023-05-27",
+    "parties": "legalRepresentative",
+    "dateSent": "2023-05-22",
+    "uniqueId": "fad68c52-2174-4181-a2e4-d9c752001f73",
+    "explanation": "The appeal is going to a hearing and you should tell the Tribunal if the appellant has any hearing requirements.\n\n# Next steps\n\nVisit the online service and use the HMCTS reference to find the case. You'll be able to submit the hearing requirements by following the instructions on the overview tab.\n\nThe Tribunal will review the hearing requirements and any requests for additional adjustments. You'll then be sent a hearing date.\n\nIf you do not submit the hearing requirements by the date indicated below, the Tribunal may not be able to accommodate the appellant's needs for the hearing.\n",
+    "directionType": "requestHearingRequirementsFeature",
+    "previousDates": []
+  },
+  "appellantNationalities": [{
+    "id": "1",
+    "value": {
+      "code": "ZZ"
+    }
+  }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "protection",
+      "label": "Refusal of protection claim"
+    },
+    "list_items": [{
+      "code": "protection",
+      "label": "Refusal of protection claim"
+    }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "homeOfficeDecisionDate": "2023-05-16",
+  "homeOfficeSearchStatus": "SUCCESS",
+  "legalRepCompanyAddress": {
+    "County": "London",
+    "Country": "UK",
+    "PostCode": "SE1 3HP",
+    "PostTown": "London",
+    "AddressLine1": "45 Lunar House",
+    "AddressLine2": "Spa Road",
+    "AddressLine3": "Woolworth"
+  },
+  "appealGroundsForDisplay": ["protectionHumanitarianProtection", "protectionRefugeeConvention"],
   "appealGroundsProtection": {
     "values": ["protectionHumanitarianProtection", "protectionRefugeeConvention"]
   },
+  "appealResponseAvailable": "Yes",
+  "appellantNameForDisplay": "John Doe",
+  "caseFlagAnonymityExists": "Yes",
   "deportationOrderOptions": "No",
-  "legalRepReferenceNumber": "ref",
+  "homeOfficeSearchNoMatch": "NO_MATCH",
+  "legalRepReferenceNumber": "Ref",
+  "legalRepresentativeName": "Org Creator Legal Rep",
   "appealGroundsHumanRights": {},
   "appellantHasFixedAddress": "No",
   "decisionHearingFeeOption": "decisionWithHearing",
-  "homeOfficeReferenceNumber": "001234567",
-  "paAppealTypePaymentOption": "payLater",
-  "uploadTheNoticeOfDecisionDocs": [{
-    "id": "c4262e41-7d4e-4277-88bf-c6a3f64c70f6",
+  "hasServiceRequestAlready": "Yes",
+  "homeOfficeAppellantsList": {
     "value": {
-      "document": {
-        "document_url": "http://dm-store:8080/documents/5eb4ef0d-cb21-45d8-8a03-3895280c8b10",
-        "document_filename": "Doc1.pdf",
-        "document_binary_url": "http://dm-store:8080/documents/5eb4ef0d-cb21-45d8-8a03-3895280c8b10/binary"
+      "code": "NoMatch",
+      "label": "No Match"
+    },
+    "list_items": [{
+      "code": "NoMatch",
+      "label": "No Match"
+    }
+    ]
+  },
+  "homeOfficeCaseStatusData": {
+    "person": {
+      "gender": {
+        "code": "No match",
+        "description": "No match"
       },
-      "description": "d1"
+      "fullName": "No match",
+      "givenName": "No match",
+      "dayOfBirth": 0,
+      "familyName": "No match",
+      "nationality": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "yearOfBirth": 0,
+      "monthOfBirth": 0
+    },
+    "applicationStatus": {
+      "roleType": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "roleSubType": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "ccdRejectionReasons": [],
+      "ccdHomeOfficeMetadata": []
+    },
+    "displayDateOfBirth": "No match",
+    "displayAppellantDetailsTitle": "<h2>Appellant details</h2>",
+    "displayApplicationDetailsTitle": "<h2>Application details</h2>"
+  },
+  "homeOfficeInstructStatus": "OK",
+  "homeOfficeReferenceNumber": "AR001234567",
+  "paAppealTypePaymentOption": "payLater",
+  "amendResponseActionAvailable": "Yes",
+  "ccdReferenceNumberForDisplay": "1684 4865 0719 5388",
+  "contactPreferenceDescription": "Email",
+  "legalRepresentativeDocuments": [{
+    "id": "4",
+    "value": {
+      "tag": "submitCaseBundle",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/84375335-6939-4e80-8d03-dd94e99a91a5",
+        "document_filename": "PA 50019 2023-Doe-appeal-skeleton-argument.PDF",
+        "document_binary_url": "http://dm-store:8080/documents/84375335-6939-4e80-8d03-dd94e99a91a5/binary"
+      },
+      "suppliedBy": "",
+      "description": "",
+      "dateUploaded": "2023-05-19"
+    }
+  }, {
+    "id": "3",
+    "value": {
+      "tag": "caseArgument",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/798f5dd1-02f9-4d44-8e4a-02da3b1ef433",
+        "document_filename": "Screenshot 2022-07-25 130825.jpg",
+        "document_binary_url": "http://dm-store:8080/documents/798f5dd1-02f9-4d44-8e4a-02da3b1ef433/binary"
+      },
+      "description": "appeal skeleton argument doc 1",
+      "dateUploaded": "2023-05-19"
+    }
+  }, {
+    "id": "2",
+    "value": {
+      "tag": "appealSubmission",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/07cdffec-70c8-435f-886c-f4647f056e7a",
+        "document_filename": "PA 50019 2023-Doe-appeal-form.PDF",
+        "document_binary_url": "http://dm-store:8080/documents/07cdffec-70c8-435f-886c-f4647f056e7a/binary"
+      },
+      "suppliedBy": "",
+      "description": "",
+      "dateUploaded": "2023-05-19"
+    }
+  }, {
+    "id": "1",
+    "value": {
+      "tag": "homeOfficeDecisionLetter",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29",
+        "document_filename": "Doc1.pdf",
+        "document_binary_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29/binary"
+      },
+      "description": "decision doc1",
+      "dateUploaded": "2023-05-19"
     }
   }
-  ]
+  ],
+  "sendDirectionActionAvailable": "Yes",
+  "uploadedHomeOfficeBundleDocs": "- None",
+  "homeOfficeSearchStatusMessage": "**Note:** The service was unable to retrieve any appellant details from the Home Office because the Home Office data does not include a main applicant. You can contact the Home Office if you need this information to validate the appeal.\n## Do this next\r\n- Contact the Home Office to get the correct details\r\n- Use [Edit appeal](/case/IA/Asylum/${[CASE_REFERENCE]}/trigger/editAppealAfterSubmit) to update the details as required\r\n- [Request Home Office data](/case/IA/Asylum/${[CASE_REFERENCE]}/trigger/requestHomeOfficeData) to match the appellant details with the Home Office details",
+  "matchingAppellantDetailsFound": "No",
+  "reviewResponseActionAvailable": "No",
+  "uploadTheNoticeOfDecisionDocs": [{
+    "id": "eb42b37c-9075-463e-bee9-ca312be0d52d",
+    "value": {
+      "document": {
+        "document_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29",
+        "document_filename": "Doc1.pdf",
+        "document_binary_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29/binary"
+      },
+      "description": "decision doc1"
+    }
+  }
+  ],
+  "uploadedLegalRepBuildCaseDocs": "- None",
+  "currentCaseStateVisibleToJudge": "submitHearingRequirements",
+  "isHomeOfficeIntegrationEnabled": "Yes",
+  "homeOfficeNotificationsEligible": "Yes",
+  "legalRepresentativeEmailAddress": "ia-law-firm-org-sc@fake.hmcts.net",
+  "uploadHomeOfficeBundleAvailable": "No",
+  "appellantNationalitiesDescription": "Stateless",
+  "reviewHomeOfficeResponseByLegalRep": "Yes",
+  "currentCaseStateVisibleToCaseOfficer": "submitHearingRequirements",
+  "uploadedHomeOfficeAppealResponseDocs": "- None",
+  "changeDirectionDueDateActionAvailable": "Yes",
+  "currentCaseStateVisibleToAdminOfficer": "submitHearingRequirements",
+  "homeOfficeRequestReviewInstructStatus": "OK",
+  "markEvidenceAsReviewedActionAvailable": "Yes",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "submitHearingRequirements",
+  "currentCaseStateVisibleToHomeOfficeApc": "submitHearingRequirements",
+  "currentCaseStateVisibleToHomeOfficePou": "submitHearingRequirements",
+  "currentCaseStateVisibleToHomeOfficeLart": "submitHearingRequirements",
+  "uploadAdditionalEvidenceActionAvailable": "Yes",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "submitHearingRequirements",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "submitHearingRequirements",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "uploadHomeOfficeAppealResponseActionAvailable": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "Yes",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "Yes"
 }
