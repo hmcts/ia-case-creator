@@ -1,0 +1,15 @@
+{
+  "uploadedHomeOfficeBundleDocs": "- None",
+  "homeOfficeBundle": [{
+    "value": {
+      "description": "ho bundle doc1",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/045b1a9a-d55e-4210-82e3-67d7b880ef83",
+        "document_binary_url": "http://dm-store:8080/documents/045b1a9a-d55e-4210-82e3-67d7b880ef83/binary",
+        "document_filename": "Appeals events -Happy path.pdf"
+      }
+    },
+    "id": null
+  }
+  ]
+}

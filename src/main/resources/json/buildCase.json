@@ -1,0 +1,11 @@
+{
+  "uploadedLegalRepBuildCaseDocs": "- None",
+  "caseArgumentDocument": {
+    "document_url": "http://dm-store:8080/documents/aa3ea6d4-fae7-4971-97ff-0be72b82cbe4",
+    "document_binary_url": "http://dm-store:8080/documents/aa3ea6d4-fae7-4971-97ff-0be72b82cbe4/binary",
+    "document_filename": "jacoco.txt"
+  },
+  "caseArgumentDescription": "appeal skeleton doc1",
+  "caseArgumentEvidence": [],
+  "caseArgumentAvailable": null
+}

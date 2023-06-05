@@ -1,0 +1,64 @@
+{
+  "searchParties": [],
+  "checklist": {
+    "checklist5": [],
+    "checklist1": [],
+    "checklist2": [
+      "isNotDetained"
+    ],
+    "checklist7": [],
+    "checklist3": [],
+    "checklist4": [],
+    "checklist6": []
+  },
+  "isOutOfCountryEnabled": "Yes",
+  "appellantInUk": "Yes",
+  "homeOfficeReferenceNumber": "01234567",
+  "homeOfficeDecisionDate": "2023-06-03",
+  "decisionLetterReceivedDate": null,
+  "uploadTheNoticeOfDecisionDocs": [{
+    "value": {
+      "description": "decision doc1",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29",
+        "document_binary_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29/binary",
+        "document_filename": "Doc1.pdf"
+      }
+    },
+    "id": null
+  }
+  ],
+  "appellantTitle": "Mr",
+  "appellantGivenNames": "John",
+  "appellantFamilyName": "Doe",
+  "appellantDateOfBirth": "1999-01-01",
+  "appellantStateless": "isStateless",
+  "appellantNationalities": [],
+  "appellantHasFixedAddress": "No",
+  "appellantAddress": null,
+  "contactPreference": "wantsEmail",
+  "email": "ia-law-firm-org2-sc@fake2.hmcts.net",
+  "mobileNumber": null,
+  "appealType": "deprivation",
+  "appealGroundsDeprivation": {
+    "values": [
+      "disproportionateDeprivation",
+      "unlawfulDeprivation"
+    ]
+  },
+  "appealGroundsHumanRights": null,
+  "deportationOrderOptions": "No",
+  "hasNewMatters": "No",
+  "newMatters": null,
+  "hasOtherAppeals": "No",
+  "legalRepCompany": "Fake Org Ltd",
+  "legalRepName": "LEGAL REP NAME",
+  "legalRepReferenceNumber": "Ref",
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "remissionType": "noRemission",
+  "feeWithHearing": null,
+  "feeWithoutHearing": null,
+  "paAppealTypePaymentOption": "payLater"
+}
