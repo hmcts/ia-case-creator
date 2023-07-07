@@ -99,7 +99,7 @@ public class CcdCaseCreator {
 
 
         InputStream caseStream = (ccdDefinitionFile == null) ?
-                getClass().getClassLoader().getResourceAsStream("json/new_example.json") :
+                getClass().getClassLoader().getResourceAsStream("json/decision_test.json") :
                 getStreamFromFile(ccdDefinitionFile);
 
         String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
