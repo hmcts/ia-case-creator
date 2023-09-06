@@ -2,6 +2,8 @@ core_case_data:
   api:
     url: ${CCD_URL:http://127.0.0.1:4452}
 
+case_document_am.url: ${CASE_DOCUMENT_AM_URL:http://127.0.0.1:4455}
+
 auth:
   idam:
     client:

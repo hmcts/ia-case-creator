@@ -1,14 +1,13 @@
 package uk.gov.hmcts.reform.ia.casecreator;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import uk.gov.hmcts.reform.ccd.client.CoreCaseDataApi;
 import uk.gov.hmcts.reform.ccd.client.model.CaseDataContent;
@@ -24,13 +23,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
+import static uk.gov.hmcts.reform.ia.casecreator.DocumentNames.NOTICE_OF_APPEAL_PDF;
 
 @Service
 public class CcdCaseCreator {
 
+    private Collection<Resource> documentResources;
+    private final CdamDocumentManagementUploader cdamDocumentManagementUploader;
     private final IdamService idamService;
     private final CoreCaseDataApi coreCaseDataApi;
     private final String idamToken;
@@ -45,7 +46,7 @@ public class CcdCaseCreator {
     private String idamPassword;
 
     @Autowired
-    public CcdCaseCreator(IdamService idamService,
+    public CcdCaseCreator(CdamDocumentManagementUploader cdamDocumentManagementUploader, IdamService idamService,
                           CoreCaseDataApi coreCaseDataApi,
                           @Value("${core_case_data.jurisdictionId}") String coreCaseDataJurisdictionId,
                           @Value("${core_case_data.caseTypeId}") String coreCaseDataCaseTypeId,
@@ -56,6 +57,7 @@ public class CcdCaseCreator {
                           @Value("${migration.idam.username}") String idamUsername,
                           @Value("${migration.idam.password}") String idamPassword
                           ) {
+        this.cdamDocumentManagementUploader = cdamDocumentManagementUploader;
         this.idamService = idamService;
         this.coreCaseDataJurisdictionId = coreCaseDataJurisdictionId;
         this.coreCaseDataCaseTypeId = coreCaseDataCaseTypeId;
@@ -83,6 +85,12 @@ public class CcdCaseCreator {
     }
 
     public void createCase(String ccdDefinitionFile) throws IOException {
+
+        documentResources =
+                BinaryResourceLoader
+                        .load("/documents/*")
+                        .values();
+
         String userToken = idamClient.authenticateUser(idamUsername, idamPassword);
         System.out.println(userToken);
 
@@ -93,16 +101,21 @@ public class CcdCaseCreator {
                 .userId(userId)
                 .build();
 
+        Document noticeOfAppealDocument = getDocument(NOTICE_OF_APPEAL_PDF, idamTokens);
+
         StartEventResponse createAppeal = idamUserRole.equals("citizen") ?
                 startCaseForCitizen(idamTokens, "createDLRMCase") :
                 startCaseForCaseworker(idamTokens, "createDLRMCase");
 
+        Long saaa = createAppeal.getCaseDetails().getId();
 
         InputStream caseStream = (ccdDefinitionFile == null) ?
-                getClass().getClassLoader().getResourceAsStream("json/decision_test.json") :
+                getClass().getClassLoader().getResourceAsStream("json/new_example.json") :
                 getStreamFromFile(ccdDefinitionFile);
 
         String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
+        iaData = iaData.replace("\"{$NOTICE_OF_DECISION_DOCUMENT}\"", toJsonString(noticeOfAppealDocument));
+
 
         Map data = new ObjectMapper().readValue(iaData, Map.class);
 
@@ -220,5 +233,66 @@ public class CcdCaseCreator {
                 true,
                 caseDataContent
         );
+    }
+
+    public Document uploadDocument(DocumentNames document, IdamTokens idamTokens) {
+
+        Optional<Resource> maybeResource = documentResources.stream()
+                .filter(res -> {
+                    String filename = formatFileName(res.getFilename());
+                    return filename.equals(document.toString());
+                }).findFirst();
+
+        if (maybeResource.isPresent()) {
+
+            Resource documentResource = maybeResource.get();
+
+            String filename = documentResource.getFilename().toUpperCase();
+
+
+            String contentType;
+
+            if (filename.endsWith(".PDF")) {
+                contentType = "application/pdf";
+
+            } else if (filename.endsWith(".DOC")) {
+                contentType = "application/msword";
+
+            } else if (filename.endsWith(".DOCX")) {
+                contentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+
+            } else {
+                throw new RuntimeException("Missing content type mapping for document: " + filename);
+            }
+            System.out.println("uploading document.....");
+            return cdamDocumentManagementUploader.upload(documentResource, contentType, idamTokens);
+
+        } else {
+            throw new IllegalStateException(
+                    String.format("Resource for document '{}' not found", document));
+        }
+    }
+
+    public Document getDocument(DocumentNames document, IdamTokens idamTokens) {
+        return uploadDocument(document, idamTokens);
+    }
+
+    private String formatFileName(String fileName) {
+        return fileName
+                .replace(".", "_")
+                .replace("-", "_")
+                .toUpperCase();
+    }
+
+    private String toJsonString(Object object) {
+        String json = null;
+
+        try {
+            json = new ObjectMapper().writeValueAsString(object);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+
+        return json;
     }
 }

@@ -195,9 +195,9 @@
     "value": {
       "tag": "appealResponse",
       "document": {
-        "document_url": "http://dm-store:8080/documents/77205fca-d557-4f4a-9421-5f15d56955ef",
-        "document_filename": "db.png",
-        "document_binary_url": "http://dm-store:8080/documents/77205fca-d557-4f4a-9421-5f15d56955ef/binary"
+        "document_url": "http://dm-store:8080/documents/d840acf6-e305-4a4b-82e8-31b9c5b19433",
+        "document_filename": "notice_of_appeal.pdf",
+        "document_binary_url": "http://dm-store:8080/documents/d840acf6-e305-4a4b-82e8-31b9c5b19433/binary"
       },
       "description": "appeal response doc1",
       "dateUploaded": "2023-05-19"
@@ -206,11 +206,7 @@
     "id": "1",
     "value": {
       "tag": "respondentEvidence",
-      "document": {
-        "document_url": "http://dm-store:8080/documents/2a4b7f31-3dde-4807-aad5-a7b422b42d02",
-        "document_filename": "Screenshot 2022-04-25 085824.jpg",
-        "document_binary_url": "http://dm-store:8080/documents/2a4b7f31-3dde-4807-aad5-a7b422b42d02/binary"
-      },
+      "document": "{$NOTICE_OF_DECISION_DOCUMENT}",
       "description": "ho bundle doc 1",
       "dateUploaded": "2023-05-19"
     }
@@ -344,11 +340,7 @@
     "id": "4",
     "value": {
       "tag": "submitCaseBundle",
-      "document": {
-        "document_url": "http://dm-store:8080/documents/84375335-6939-4e80-8d03-dd94e99a91a5",
-        "document_filename": "PA 50019 2023-Doe-appeal-skeleton-argument.PDF",
-        "document_binary_url": "http://dm-store:8080/documents/84375335-6939-4e80-8d03-dd94e99a91a5/binary"
-      },
+      "document": "{$NOTICE_OF_DECISION_DOCUMENT}",
       "suppliedBy": "",
       "description": "",
       "dateUploaded": "2023-05-19"
@@ -357,11 +349,7 @@
     "id": "3",
     "value": {
       "tag": "caseArgument",
-      "document": {
-        "document_url": "http://dm-store:8080/documents/798f5dd1-02f9-4d44-8e4a-02da3b1ef433",
-        "document_filename": "Screenshot 2022-07-25 130825.jpg",
-        "document_binary_url": "http://dm-store:8080/documents/798f5dd1-02f9-4d44-8e4a-02da3b1ef433/binary"
-      },
+      "document": "{$NOTICE_OF_DECISION_DOCUMENT}",
       "description": "appeal skeleton argument doc 1",
       "dateUploaded": "2023-05-19"
     }
@@ -369,11 +357,7 @@
     "id": "2",
     "value": {
       "tag": "appealSubmission",
-      "document": {
-        "document_url": "http://dm-store:8080/documents/07cdffec-70c8-435f-886c-f4647f056e7a",
-        "document_filename": "PA 50019 2023-Doe-appeal-form.PDF",
-        "document_binary_url": "http://dm-store:8080/documents/07cdffec-70c8-435f-886c-f4647f056e7a/binary"
-      },
+      "document": "{$NOTICE_OF_DECISION_DOCUMENT}",
       "suppliedBy": "",
       "description": "",
       "dateUploaded": "2023-05-19"
@@ -382,11 +366,7 @@
     "id": "1",
     "value": {
       "tag": "homeOfficeDecisionLetter",
-      "document": {
-        "document_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29",
-        "document_filename": "Doc1.pdf",
-        "document_binary_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29/binary"
-      },
+      "document": "{$NOTICE_OF_DECISION_DOCUMENT}",
       "description": "decision doc1",
       "dateUploaded": "2023-05-19"
     }
@@ -400,11 +380,7 @@
   "uploadTheNoticeOfDecisionDocs": [{
     "id": "eb42b37c-9075-463e-bee9-ca312be0d52d",
     "value": {
-      "document": {
-        "document_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29",
-        "document_filename": "Doc1.pdf",
-        "document_binary_url": "http://dm-store:8080/documents/9abe1edb-177b-498c-96b7-1826575e4c29/binary"
-      },
+      "document": "{$NOTICE_OF_DECISION_DOCUMENT}",
       "description": "decision doc1"
     }
   }
