@@ -2,8 +2,7 @@ package uk.gov.hmcts.reform.ia.casecreator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,7 +21,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.nio.charset.Charset;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import static uk.gov.hmcts.reform.ia.casecreator.DocumentNames.NOTICE_OF_APPEAL_PDF;
@@ -179,11 +181,49 @@ public class CcdCaseCreator {
     }
 
     private void prettyPrintCase(CaseDetails aCase) {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapter(LocalDate.class, new LocalDateTypeAdapter())
+                .registerTypeAdapter(LocalDateTime.class, new LocalDateTimeTypeAdapter2())
+                .setPrettyPrinting().create();
 
         String json = gson.toJson(aCase);
 
         System.out.println(json);
+    }
+
+    public static class LocalDateTypeAdapter implements JsonSerializer<LocalDate>, JsonDeserializer<LocalDate> {
+
+        private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+        @Override
+        public JsonElement serialize(final LocalDate date, final Type typeOfSrc,
+                                     final JsonSerializationContext context) {
+            return new JsonPrimitive(date.format(formatter));
+        }
+
+        @Override
+        public LocalDate deserialize(final JsonElement json, final Type typeOfT,
+                                     final JsonDeserializationContext context) throws JsonParseException {
+            return LocalDate.parse(json.getAsString(), formatter);
+        }
+    }
+
+    public class LocalDateTimeTypeAdapter2 implements JsonSerializer<LocalDateTime>, JsonDeserializer<LocalDateTime> {
+        private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d::MMM::uuuu HH::mm::ss");
+
+        @Override
+        public JsonElement serialize(LocalDateTime localDateTime, Type srcType,
+                                     JsonSerializationContext context) {
+
+            return new JsonPrimitive(formatter.format(localDateTime));
+        }
+
+        @Override
+        public LocalDateTime deserialize(JsonElement json, Type typeOfT,
+                                         JsonDeserializationContext context) throws JsonParseException {
+
+            return LocalDateTime.parse(json.getAsString(), formatter);
+        }
     }
 
     private FileInputStream getStreamFromFile(String ccdDefinitionFile) throws FileNotFoundException {
