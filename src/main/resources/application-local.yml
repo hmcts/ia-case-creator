@@ -21,8 +21,8 @@ idam:
     url: ${S2S_URL:http://127.0.0.1:4502}
   oauth2:
     user:
-      email: ia-law-firm-org-sc@fake.hmcts.net
-      password: London03
+      email: ${TEST_ADMINOFFICER_USERNAME:REPLACE_ME}
+      password: ${TEST_ADMINOFFICER_PASSWORD:REPLACE_ME}
     client:
       id: ccd_gateway
       secret: OOOOOOOOOOOOOOOO
@@ -31,9 +31,9 @@ document_management:
   url: ${DM_STORE_URL:http://dm-store:4506}
 
 idam_token: SET_ME
-idam_user_id: 427303d7-5692-3532-9dea-26659ecf3a45
+idam_user_id: REPLACE_ME
 idam_user_role: caseworker
 
 
-migration.idam.username: ia-law-firm-org-sc@fake.hmcts.net
-migration.idam.password: London03
+migration.idam.username: ${TEST_ADMINOFFICER_USERNAME:REPLACE_ME}
+migration.idam.password: ${TEST_ADMINOFFICER_PASSWORD:REPLACE_ME}

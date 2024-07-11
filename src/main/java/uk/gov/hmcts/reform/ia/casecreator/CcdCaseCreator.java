@@ -106,13 +106,13 @@ public class CcdCaseCreator {
         Document noticeOfAppealDocument = getDocument(NOTICE_OF_APPEAL_PDF, idamTokens);
 
         StartEventResponse createAppeal = idamUserRole.equals("citizen") ?
-                startCaseForCitizen(idamTokens, "createDLRMCase") :
-                startCaseForCaseworker(idamTokens, "createDLRMCase");
+                startCaseForCitizen(idamTokens, "ariaCreateCase") :
+                startCaseForCaseworker(idamTokens, "ariaCreateCase");
 
         Long saaa = createAppeal.getCaseDetails().getId();
 
         InputStream caseStream = (ccdDefinitionFile == null) ?
-                getClass().getClassLoader().getResourceAsStream("json/new_example.json") :
+                getClass().getClassLoader().getResourceAsStream("json/internal_case_creation.json") :
                 getStreamFromFile(ccdDefinitionFile);
 
         String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
