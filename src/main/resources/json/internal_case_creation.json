@@ -81,7 +81,6 @@
     "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
   },
   "tribunalReceivedDate": "2024-07-05",
-  "appealReferenceNumber": "EA/50005/2024",
   "caseNameHmctsInternal": "gname fname",
   "hmctsCaseNameInternal": "gname fname",
   "isOutOfCountryEnabled": "Yes",
@@ -198,6 +197,5 @@
   "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
   "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
-  "isAriaMigrated": "Yes",
   "ariaDesiredState": "appealSubmitted"
 }
