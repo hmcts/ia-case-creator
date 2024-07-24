@@ -31,7 +31,7 @@ public class ArgumentParser {
 
         if (hasValue(args, "headers")) {
             System.out.println("\n---------------------------- HEADERS -----------------------");
-            ccdCaseLoader.getHeaders();
+//            ccdCaseLoader.getHeaders();
             System.out.println("------------------------------------------------------------\n");
         } else if (hasValue(args, "load")) {
             String caseId = getOptionalValue(args, "load");

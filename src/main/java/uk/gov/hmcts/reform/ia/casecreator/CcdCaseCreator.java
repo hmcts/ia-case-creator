@@ -102,42 +102,49 @@ public class CcdCaseCreator {
                 .serviceAuthorization(serviceAuthorizationToken)
                 .userId(userId)
                 .build();
+        System.out.println("userToken");
+        System.out.println(userToken);
+        System.out.println("idamTokens");
+        System.out.println(idamTokens);
+        System.out.println("serviceAuthorizationToken");
+        System.out.println(serviceAuthorizationToken);
+        System.out.println("userId");
+        System.out.println(userId);
+//        Document noticeOfAppealDocument = getDocument(NOTICE_OF_APPEAL_PDF, idamTokens);
 
-        Document noticeOfAppealDocument = getDocument(NOTICE_OF_APPEAL_PDF, idamTokens);
-
-        StartEventResponse createAppeal = idamUserRole.equals("citizen") ?
-                startCaseForCitizen(idamTokens, "ariaCreateCase") :
-                startCaseForCaseworker(idamTokens, "ariaCreateCase");
-
-        Long saaa = createAppeal.getCaseDetails().getId();
-
-        InputStream caseStream = (ccdDefinitionFile == null) ?
-                getClass().getClassLoader().getResourceAsStream("json/internal_case_creation.json") :
-                getStreamFromFile(ccdDefinitionFile);
-
-        String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
-        iaData = iaData.replace("\"{$NOTICE_OF_DECISION_DOCUMENT}\"", toJsonString(noticeOfAppealDocument));
-
-
-        Map data = new ObjectMapper().readValue(iaData, Map.class);
-
-        CaseDataContent caseDataContent = CaseDataContent.builder()
-                .eventToken(createAppeal.getToken())
-                .event(Event.builder()
-                        .id(createAppeal.getEventId())
-                        .summary("summary")
-                        .description("description")
-                        .build())
-                .data(data)
-                .build();
-
-        CaseDetails caseDetails = idamUserRole.equals("citizen") ?
-                submitForCitizen(idamTokens, caseDataContent) :
-                submitForCaseworker(idamTokens, caseDataContent);
-
-        System.out.println(ANSI_BLUE + "case id: " + ANSI_RESET + caseDetails.getId());
-
-        loadCase(caseDetails.getId() + "", idamTokens);
+//        StartEventResponse createAppeal = idamUserRole.equals("citizen") ?
+//                startCaseForCitizen(idamTokens, "ariaCreateCase");
+//                startCaseForCaseworker(idamTokens, "ariaCreateCase");
+//
+//        Long saaa = createAppeal.getCaseDetails().getId();
+//
+//        InputStream caseStream = (ccdDefinitionFile == null) ?
+//                getClass().getClassLoader().getResourceAsStream("json/preview.json") :
+//                getStreamFromFile(ccdDefinitionFile);
+//
+//        String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
+////        iaData = iaData.replace("\"{$NOTICE_OF_DECISION_DOCUMENT}\"", toJsonString(noticeOfAppealDocument));
+//
+//
+//        Map data = new ObjectMapper().readValue(iaData, Map.class);
+//
+//        CaseDataContent caseDataContent = CaseDataContent.builder()
+//                .eventToken(createAppeal.getToken())
+//                .event(Event.builder()
+//                        .id(createAppeal.getEventId())
+//                        .summary("summary")
+//                        .description("description")
+//                        .build())
+//                .data(data)
+//                .build();
+//
+//        CaseDetails caseDetails = idamUserRole.equals("citizen") ?
+//                submitForCitizen(idamTokens, caseDataContent) :
+//                submitForCaseworker(idamTokens, caseDataContent);
+//
+//        System.out.println(ANSI_BLUE + "case id: " + ANSI_RESET + caseDetails.getId());
+//
+//        loadCase(caseDetails.getId() + "", idamTokens);
     }
 
     public void loadCase(String caseId) {

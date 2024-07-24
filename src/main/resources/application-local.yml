@@ -14,6 +14,12 @@ auth:
         baseUrl: ${S2S_URL:http://127.0.0.1:4502}
 
 idam:
+  client:
+    redirect_uri: ${IA_IDAM_REDIRECT_URI:http://localhost:3002/oauth2/callback}
+    id: iac
+    secret: ${IA_IDAM_SECRET:OOOOOOOOOOOOOOOO}
+  api:
+      url: ${IDAM_URL:http://127.0.0.1:4501}
   url: ${IDAM_URL:http://127.0.0.1:4501}
   urlnew: ${OPEN_ID_IDAM_URL:http://127.0.0.1:5000}
   s2s-auth:
@@ -25,7 +31,7 @@ idam:
       password: ${IA_SYSTEM_PASSWORD:REPLACE_ME}
     client:
       id: ccd_gateway
-      secret: OOOOOOOOOOOOOOOO
+      secret: ${IA_IDAM_SECRET:OOOOOOOOOOOOOOOO}
     redirectUrl: ${IA_IDAM_REDIRECT_URI:http://localhost:3002/oauth2/callback}
 document_management:
   url: ${DM_STORE_URL:http://dm-store:4506}

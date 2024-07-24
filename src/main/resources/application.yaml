@@ -4,7 +4,7 @@ spring:
     allow-bean-definition-overriding: true
     banner-mode: "off"
   application:
-    name: SSCS-Case-Creator
+    name: IA-Case-Creator
 
 core_case_data:
   caseTypeId: Asylum
