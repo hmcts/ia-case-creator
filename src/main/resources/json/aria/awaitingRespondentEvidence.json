@@ -1,0 +1,262 @@
+{
+  "email": "example@test.com",
+  "isEjp": "No",
+  "feeCode": "FEE0238",
+  "isAdmin": "Yes",
+  "paidDate": "2024-08-05",
+  "appealType": "refusalOfHumanRights",
+  "directions": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "respondentEvidence",
+        "dateDue": "2024-08-21",
+        "parties": "respondent",
+        "dateSent": "2024-08-07",
+        "uniqueId": "852283e9-2105-4965-9038-e71f14033d30",
+        "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply the documents.\n\nYou must include:\n- the notice of decision\n- any other document provided to the appellant giving reasons for that decision\n- any statements of evidence\n- the application form\n- any record of interview with the appellant in relation to the decision being appealed\n- any other unpublished documents on which you rely\n- the notice of any other appealable decision made in relation to the appellant",
+        "directionType": "requestRespondentEvidence",
+        "previousDates": []
+      }
+    }
+  ],
+  "feeVersion": "2",
+  "paidAmount": "14000",
+  "s94bStatus": "No",
+  "paymentDate": "5 Aug 2024",
+  "feeAmountGbp": "14000",
+  "isIntegrated": "No",
+  "appellantInUk": "Yes",
+  "hearingCentre": "taylorHouse",
+  "isNabaEnabled": "No",
+  "paymentStatus": "Paid",
+  "remissionType": "noRemission",
+  "staffLocation": "Taylor House",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "31bb839d-af3f-494e-9306-70153a44bf61",
+        "value": {
+          "Name": "GivenName Migration 4 FamilyName awaitingRespondentEvidence",
+          "PostCode": "SE10 0XX",
+          "DateOfBirth": "2000-01-01",
+          "AddressLine1": "Flat 101",
+          "EmailAddress": "example@test.com"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "f6a2e23f-9fc2-495d-8fc0-6fb8e4be8018",
+        "value": "HU/50009/2024"
+      }
+    ]
+  },
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
+  "searchPostcode": "SE10 0XX",
+  "hasOtherAppeals": "No",
+  "adminDeclaration": [
+    "hasDeclared"
+  ],
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "SE10 0XX",
+    "PostTown": "London",
+    "AddressLine1": "Flat 101",
+    "AddressLine2": "10 Cutter Lane",
+    "AddressLine3": ""
+  },
+  "appellantPartyId": "45889c92-2cf4-4dae-ae9a-f64aa051d525",
+  "ariaDesiredState": "awaitingRespondentEvidence",
+  "isAppellantMinor": "No",
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Human rights",
+  "notificationsSent": [
+    {
+      "id": "1723019798041350_INTERNAL_SUBMIT_APPEAL_WITH_FEE_APPELLANT_LETTER",
+      "value": "b37d58f7-6390-4049-b01e-dd19e1d93708"
+    },
+    {
+      "id": "1723019798041350_APPEAL_SUBMITTED_HOME_OFFICE",
+      "value": "d15ca65a-fdd9-4a9d-aded-9abcc69c7083"
+    },
+    {
+      "id": "1723019798041350_RESPONDENT_EVIDENCE_DIRECTION",
+      "value": "41ee8ae8-0afc-45ba-850e-25b02e891d7c"
+    },
+    {
+      "id": "1723019798041350_INTERNAL_HO_UPLOAD_BUNDLE_APPELLANT_LETTER",
+      "value": "4f554329-f62f-47e6-ac08-3d5f39a48df0"
+    }
+  ],
+  "tribunalDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "appealForm",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e",
+          "document_filename": "HU/50009/2024-GivenName Migration 4 FamilyName awaitingRespondentEvidence-appeal form1.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e/binary"
+        },
+        "description": "appeal form 1",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "legalRepFamilyName": "",
+  "paymentDescription": "Appeal determined with a hearing",
+  "appellantFamilyName": "FamilyName awaitingRespondentEvidence",
+  "appellantGivenNames": "GivenName Migration 4",
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2024-08-07",
+  "appellantDateOfBirth": "2000-01-01",
+  "feePaymentAppealType": "Yes",
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "tribunalReceivedDate": "2024-08-05",
+  "additionalPaymentInfo": "Additional paid information",
+  "appealReferenceNumber": "HU/50009/2024",
+  "caseNameHmctsInternal": "GivenName Migration 4 FamilyName awaitingRespondentEvidence",
+  "hmctsCaseNameInternal": "GivenName Migration 4 FamilyName awaitingRespondentEvidence",
+  "isOutOfCountryEnabled": "Yes",
+  "lastModifiedDirection": {
+    "tag": "respondentEvidence",
+    "dateDue": "2024-08-21",
+    "parties": "respondent",
+    "dateSent": "2024-08-07",
+    "uniqueId": "852283e9-2105-4965-9038-e71f14033d30",
+    "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply the documents.\n\nYou must include:\n- the notice of decision\n- any other document provided to the appellant giving reasons for that decision\n- any statements of evidence\n- the application form\n- any record of interview with the appellant in relation to the decision being appealed\n- any other unpublished documents on which you rely\n- the notice of any other appealable decision made in relation to the appellant",
+    "directionType": "requestRespondentEvidence",
+    "previousDates": []
+  },
+  "appellantNationalities": [
+    {
+      "id": "520cd556-39b3-4729-9093-a07513f4b03e",
+      "value": {
+        "code": "GB"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "refusalOfHumanRights",
+      "label": "Refusal of a human rights claim"
+    },
+    "list_items": [
+      {
+        "code": "refusalOfHumanRights",
+        "label": "Refusal of a human rights claim"
+      }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "homeOfficeDecisionDate": "2024-08-05",
+  "internalAppellantEmail": "example@test.com",
+  "appealGroundsForDisplay": [],
+  "appelantsRepresentation": "Yes",
+  "appellantNameForDisplay": "GivenName Migration 4 FamilyName awaitingRespondentEvidence",
+  "deportationOrderOptions": "No",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "3d2867c6-4888-450d-8138-258526aaab20",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e",
+          "document_filename": "Doc1.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e/binary"
+        },
+        "description": "appeal form 1"
+      }
+    }
+  ],
+  "appellantHasFixedAddress": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "homeOfficeReferenceNumber": "012345678",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "legalRepIndividualPartyId": "f7159136-7bff-40fb-921a-c8a53633afc8",
+  "legalRepOrganisationPartyId": "71c50709-b802-42c7-ac56-2ef03e6e14e7",
+  "appealSubmissionInternalDate": "2024-08-07",
+  "ccdReferenceNumberForDisplay": "1723 0197 9804 1350",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealSubmission",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/f3f29b1a-65b9-4927-b251-be4ccb65136e",
+          "document_filename": "HU 50009 2024-FamilyName awaitingRespondentEvidence-appeal-form.PDF",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/f3f29b1a-65b9-4927-b251-be4ccb65136e/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e/binary"
+        },
+        "description": "nod",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "Yes",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "a54cc12b-e4a0-42bf-ae79-c4595baae9a7",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e/binary"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "automaticEndAppealTimedEventId": "fd614594-6b6b-4116-8568-f0d80298486e",
+  "currentCaseStateVisibleToJudge": "awaitingRespondentEvidence",
+  "uploadHomeOfficeBundleAvailable": "Yes",
+  "currentCaseStateVisibleToCaseOfficer": "awaitingRespondentEvidence",
+  "changeDirectionDueDateActionAvailable": "Yes",
+  "currentCaseStateVisibleToAdminOfficer": "awaitingRespondentEvidence",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "awaitingRespondentEvidence",
+  "currentCaseStateVisibleToHomeOfficeApc": "awaitingRespondentEvidence",
+  "currentCaseStateVisibleToHomeOfficePou": "awaitingRespondentEvidence",
+  "currentCaseStateVisibleToHomeOfficeLart": "awaitingRespondentEvidence",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "awaitingRespondentEvidence",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "awaitingRespondentEvidence",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "Yes",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No"
+}

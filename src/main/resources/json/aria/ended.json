@@ -1,0 +1,279 @@
+{
+  "isEjp": "No",
+  "isAdmin": "Yes",
+  "caseFlags": {
+    "details": [
+      {
+        "id": "141dc9b8-a135-4a31-a9ba-83665abfcd37",
+        "value": {
+          "name": "RRO (Restricted Reporting Order / Anonymisation)",
+          "status": "Active",
+          "flagCode": "CF0012",
+          "dateTimeCreated": "2024-08-07T11:33:09.653874973",
+          "hearingRelevant": "Yes"
+        }
+      }
+    ]
+  },
+  "appealType": "revocationOfProtection",
+  "s94bStatus": "No",
+  "applications": [],
+  "isIntegrated": "No",
+  "appellantInUk": "Yes",
+  "endAppealDate": "2024-08-07",
+  "hearingCentre": "taylorHouse",
+  "isNabaEnabled": "No",
+  "staffLocation": "Taylor House",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "ef7a8748-c54d-4041-84fa-487efec1c204",
+        "value": {
+          "Name": "GivenName Migration 99 FamilyName ended",
+          "PostCode": "SE10 0XX",
+          "DateOfBirth": "2000-01-01",
+          "AddressLine1": "Flat 103"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "bf59b67c-b74f-4503-a0b2-5363934832fb",
+        "value": "RP/50001/2024"
+      }
+    ]
+  },
+  "searchPostcode": "SE10 0XX",
+  "hasOtherAppeals": "No",
+  "adminDeclaration": [
+    "hasDeclared"
+  ],
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "SE10 0XX",
+    "PostTown": "London",
+    "AddressLine1": "Flat 103",
+    "AddressLine2": "10 Cutter Lane",
+    "AddressLine3": ""
+  },
+  "appellantPartyId": "c8231ad6-a0d5-41df-bea9-35c615a298d9",
+  "ariaDesiredState": "ended",
+  "endAppealOutcome": "Withdrawn",
+  "isAppellantMinor": "No",
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Revocation",
+  "notificationsSent": [
+    {
+      "id": "1723030374362193_APPEAL_SUBMITTED_HOME_OFFICE",
+      "value": "b3e705a8-d640-4c1d-86b8-1831bd45625c"
+    },
+    {
+      "id": "1723030374362193_INTERNAL_SUBMIT_APPEAL_WITH_EXEMPTION_APPELLANT_LETTER",
+      "value": "c41dd198-5772-4817-b5fe-dea68dbde19e"
+    },
+    {
+      "id": "1723030374362193_END_APPEAL_HOME_OFFICE",
+      "value": "a9166081-ef45-4dd1-aa1a-b348b07fe990"
+    },
+    {
+      "id": "1723030374362193_INTERNAL_END_APPEAL_LETTER_BUNDLE",
+      "value": "f26cc3cf-2955-4137-acc9-f720fbb235e2"
+    }
+  ],
+  "tribunalDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "endAppeal",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e8537a9d-da06-460f-959d-b64c5a1ac9ed",
+          "document_filename": "RP 50001 2024-FamilyName ended-NoticeOfEndedAppeal.PDF",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e8537a9d-da06-460f-959d-b64c5a1ac9ed/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "appealForm",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258",
+          "document_filename": "RP/50001/2024-GivenName Migration 99 FamilyName ended-appeal form1.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258/binary"
+        },
+        "description": "Appeal Form",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "legalRepFamilyName": "",
+  "appellantFamilyName": "FamilyName ended",
+  "appellantGivenNames": "GivenName Migration 99",
+  "isRemissionsEnabled": "Yes",
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2024-08-07",
+  "appellantDateOfBirth": "2000-01-01",
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "stateBeforeEndAppeal": "appealSubmitted",
+  "tribunalReceivedDate": "2024-08-05",
+  "appealReferenceNumber": "RP/50001/2024",
+  "appealTypeDescription": "Revocation of a protection status",
+  "caseNameHmctsInternal": "GivenName Migration 99 FamilyName ended",
+  "endAppealApproverName": "Judge John",
+  "endAppealApproverType": "Judge",
+  "hmctsCaseNameInternal": "GivenName Migration 99 FamilyName ended",
+  "isOutOfCountryEnabled": "Yes",
+  "letterBundleDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "internalEndAppealLetterBundle",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/ec8afcb5-de0b-428c-a365-3288bd79a2bb",
+          "document_filename": "RP 50001 2024-FamilyName ended-internal-end-appeal-letter-with-attachment.PDF",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/ec8afcb5-de0b-428c-a365-3288bd79a2bb/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "appellantNationalities": [
+    {
+      "id": "322c13cb-c1c5-489e-a88e-fdaa76a780f4",
+      "value": {
+        "code": "GB"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "revocationOfProtection",
+      "label": "Revocation of a protection status"
+    },
+    "list_items": [
+      {
+        "code": "revocationOfProtection",
+        "label": "Revocation of a protection status"
+      }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "endAppealOutcomeReason": "reason for withdraw outcome",
+  "homeOfficeDecisionDate": "2024-08-05",
+  "homeOfficeSearchStatus": "FAIL",
+  "appealGroundsForDisplay": [],
+  "appelantsRepresentation": "Yes",
+  "appellantNameForDisplay": "GivenName Migration 99 FamilyName ended",
+  "deportationOrderOptions": "No",
+  "rpDcAppealHearingOption": "decisionWithHearing",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "76ec1e0a-e200-47cc-aa2b-c68d38ede2cf",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258",
+          "document_filename": "Doc1.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258/binary"
+        },
+        "description": "Appeal Form"
+      }
+    }
+  ],
+  "appellantHasFixedAddress": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "manualCanHearingRequired": "Yes",
+  "homeOfficeReferenceNumber": "012345678",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "legalRepIndividualPartyId": "9eed3b3c-755e-4100-b007-0f44f15c9981",
+  "legalRepOrganisationPartyId": "8d2e4e96-dfcd-48b1-b585-726524b5c616",
+  "appealSubmissionInternalDate": "2024-08-07",
+  "ccdReferenceNumberForDisplay": "1723 0303 7436 2193",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealSubmission",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7e398b76-af32-4195-aa08-507faa9e5f42",
+          "document_filename": "RP 50001 2024-FamilyName ended-appeal-form.PDF",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7e398b76-af32-4195-aa08-507faa9e5f42/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d",
+          "document_filename": "Dummy_nod.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d/binary"
+        },
+        "description": "nod",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "No",
+  "homeOfficeSearchStatusMessage": "**Note:** The service was unable to retrieve any appellant details from the Home Office because the Home Office data does not include a main applicant. You can contact the Home Office if you need this information to validate the appeal.\n## Do this next\r\n- Contact the Home Office to get the correct details\r\n- Use [Edit appeal](/case/IA/Asylum/${[CASE_REFERENCE]}/trigger/editAppealAfterSubmit) to update the details as required\r\n- [Request Home Office data](/case/IA/Asylum/${[CASE_REFERENCE]}/trigger/requestHomeOfficeData) to match the appellant details with the Home Office details",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "a4d18f9a-b96d-47b8-bb2e-8f6626bf6fdf",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d",
+          "document_filename": "Dummy_nod.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d/binary"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "currentCaseStateVisibleToJudge": "ended",
+  "isHomeOfficeIntegrationEnabled": "Yes",
+  "homeOfficeNotificationsEligible": "Yes",
+  "recordApplicationActionDisabled": "Yes",
+  "appellantNationalitiesDescription": "United Kingdom",
+  "currentCaseStateVisibleToCaseOfficer": "ended",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "ended",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "ended",
+  "currentCaseStateVisibleToHomeOfficeApc": "ended",
+  "currentCaseStateVisibleToHomeOfficePou": "ended",
+  "currentCaseStateVisibleToHomeOfficeLart": "ended",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "displayMarkAsPaidEventForPartialRemission": "No",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "ended",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "ended",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "No",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No"
+}
