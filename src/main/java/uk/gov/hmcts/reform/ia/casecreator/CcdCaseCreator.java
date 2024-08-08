@@ -49,7 +49,7 @@ public class CcdCaseCreator {
 
     private final List<String> stateList = Arrays.asList("pendingPayment_noRemission", "pendingPayment_hasRemission",
             "appealSubmitted", "awaitingRespondentEvidence", "caseUnderReview", "listing", "prepareForHearing", "decision", "decided",
-            "ftpaSubmitted", "ftpaDecided", "remitted", "ended");
+            "ftpaSubmitted", "ftpaDecided_HO_AP", "ftpaDecided", "remitted", "ended");
 
     @Autowired
     public CcdCaseCreator(CdamDocumentManagementUploader cdamDocumentManagementUploader, IdamService idamService,
@@ -137,7 +137,7 @@ public class CcdCaseCreator {
                     submitForCaseworker(idamTokens, caseDataContent);
 
             System.out.println(ANSI_BLUE + "case id: " + ANSI_RESET + caseDetails.getId()
-                    + ANSI_BLUE + "case state: " + ANSI_RESET + state);
+                    + ANSI_BLUE + " case state: " + ANSI_RESET + state);
 
     //        loadCase(caseDetails.getId() + "", idamTokens);
         }

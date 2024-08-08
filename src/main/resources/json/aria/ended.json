@@ -29,7 +29,7 @@
       {
         "id": "ef7a8748-c54d-4041-84fa-487efec1c204",
         "value": {
-          "Name": "GivenName Migration 99 FamilyName ended",
+          "Name": "GivenName Migration 13 FamilyName ended",
           "PostCode": "SE10 0XX",
           "DateOfBirth": "2000-01-01",
           "AddressLine1": "Flat 103"
@@ -104,7 +104,7 @@
         "tag": "appealForm",
         "document": {
           "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258",
-          "document_filename": "RP/50001/2024-GivenName Migration 99 FamilyName ended-appeal form1.pdf",
+          "document_filename": "RP/50001/2024-GivenName Migration 13 FamilyName ended-appeal form1.pdf",
           "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258/binary"
         },
         "description": "Appeal Form",
@@ -116,7 +116,7 @@
   "appellantStateless": "hasNationality",
   "legalRepFamilyName": "",
   "appellantFamilyName": "FamilyName ended",
-  "appellantGivenNames": "GivenName Migration 99",
+  "appellantGivenNames": "GivenName Migration 13",
   "isRemissionsEnabled": "Yes",
   "submissionOutOfTime": "No",
   "appealSubmissionDate": "2024-08-07",
@@ -130,10 +130,10 @@
   "tribunalReceivedDate": "2024-08-05",
   "appealReferenceNumber": "RP/50001/2024",
   "appealTypeDescription": "Revocation of a protection status",
-  "caseNameHmctsInternal": "GivenName Migration 99 FamilyName ended",
+  "caseNameHmctsInternal": "GivenName Migration 13 FamilyName ended",
   "endAppealApproverName": "Judge John",
   "endAppealApproverType": "Judge",
-  "hmctsCaseNameInternal": "GivenName Migration 99 FamilyName ended",
+  "hmctsCaseNameInternal": "GivenName Migration 13 FamilyName ended",
   "isOutOfCountryEnabled": "Yes",
   "letterBundleDocuments": [
     {
@@ -180,7 +180,7 @@
   "homeOfficeSearchStatus": "FAIL",
   "appealGroundsForDisplay": [],
   "appelantsRepresentation": "Yes",
-  "appellantNameForDisplay": "GivenName Migration 99 FamilyName ended",
+  "appellantNameForDisplay": "GivenName Migration 13 FamilyName ended",
   "deportationOrderOptions": "No",
   "rpDcAppealHearingOption": "decisionWithHearing",
   "uploadTheAppealFormDocs": [
