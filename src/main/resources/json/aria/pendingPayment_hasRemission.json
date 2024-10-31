@@ -37,7 +37,7 @@
   "feeWithHearing": "140",
   "searchPostcode": "SE10 0XX",
   "hasOtherAppeals": "No",
-  "adminDeclaration": [
+  "adminDeclaration1": [
     "hasDeclared"
   ],
   "appellantAddress": {
@@ -77,9 +77,9 @@
       "value": {
         "tag": "appealForm",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/68636df2-9d53-4280-9d84-8bdfbee7fb65",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU/50010/2024-GivenName Migration 2 FamilyName pendingPayment 2-appeal form1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/68636df2-9d53-4280-9d84-8bdfbee7fb65/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "appeal form 1",
         "dateUploaded": "2024-08-07"
@@ -134,7 +134,7 @@
   "homeOfficeDecisionDate": "2024-08-05",
   "internalAppellantEmail": "example@test.com",
   "appealGroundsForDisplay": [],
-  "appelantsRepresentation": "Yes",
+  "appellantsRepresentation": "Yes",
   "appellantNameForDisplay": "GivenName Migration 2 FamilyName pendingPayment 2",
   "deportationOrderOptions": "No",
   "uploadTheAppealFormDocs": [
@@ -142,9 +142,9 @@
       "id": "b58d8891-e6e5-4d0c-b6dc-5fe9ba47e596",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/68636df2-9d53-4280-9d84-8bdfbee7fb65",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Doc1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/68636df2-9d53-4280-9d84-8bdfbee7fb65/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "appeal form 1"
       }
@@ -166,9 +166,9 @@
       "value": {
         "tag": "appealSubmission",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/481dfea6-2849-4a9b-b976-1c1b8a3ceba7",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU 50010 2024-FamilyName pendingPayment 2-appeal-form.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/481dfea6-2849-4a9b-b976-1c1b8a3ceba7/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -180,9 +180,9 @@
       "value": {
         "tag": "homeOfficeDecisionLetter",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e4a3ee68-ac2a-44aa-a0ed-63fc9d248f2f",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "NOD-PA-50219-2023.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e4a3ee68-ac2a-44aa-a0ed-63fc9d248f2f/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "nod 1",
         "dateUploaded": "2024-08-07"
@@ -204,9 +204,9 @@
       "id": "b530b329-032c-4347-af7e-5a9cd9e0a41f",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e4a3ee68-ac2a-44aa-a0ed-63fc9d248f2f",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "NOD-PA-50219-2023.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e4a3ee68-ac2a-44aa-a0ed-63fc9d248f2f/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "nod 1"
       }
@@ -233,5 +233,7 @@
   "isServiceRequestTabVisibleConsideringRemissions": "No",
   "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
-  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No"
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "isFeePaymentEnabled": "Yes",
+  "ariaMigrationTaskDueDays": "2"
 }

@@ -30,7 +30,7 @@ idam:
       email: ${IA_SYSTEM_USERNAME:REPLACE_ME}
       password: ${IA_SYSTEM_PASSWORD:REPLACE_ME}
     client:
-      id: ccd_gateway
+      id: iac
       secret: ${IA_IDAM_SECRET:OOOOOOOOOOOOOOOO}
     redirectUrl: ${IA_IDAM_REDIRECT_URI:http://localhost:3002/oauth2/callback}
 document_management:

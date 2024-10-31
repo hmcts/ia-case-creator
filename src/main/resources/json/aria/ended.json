@@ -45,7 +45,7 @@
   },
   "searchPostcode": "SE10 0XX",
   "hasOtherAppeals": "No",
-  "adminDeclaration": [
+  "adminDeclaration1": [
     "hasDeclared"
   ],
   "appellantAddress": {
@@ -89,9 +89,9 @@
       "value": {
         "tag": "endAppeal",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e8537a9d-da06-460f-959d-b64c5a1ac9ed",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "RP 50001 2024-FamilyName ended-NoticeOfEndedAppeal.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e8537a9d-da06-460f-959d-b64c5a1ac9ed/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -103,9 +103,9 @@
       "value": {
         "tag": "appealForm",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "RP/50001/2024-GivenName Migration 13 FamilyName ended-appeal form1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "Appeal Form",
         "dateUploaded": "2024-08-07"
@@ -141,9 +141,9 @@
       "value": {
         "tag": "internalEndAppealLetterBundle",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/ec8afcb5-de0b-428c-a365-3288bd79a2bb",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "RP 50001 2024-FamilyName ended-internal-end-appeal-letter-with-attachment.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/ec8afcb5-de0b-428c-a365-3288bd79a2bb/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -179,7 +179,7 @@
   "homeOfficeDecisionDate": "2024-08-05",
   "homeOfficeSearchStatus": "FAIL",
   "appealGroundsForDisplay": [],
-  "appelantsRepresentation": "Yes",
+  "appellantsRepresentation": "Yes",
   "appellantNameForDisplay": "GivenName Migration 13 FamilyName ended",
   "deportationOrderOptions": "No",
   "rpDcAppealHearingOption": "decisionWithHearing",
@@ -188,9 +188,9 @@
       "id": "76ec1e0a-e200-47cc-aa2b-c68d38ede2cf",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Doc1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/dda7b509-d675-4c37-a2d6-29db494f4258/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "Appeal Form"
       }
@@ -212,9 +212,9 @@
       "value": {
         "tag": "appealSubmission",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7e398b76-af32-4195-aa08-507faa9e5f42",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "RP 50001 2024-FamilyName ended-appeal-form.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7e398b76-af32-4195-aa08-507faa9e5f42/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -226,9 +226,9 @@
       "value": {
         "tag": "homeOfficeDecisionLetter",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Dummy_nod.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "nod",
         "dateUploaded": "2024-08-07"
@@ -242,9 +242,9 @@
       "id": "a4d18f9a-b96d-47b8-bb2e-8f6626bf6fdf",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Dummy_nod.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/97838a3a-ca25-46a4-a84e-fec03da4e38d/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "nod"
       }
@@ -275,5 +275,6 @@
   "isServiceRequestTabVisibleConsideringRemissions": "No",
   "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
-  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No"
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "ariaMigrationTaskDueDays": "2"
 }

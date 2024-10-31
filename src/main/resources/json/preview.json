@@ -40,7 +40,7 @@
   "searchPostcode": "HA4 9RQ",
   "amountLeftToPay": "000",
   "hasOtherAppeals": "YesWithoutAppealNumber",
-  "adminDeclaration": [
+  "adminDeclaration1": [
     "hasDeclared"
   ],
   "appellantAddress": {
@@ -80,9 +80,9 @@
       "value": {
         "tag": "appealForm",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/306805fb-d843-4b4b-a793-1ae5729c01f5",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU/50002/2024-NNN MMM-appeal form1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/306805fb-d843-4b4b-a793-1ae5729c01f5/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "TEST",
         "dateUploaded": "2024-07-23"
@@ -137,7 +137,7 @@
   },
   "homeOfficeDecisionDate": "2024-07-22",
   "appealGroundsForDisplay": [],
-  "appelantsRepresentation": "Yes",
+  "appellantsRepresentation": "Yes",
   "appellantNameForDisplay": "NNN MMM",
   "deportationOrderOptions": "No",
   "uploadTheAppealFormDocs": [
@@ -145,9 +145,9 @@
       "id": "9c6350c6-f9a2-4d9f-a9a1-a3c3a4c24278",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/306805fb-d843-4b4b-a793-1ae5729c01f5",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "AdditionalEvidence1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/306805fb-d843-4b4b-a793-1ae5729c01f5/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "TEST"
       }
@@ -167,9 +167,9 @@
       "value": {
         "tag": "appealSubmission",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/04c5616e-e9cc-4225-a1c1-b39059545288",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU 50002 2024-MMM-appeal-form.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/04c5616e-e9cc-4225-a1c1-b39059545288/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -181,9 +181,9 @@
       "value": {
         "tag": "homeOfficeDecisionLetter",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7fb9e0eb-ba43-49be-b81e-4a3125f2d697",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "AppealResponse.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7fb9e0eb-ba43-49be-b81e-4a3125f2d697/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "test",
         "dateUploaded": "2024-07-23"
@@ -206,9 +206,9 @@
       "id": "20e9f439-b98c-4d50-a7d2-81dc60718435",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7fb9e0eb-ba43-49be-b81e-4a3125f2d697",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "AppealResponse.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/7fb9e0eb-ba43-49be-b81e-4a3125f2d697/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "test"
       }

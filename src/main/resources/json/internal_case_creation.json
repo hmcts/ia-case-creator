@@ -36,7 +36,7 @@
   "feeWithHearing": "140",
   "hasOtherAppeals": "No",
   "oocAppealAdminJ": "entryClearanceDecision",
-  "adminDeclaration": [
+  "adminDeclaration1": [
     "hasDeclared"
   ],
   "isNabaAdaEnabled": "No",
@@ -109,7 +109,7 @@
     "baseLocation": "227101"
   },
   "appealGroundsForDisplay": [],
-  "appelantsRepresentation": "Yes",
+  "appellantsRepresentation": "Yes",
   "appellantNameForDisplay": "gname fname",
   "deportationOrderOptions": "No",
   "uploadTheAppealFormDocs": [

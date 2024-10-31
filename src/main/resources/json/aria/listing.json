@@ -77,7 +77,7 @@
   "paymentDate": "5 Aug 2024",
   "datesToAvoid": [],
   "feeAmountGbp": "14000",
-  "isIntegrated": "No",
+  "isIntegrated": "Yes",
   "witnessCount": 0,
   "appellantInUk": "Yes",
   "hearingCentre": "taylorHouse",
@@ -141,7 +141,7 @@
   "hasOtherAppeals": "No",
   "pastExperiences": "No",
   "remoteVideoCall": "No",
-  "adminDeclaration": [
+  "adminDeclaration1": [
     "hasDeclared"
   ],
   "appellantAddress": {
@@ -193,9 +193,9 @@
       "value": {
         "tag": "appealForm",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU/50009/2024-GivenName Migration 6 FamilyName listing-appeal form1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "appeal form 1",
         "dateUploaded": "2024-08-07"
@@ -217,9 +217,9 @@
       "value": {
         "tag": "hearingRequirements",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/180567fb-1125-4c90-8738-1e60e0d0d91b",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU 50009 2024-FamilyName listing-hearing-requirements.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/180567fb-1125-4c90-8738-1e60e0d0d91b/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -237,9 +237,9 @@
       "value": {
         "tag": "appealResponse",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/370704b9-2521-4c1a-b6a9-01aeab757e6b",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Dummy_nod.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/370704b9-2521-4c1a-b6a9-01aeab757e6b/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "HO appeal response",
         "dateUploaded": "2024-08-07"
@@ -250,9 +250,9 @@
       "value": {
         "tag": "respondentEvidence",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/f268640e-7f4a-40c5-bc25-df378c87ce53",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "PA 50219 2023-Respondent-HO-Doc.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/f268640e-7f4a-40c5-bc25-df378c87ce53/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "ho bundle",
         "dateUploaded": "2024-08-07"
@@ -316,7 +316,7 @@
   "isRemoteHearingAllowed": "Granted",
   "appealGroundsForDisplay": [],
   "appealResponseAvailable": "Yes",
-  "appelantsRepresentation": "Yes",
+  "appellantsRepresentation": "Yes",
   "appellantNameForDisplay": "GivenName Migration 6 FamilyName listing",
   "deportationOrderOptions": "No",
   "isAppealSuitableToFloat": "No",
@@ -325,9 +325,9 @@
       "id": "3d2867c6-4888-450d-8138-258526aaab20",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Doc1.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/d65862e8-5756-4a44-adde-53409c24f76e/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "appeal form 1"
       }
@@ -355,9 +355,9 @@
       "value": {
         "tag": "submitCaseBundle",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/2e742044-b54a-41b5-b44d-5f4c2569c996",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU 50009 2024-FamilyName listing-appeal-skeleton-argument.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/2e742044-b54a-41b5-b44d-5f4c2569c996/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -369,9 +369,9 @@
       "value": {
         "tag": "caseArgument",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/0d2d888f-dbad-45b4-b635-d7f06e0cf354",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "Appeals events -Happy path.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/0d2d888f-dbad-45b4-b635-d7f06e0cf354/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "appeal skeleton argument 1",
         "dateUploaded": "2024-08-07"
@@ -382,9 +382,9 @@
       "value": {
         "tag": "appealSubmission",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/f3f29b1a-65b9-4927-b251-be4ccb65136e",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "HU 50009 2024-FamilyName listing-appeal-form.PDF",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/f3f29b1a-65b9-4927-b251-be4ccb65136e/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "suppliedBy": "",
         "description": "",
@@ -396,9 +396,9 @@
       "value": {
         "tag": "homeOfficeDecisionLetter",
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "NOD-PA-50219-2023.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "nod",
         "dateUploaded": "2024-08-07"
@@ -415,9 +415,9 @@
       "id": "a54cc12b-e4a0-42bf-ae79-c4595baae9a7",
       "value": {
         "document": {
-          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
           "document_filename": "NOD-PA-50219-2023.pdf",
-          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/e400ef8c-f5bf-45a4-ba4c-909d329c783e/binary"
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
         },
         "description": "nod"
       }
@@ -478,5 +478,6 @@
   "isServiceRequestTabVisibleConsideringRemissions": "Yes",
   "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
-  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "Yes"
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "Yes",
+  "ariaMigrationTaskDueDays": "2"
 }
