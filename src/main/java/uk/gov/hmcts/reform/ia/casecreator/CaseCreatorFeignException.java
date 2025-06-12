@@ -12,8 +12,7 @@ public class CaseCreatorFeignException extends feign.FeignException {
     public CaseCreatorFeignException(String methodKey, Response response) {
         super(
                 response.status(),
-                methodKey + " caused an error\n" + responseToString(response),
-                body(response)
+                methodKey + " caused an error\n" + responseToString(response)
         );
     }
 

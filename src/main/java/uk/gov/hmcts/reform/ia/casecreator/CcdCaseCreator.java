@@ -3,6 +3,7 @@ package uk.gov.hmcts.reform.ia.casecreator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.*;
+import io.restassured.http.Headers;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,9 +14,10 @@ import uk.gov.hmcts.reform.ccd.client.model.CaseDataContent;
 import uk.gov.hmcts.reform.ccd.client.model.CaseDetails;
 import uk.gov.hmcts.reform.ccd.client.model.Event;
 import uk.gov.hmcts.reform.ccd.client.model.StartEventResponse;
-import uk.gov.hmcts.reform.ia.casecreator.idam.IdamService;
 import uk.gov.hmcts.reform.ia.casecreator.idam.IdamTokens;
-import uk.gov.hmcts.reform.idam.client.IdamClient;
+import uk.gov.hmcts.reform.ia.casecreator.idam.UserInfo;
+import uk.gov.hmcts.reform.ia.casecreator.services.AuthorizationHeaders;
+import uk.gov.hmcts.reform.ia.casecreator.services.AuthorizationHeadersProvider;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -28,55 +30,50 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import static uk.gov.hmcts.reform.ia.casecreator.DocumentNames.NOTICE_OF_APPEAL_PDF;
+import static uk.gov.hmcts.reform.ia.casecreator.services.AuthorizationHeadersProvider.AUTHORIZATION;
+import static uk.gov.hmcts.reform.ia.casecreator.services.AuthorizationHeadersProvider.SERVICE_AUTHORIZATION;
 
 @Service
 public class CcdCaseCreator {
 
     private Collection<Resource> documentResources;
     private final CdamDocumentManagementUploader cdamDocumentManagementUploader;
-    private final IdamService idamService;
+    private final AuthorizationHeadersProvider authorizationHeadersProvider;
     private final CoreCaseDataApi coreCaseDataApi;
-    private final String idamToken;
-    private final String userId;
-    private final String idamUserRole;
     private final String coreCaseDataJurisdictionId;
     private final String coreCaseDataCaseTypeId;
 
-    private final IdamClient idamClient;
-
     private String idamUsername;
     private String idamPassword;
+    private String idamUserRole;
 
-    private final List<String> stateList = Arrays.asList("pendingPayment_noRemission", "pendingPayment_hasRemission",
-            "appealSubmitted", "awaitingRespondentEvidence", "caseUnderReview", "listing", "prepareForHearing", "decision", "decided",
-            "ftpaSubmitted", "ftpaDecided_HO_AP", "ftpaDecided", "remitted", "ended");
+    //private final List<String> stateList = Arrays.asList("pendingPayment_noRemission", "pendingPayment_hasRemission",
+    //        "appealSubmitted", "awaitingRespondentEvidence", "caseUnderReview", "listing", "prepareForHearing", "decision", "decided",
+    //        "ftpaSubmitted", "ftpaDecided_HO_AP", "ftpaDecided", "remitted", "ended");
+
+    private final List<String> stateList = Arrays.asList("appealSubmitted");
 
     @Autowired
-    public CcdCaseCreator(CdamDocumentManagementUploader cdamDocumentManagementUploader, IdamService idamService,
+    public CcdCaseCreator(CdamDocumentManagementUploader cdamDocumentManagementUploader,
+                          AuthorizationHeadersProvider authorizationHeadersProvider,
                           CoreCaseDataApi coreCaseDataApi,
                           @Value("${core_case_data.jurisdictionId}") String coreCaseDataJurisdictionId,
                           @Value("${core_case_data.caseTypeId}") String coreCaseDataCaseTypeId,
-                          @Value("${idam_token}") String idamToken,
-                          @Value("${idam_user_id}") String userId,
-                          @Value("${idam_user_role}") String idamUserRole,
-                          IdamClient idamClient,
                           @Value("${migration.idam.username}") String idamUsername,
-                          @Value("${migration.idam.password}") String idamPassword
+                          @Value("${migration.idam.password}") String idamPassword,
+                          @Value("${idam.user.role}") String idamuserRole
                           ) {
         this.cdamDocumentManagementUploader = cdamDocumentManagementUploader;
-        this.idamService = idamService;
+        this.authorizationHeadersProvider = authorizationHeadersProvider;
         this.coreCaseDataJurisdictionId = coreCaseDataJurisdictionId;
         this.coreCaseDataCaseTypeId = coreCaseDataCaseTypeId;
         this.coreCaseDataApi = coreCaseDataApi;
-        this.idamToken = "Bearer " + idamToken;
-        this.userId = userId;
-        this.idamUserRole = idamUserRole;
-        this.idamClient = idamClient;
         this.idamUsername = idamUsername;
         this.idamPassword = idamPassword;
+        this.idamUserRole = idamuserRole;
 
-        if (!idamUserRole.equals("citizen") && !idamUserRole.equals("caseworker")) {
-            throw new IllegalArgumentException("Property idam_user_role must be either 'citizen' or 'caseworker' but was [" + idamUserRole + "]");
+        if (idamUserRole.isEmpty()) {
+            throw new IllegalArgumentException("Property idam_user_role is invalid");
         }
     }
 
@@ -84,40 +81,40 @@ public class CcdCaseCreator {
     private static final String ANSI_BLUE = "\u001B[34m";
 
     public void getHeaders() {
-        IdamTokens idamTokens = idamService.getIdamTokens();
+        Headers authorizationHeaders = authorizationHeadersProvider
+                .getAuthorizationHeaders(idamUserRole);
 
-        System.out.println(ANSI_BLUE + "Authorization: " + ANSI_RESET + idamTokens.getIdamOauth2Token());
-        System.out.println(ANSI_BLUE + "ServiceAuthorization: " + ANSI_RESET  + idamTokens.getServiceAuthorization());
+        System.out.println(ANSI_BLUE + "Authorization: " + ANSI_RESET + authorizationHeaders.getValue(AUTHORIZATION));
+        System.out.println(ANSI_BLUE + "ServiceAuthorization: " + ANSI_RESET  + authorizationHeaders.getValue(SERVICE_AUTHORIZATION));
     }
 
     public void createCase(String ccdDefinitionFile) throws IOException {
 
-//        documentResources =
-//                BinaryResourceLoader
-//                        .load("/documents/*")
-//                        .values();
+        Headers authorizationHeaders = authorizationHeadersProvider
+                .getAuthorizationHeaders(idamUserRole);
+        String userToken = authorizationHeaders.getValue(AUTHORIZATION);
+        UserInfo userInfo = authorizationHeadersProvider.getUserInfo(userToken);
 
-        String userToken = idamClient.authenticateUser(idamUsername, idamPassword);
-        String serviceAuthorizationToken = idamService.generateServiceAuthorization();
-        IdamTokens idamTokens = IdamTokens.builder()
-                .idamOauth2Token(userToken)
-                .serviceAuthorization(serviceAuthorizationToken)
-                .userId(userId)
-                .build();
+        documentResources =
+                BinaryResourceLoader
+                        .load("/documents/*")
+                        .values();
 
         for (String state : stateList) {
 
-    //        Document noticeOfAppealDocument = getDocument(NOTICE_OF_APPEAL_PDF, idamTokens);
+            Document noticeOfAppealDocument = getDocument(NOTICE_OF_APPEAL_PDF, authorizationHeaders, userInfo);
             StartEventResponse createAppeal = idamUserRole.equals("citizen") ?
-                startCaseForCitizen(idamTokens, "ariaCreateCase") :
-                startCaseForCaseworker(idamTokens, "ariaCreateCase");
+                startCaseForCitizen(authorizationHeaders, userInfo,"ariaCreateCase") :
+                startCaseForCaseworker(authorizationHeaders, userInfo, "ariaCreateCase");
 
             InputStream caseStream = (ccdDefinitionFile == null) ?
-                    getClass().getClassLoader().getResourceAsStream("json/aria/" + state + ".json") :
+                    getClass().getClassLoader().getResourceAsStream("json/preview/" + state + ".json") :
                     getStreamFromFile(ccdDefinitionFile);
 
             String iaData = IOUtils.toString(caseStream, Charset.defaultCharset().name());
-    //        iaData = iaData.replace("\"{$NOTICE_OF_DECISION_DOCUMENT}\"", toJsonString(noticeOfAppealDocument));
+
+            iaData = iaData.replace("DOCUMENT_BINARY_URL",  noticeOfAppealDocument.getDocumentBinaryUrl()  );
+            iaData = iaData.replace("DOCUMENT_URL",   noticeOfAppealDocument.getDocumentUrl()  );
 
 
             Map data = new ObjectMapper().readValue(iaData, Map.class);
@@ -133,8 +130,8 @@ public class CcdCaseCreator {
                     .build();
 
             CaseDetails caseDetails = idamUserRole.equals("citizen") ?
-                    submitForCitizen(idamTokens, caseDataContent) :
-                    submitForCaseworker(idamTokens, caseDataContent);
+                    submitForCitizen(authorizationHeaders, userInfo, caseDataContent) :
+                    submitForCaseworker(authorizationHeaders, userInfo, caseDataContent);
 
             System.out.println(ANSI_BLUE + "case id: " + ANSI_RESET + caseDetails.getId()
                     + ANSI_BLUE + " case state: " + ANSI_RESET + state);
@@ -144,39 +141,40 @@ public class CcdCaseCreator {
     }
 
     public void loadCase(String caseId) {
-        String serviceAuthorizationToken = idamService.generateServiceAuthorization();
-        IdamTokens idamTokens = IdamTokens.builder()
-                .idamOauth2Token(idamToken)
-                .serviceAuthorization(serviceAuthorizationToken)
-                .userId(userId)
-                .build();
+        Headers authorizationHeaders = authorizationHeadersProvider
+                .getAuthorizationHeaders(idamUserRole);
+        String userToken = authorizationHeaders.getValue(AUTHORIZATION);
+        String serviceToken = authorizationHeaders.getValue(AUTHORIZATION);
 
-        loadCase(caseId, idamTokens);
+
+        loadCase(caseId, userToken, serviceToken);
     }
 
-    public void loadCase(String caseId, IdamTokens idamTokens) {
+    public void loadCase(String caseId, String userToken, String serviceToken) {
         System.out.println("Loading [" + caseId + "]");
+        UserInfo userInfo = authorizationHeadersProvider.getUserInfo(userToken);
 
         CaseDetails aCase = idamUserRole.equals("citizen") ?
-                coreCaseDataApi.readForCitizen(idamTokens.getIdamOauth2Token(), idamTokens.getServiceAuthorization(), idamTokens.getUserId(), coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, caseId):
-                coreCaseDataApi.readForCaseWorker(idamTokens.getIdamOauth2Token(), idamTokens.getServiceAuthorization(), idamTokens.getUserId(), coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, caseId);
+                coreCaseDataApi.readForCitizen(userToken, serviceToken, userInfo.getUid(), coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, caseId):
+                coreCaseDataApi.readForCaseWorker(userToken, serviceToken, userInfo.getUid(), coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, caseId);
 
         prettyPrintCase(aCase);
     }
 
     public void loadCases() {
-        String serviceAuthorizationToken = idamService.generateServiceAuthorization();
-        IdamTokens idamTokens = IdamTokens.builder()
-                .idamOauth2Token(idamToken)
-                .serviceAuthorization(serviceAuthorizationToken)
-                .userId(userId)
-                .build();
-        loadCases(idamTokens);
+        Headers authorizationHeaders = authorizationHeadersProvider
+                .getAuthorizationHeaders(idamUserRole);
+        String userToken = authorizationHeaders.getValue(AUTHORIZATION);
+        String serviceToken = authorizationHeaders.getValue(AUTHORIZATION);
+        loadCases(userToken, serviceToken);
     }
-    public void loadCases(IdamTokens idamTokens) {
+    public void loadCases(String userToken, String serviceToken) {
+
+        UserInfo userInfo = authorizationHeadersProvider.getUserInfo(userToken);
+
         List<CaseDetails> caseDetails = idamUserRole.equals("citizen") ?
-                coreCaseDataApi.searchForCitizen(idamTokens.getIdamOauth2Token(), idamTokens.getServiceAuthorization(), userId, coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, new HashMap<>()):
-                coreCaseDataApi.searchForCaseworker(idamTokens.getIdamOauth2Token(), idamTokens.getServiceAuthorization(), userId, coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, new HashMap<>());
+                coreCaseDataApi.searchForCitizen(userToken, serviceToken, userInfo.getUid(), coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, new HashMap<>()):
+                coreCaseDataApi.searchForCaseworker(userToken, serviceToken, userInfo.getUid(), coreCaseDataJurisdictionId, coreCaseDataCaseTypeId, new HashMap<>());
 
         for (CaseDetails caseDetail : caseDetails) {
             prettyPrintCase(caseDetail);
@@ -234,21 +232,22 @@ public class CcdCaseCreator {
         return new FileInputStream(ccdDefinitionFile);
     }
 
-    private StartEventResponse startCaseForCaseworker(IdamTokens idamTokens, String eventId) {
+    private StartEventResponse startCaseForCaseworker(Headers authorizationHeaders, UserInfo userInfo,  String eventId) {
         return coreCaseDataApi.startForCaseworker(
-                idamTokens.getIdamOauth2Token(),
-                idamTokens.getServiceAuthorization(),
-                idamTokens.getUserId(),
+                authorizationHeaders.getValue(AUTHORIZATION),
+                authorizationHeaders.getValue(SERVICE_AUTHORIZATION),
+                userInfo.getUid(),
                 coreCaseDataJurisdictionId,
                 coreCaseDataCaseTypeId,
                 eventId);
     }
 
-    private CaseDetails submitForCaseworker(IdamTokens idamTokens, CaseDataContent caseDataContent) {
+    private CaseDetails submitForCaseworker(Headers authorizationHeaders, UserInfo userInfo,  CaseDataContent caseDataContent) {
+
         return coreCaseDataApi.submitForCaseworker(
-                idamTokens.getIdamOauth2Token(),
-                idamTokens.getServiceAuthorization(),
-                idamTokens.getUserId(),
+                authorizationHeaders.getValue(AUTHORIZATION),
+                authorizationHeaders.getValue(SERVICE_AUTHORIZATION),
+                userInfo.getUid(),
                 coreCaseDataJurisdictionId,
                 coreCaseDataCaseTypeId,
                 true,
@@ -256,21 +255,21 @@ public class CcdCaseCreator {
         );
     }
 
-    private StartEventResponse startCaseForCitizen(IdamTokens idamTokens, String eventId) {
+    private StartEventResponse startCaseForCitizen(Headers authorizationHeaders, UserInfo userInfo, String eventId) {
         return coreCaseDataApi.startForCitizen(
-                idamTokens.getIdamOauth2Token(),
-                idamTokens.getServiceAuthorization(),
-                idamTokens.getUserId(),
+                authorizationHeaders.getValue(AUTHORIZATION),
+                authorizationHeaders.getValue(SERVICE_AUTHORIZATION),
+                userInfo.getUid(),
                 coreCaseDataJurisdictionId,
                 coreCaseDataCaseTypeId,
                 eventId);
     }
 
-    private CaseDetails submitForCitizen(IdamTokens idamTokens, CaseDataContent caseDataContent) {
+    private CaseDetails submitForCitizen(Headers authorizationHeaders,UserInfo userInfo,  CaseDataContent caseDataContent) {
         return coreCaseDataApi.submitForCitizen(
-                idamTokens.getIdamOauth2Token(),
-                idamTokens.getServiceAuthorization(),
-                idamTokens.getUserId(),
+                authorizationHeaders.getValue(AUTHORIZATION),
+                authorizationHeaders.getValue(SERVICE_AUTHORIZATION),
+                userInfo.getUid(),
                 coreCaseDataJurisdictionId,
                 coreCaseDataCaseTypeId,
                 true,
@@ -278,7 +277,13 @@ public class CcdCaseCreator {
         );
     }
 
-    public Document uploadDocument(DocumentNames document, IdamTokens idamTokens) {
+    public Document uploadDocument(DocumentNames document, Headers authorizationHeaders, UserInfo userInfo) {
+
+        IdamTokens idamTokens = IdamTokens.builder()
+                .idamOauth2Token(authorizationHeaders.getValue(AUTHORIZATION))
+                .serviceAuthorization(authorizationHeaders.getValue(SERVICE_AUTHORIZATION))
+                .userId(userInfo.getUid())
+                .build();
 
         Optional<Resource> maybeResource = documentResources.stream()
                 .filter(res -> {
@@ -316,8 +321,8 @@ public class CcdCaseCreator {
         }
     }
 
-    public Document getDocument(DocumentNames document, IdamTokens idamTokens) {
-        return uploadDocument(document, idamTokens);
+    public Document getDocument(DocumentNames document, Headers authorizationHeaders, UserInfo userInfo) {
+        return uploadDocument(document, authorizationHeaders, userInfo);
     }
 
     private String formatFileName(String fileName) {

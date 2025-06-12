@@ -1,0 +1,195 @@
+package uk.gov.hmcts.reform.ia.casecreator.services;
+
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import uk.gov.hmcts.reform.authorisation.generators.AuthTokenGenerator;
+import uk.gov.hmcts.reform.ia.casecreator.clients.IdamWebApi;
+import uk.gov.hmcts.reform.ia.casecreator.idam.UserInfo;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+@Slf4j
+@Service
+public class AuthorizationHeadersProvider  implements AuthorizationHeaders {
+
+    public static final String AUTHORIZATION = "Authorization";
+    public static final String SERVICE_AUTHORIZATION = "ServiceAuthorization";
+
+    private final Map<String, String> tokens = new ConcurrentHashMap<>();
+    private final Map<String, UserInfo> userInfo = new ConcurrentHashMap<>();
+    @Value("${idam.redirectUrl}")
+    protected String idamRedirectUrl;
+    @Value("${idam.scope}")
+    protected String userScope;
+    @Value("${spring.security.oauth2.client.registration.oidc.client-id}")
+    protected String idamClientId;
+    @Value("${spring.security.oauth2.client.registration.oidc.client-secret}")
+    protected String idamClientSecret;
+
+    @Autowired
+    private IdamWebApi idamWebApi;
+
+    @Autowired
+    private AuthTokenGenerator serviceAuthTokenGenerator;
+
+    public Header getServiceAuthorizationHeader() {
+        String serviceToken = tokens.computeIfAbsent(
+            SERVICE_AUTHORIZATION,
+            user -> serviceAuthTokenGenerator.generate()
+        );
+
+        return new Header(SERVICE_AUTHORIZATION, serviceToken);
+    }
+
+    public Headers getTribunalCaseworkerAAuthorization() {
+        return new Headers(
+            getCaseworkerAAuthorizationOnly(),
+            getServiceAuthorizationHeader()
+        );
+    }
+
+    public Headers getCtscAdminAuthorization() {
+        return new Headers(
+            getCtscAdminAuthorizationOnly(),
+            getServiceAuthorizationHeader()
+        );
+    }
+
+    public Headers getAdminOfficerAuthorization() {
+        return new Headers(
+            getAdminOfficerAuthorizationOnly(),
+            getServiceAuthorizationHeader()
+        );
+    }
+
+    public Headers getWaSystemUserAuthorization() {
+        return new Headers(
+            getUserAuthorizationOnly(
+                "WA_SYSTEM_USERNAME",
+                "WA_SYSTEM_PASSWORD",
+                "WaSystemUser"
+            ),
+            getServiceAuthorizationHeader()
+        );
+    }
+
+    public Headers getLegalRepAuthorization() {
+        Header requiredHeader =
+                getLawFirmAuthorizationOnly();
+
+        return new Headers(
+            requiredHeader,
+            getServiceAuthorizationHeader()
+        );
+    }
+
+    public Header getCaseworkerAAuthorizationOnly() {
+
+        return getAuthorization("Caseworker A",
+                    "CRD_func_test_aat_stcw@justice.gov.uk",
+                                        "AldgateT0wer"
+                                        );
+    }
+
+    public Header getCtscAdminAuthorizationOnly() {
+
+        return getAuthorization("CTSCAdmin",
+                "CRD_func_test_aat_adm66@justice.gov.uk",
+                                        "AldgateT0wer");
+    }
+
+    public Header getAdminOfficerAuthorizationOnly() {
+
+        return getUserAuthorizationOnly("TEST_ADMINOFFICER_USERNAME",
+                                        "TEST_ADMINOFFICER_PASSWORD",
+                                        "AdminOfficer");
+    }
+
+    public Headers getNbcAdminAuthorization() {
+        return new Headers(
+            getNbcAdminOfficerAuthorizationOnly(),
+            getServiceAuthorizationHeader()
+        );
+    }
+
+    public Header getNbcAdminOfficerAuthorizationOnly() {
+
+        return getUserAuthorizationOnly("TEST_NBC_ADMIN_USERNAME",
+                                        "TEST_NBC_ADMIN_PASSWORD",
+                                        "NBCAdmin");
+    }
+
+    public Header getUserAuthorizationOnly(String username, String password, String key) {
+        return getAuthorization(key, "ia.super.ccd@gmail.com", "AldgateT0wer");
+    }
+
+
+    public Header getLawFirmAuthorizationOnly() {
+        return getAuthorization("LawFirm",
+                "ia.super.ccd@gmail.com",
+                "AldgateT0wer");
+
+    }
+
+    private Header getAuthorization(String key, String username, String password) {
+
+        MultiValueMap<String, String> body = createIdamRequest(username, password);
+
+        String accessToken = tokens.computeIfAbsent(
+            key,
+            user -> "Bearer " + idamWebApi.token(body).getAccessToken()
+        );
+        return new Header(AUTHORIZATION, accessToken);
+    }
+
+
+    private MultiValueMap<String, String> createIdamRequest(String username, String password) {
+        MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
+        body.add("grant_type", "password");
+        body.add("redirect_uri", idamRedirectUrl);
+        body.add("client_id", idamClientId);
+        body.add("client_secret", idamClientSecret);
+        body.add("username", username);
+        body.add("password", password);
+        body.add("scope", userScope);
+
+        return body;
+    }
+
+    @Override
+    public UserInfo getUserInfo(String userToken) {
+        return userInfo.computeIfAbsent(
+            userToken,
+            user -> idamWebApi.userInfo(userToken)
+        );
+
+    }
+
+    @Override
+    public Headers getAuthorizationHeaders(String credentials) {
+        switch (credentials) {
+            case "IALegalRepresentative":
+                return getLegalRepAuthorization();
+            case "IACaseworker":
+                return getTribunalCaseworkerAAuthorization();
+            case "CTSCAdmin":
+                return getCtscAdminAuthorization();
+            case "AdminOfficer":
+                return getAdminOfficerAuthorization();
+            case "WaSystemUser":
+                return getWaSystemUserAuthorization();
+            case "NBCAdmin":
+                return getNbcAdminAuthorization();
+            default:
+                throw new IllegalStateException("Credentials implementation for '" + credentials + "' not found");
+        }
+
+    }
+}

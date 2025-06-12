@@ -16,7 +16,7 @@ spring:
 
 core_case_data:
   api:
-    url: http://ccd-data-store-api-aat.service.core-compute-aat.internal
+    url: https://ccd-data-store-api-ia-case-api-pr-2525.preview.platform.hmcts.net
 
 auth:
   idam:
@@ -47,7 +47,7 @@ document_management:
 
 
 
-case_document_am.url: https://ccd-case-document-am-api-aat.service.core-compute-aat.internal
+case_document_am.url: http://ccd-case-document-am-api-aat.service.core-compute-aat.internal
 
 migration.idam.username: "ia.super.ccd@gmail.com"
 migration.idam.password: "AldgateT0wer"
