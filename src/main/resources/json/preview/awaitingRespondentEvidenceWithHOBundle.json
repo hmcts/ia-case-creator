@@ -1,0 +1,299 @@
+{
+  "email": "example@test.com",
+  "isEjp": "No",
+  "feeCode": "FEE0238",
+  "isAdmin": "Yes",
+  "paidDate": "2025-07-07",
+  "appealType": "refusalOfHumanRights",
+  "directions": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "respondentEvidence",
+        "dateDue": "2025-07-15",
+        "parties": "respondent",
+        "dateSent": "2025-07-08",
+        "uniqueId": "bfee45b4-3801-43a7-8639-8506d4012dda",
+        "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply your bundle.\n\nThe bundle must comply with (i) Rule 24 of the Tribunal Procedure Rules 2014 and (ii) Practice Direction, Part 3, sections 7.1 - 7.4.\nSpecifically, the bundle must contain:\n\n- The explanation for refusal;\n- the deportation order and/or the notice of decision to make the order (if any);\n- Interview record (if any);\n- Appellant's representations (if any);\n- a copy of any relevant indictment; pre-sentence report and/or OASys/ARNS reports (if any);\n- a copy of the Appellant's criminal record (if any);\n- a copy of the certificate of conviction (if any);\n- a transcript of the Sentencing Judge's Remarks (if any).\n- a copy of any Parole Report or other document relating to the appellant's period in custody and/or release (if any);\n- a copy of any medical report (if any).\n\nParties must ensure they conduct proceedings with procedural rigour.\nThe Tribunal will not overlook breaches of the requirements of the Procedure Rules, Practice Statement or Practice Direction, nor failures to comply with directions issued by the Tribunal. Parties are reminded of the possible sanctions for non-compliance set out in paragraph 5.3 of the Practice Direction.",
+        "directionType": "requestRespondentEvidence",
+        "previousDates": []
+      }
+    }
+  ],
+  "feeVersion": "2",
+  "paidAmount": "14000",
+  "s94bStatus": "No",
+  "paymentDate": "7 Jul 2025",
+  "feeAmountGbp": "14000",
+  "isIntegrated": "No",
+  "appellantInUk": "Yes",
+  "hearingCentre": "taylorHouse",
+  "isNabaEnabled": "No",
+  "paymentStatus": "Paid",
+  "staffLocation": "Taylor House",
+  "ircName": "Brookhouse",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "ec889f66-0475-4633-8d69-b31b80d76e5a",
+        "value": {
+          "Name": "GivenName Migration 3 FamilyName appealSubmitted",
+          "PostCode": "SE10 0XX",
+          "DateOfBirth": "2000-01-01",
+          "AddressLine1": "Flat 101",
+          "EmailAddress": "example@test.com"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "65e7cf55-21c9-4d5b-af62-afd13222a8eb",
+        "value": "HU/50009/2024"
+      }
+    ]
+  },
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
+  "searchPostcode": "SE10 0XX",
+  "hasOtherAppeals": "No",
+  "adminDeclaration1": [
+    "hasDeclared"
+  ],
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "SE10 0XX",
+    "PostTown": "London",
+    "AddressLine1": "Flat 101",
+    "AddressLine2": "10 Cutter Lane",
+    "AddressLine3": ""
+  },
+  "appellantPartyId": "45889c92-2cf4-4dae-ae9a-f64aa051d525",
+  "ariaDesiredState": "awaitingRespondentEvidence",
+  "isAppellantMinor": "No",
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "hearingTypeResult": "No",
+  "removalOrderDate": "2025-07-17T13:07:22.000",
+  "detentionBuilding": "Brook House IRC",
+  "detentionFacility": "immigrationRemovalCentre",
+  "detentionPostcode": "RH6 0PQ",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Human rights",
+  "notificationsSent": [
+    {
+      "id": "1723019798041350_INTERNAL_SUBMIT_APPEAL_WITH_FEE_APPELLANT_LETTER",
+      "value": "b37d58f7-6390-4049-b01e-dd19e1d93708"
+    },
+    {
+      "id": "1723019798041350_APPEAL_SUBMITTED_HOME_OFFICE",
+      "value": "d15ca65a-fdd9-4a9d-aded-9abcc69c7083"
+    }
+  ],
+  "tribunalDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "appealForm",
+        "document": {
+          "document_url": "DOCUMENT_URL",
+          "document_filename": "HU/50009/2024-GivenName Migration 3 FamilyName appealSubmitted-appeal form1.pdf",
+          "document_binary_url": "DOCUMENT_BINARY_URL"
+        },
+        "description": "appeal form 1",
+        "dateUploaded": "2025-07-07"
+      }
+    }
+  ],
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "legalRepFamilyName": "",
+  "legalRepDeclaration": [
+    "hasDeclared"
+  ],
+  "paymentDescription": "Appeal determined with a hearing",
+  "appellantFamilyName": "FamilyName appealSubmitted",
+  "appellantGivenNames": "GivenName Migration 3",
+  "appellantLevelFlags": {
+    "details": [
+      {
+        "id": "c59e24b0-92c8-40f8-884c-84877776e79e",
+        "value": {
+          "name": "Detained individual",
+          "status": "Active",
+          "flagCode": "PF0019",
+          "dateTimeCreated": "2025-07-08T09:54:33.916201185",
+          "hearingRelevant": "Yes"
+        }
+      }
+    ],
+    "partyName": "David Smith",
+    "roleOnCase": "Appellant"
+  },
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "removalOrderOptions": "Yes",
+  "respondentDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "respondentEvidence",
+        "document": {
+          "document_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/0db253ea-8b52-4811-bd03-94115aeae2a2",
+          "document_filename": "TEST DOCUMENT 3.pdf",
+          "document_binary_url": "http://dm-store-aat.service.core-compute-aat.internal/documents/0db253ea-8b52-4811-bd03-94115aeae2a2/binary"
+        },
+        "description": "test aria",
+        "dateUploaded": "2025-07-08"
+      }
+    }
+  ],
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2025-07-08",
+  "appellantDateOfBirth": "2000-01-01",
+  "appellantInDetention": "Yes",
+  "isAriaMigratedFeeExemption": "No",
+  "feePaymentAppealType": "Yes",
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "tribunalReceivedDate": "2025-07-07",
+  "additionalPaymentInfo": "Additional paid information",
+  "appealReferenceNumber": "HU/50009/2024",
+  "caseNameHmctsInternal": "GivenName Migration 3 FamilyName appealSubmitted",
+  "hmctsCaseNameInternal": "GivenName Migration 3 FamilyName appealSubmitted",
+  "isOutOfCountryEnabled": "Yes",
+  "appellantNationalities": [
+    {
+      "id": "520cd556-39b3-4729-9093-a07513f4b03e",
+      "value": {
+        "code": "GB"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "refusalOfHumanRights",
+      "label": "Refusal of a human rights claim"
+    },
+    "list_items": [
+      {
+        "code": "refusalOfHumanRights",
+        "label": "Refusal of a human rights claim"
+      }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "homeOfficeDecisionDate": "2025-07-03",
+  "internalAppellantEmail": "example@test.com",
+  "appealGroundsForDisplay": [],
+  "appellantsRepresentation": "No",
+  "appellantNameForDisplay": "GivenName Migration 3 FamilyName appealSubmitted",
+  "deportationOrderOptions": "No",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "3d2867c6-4888-450d-8138-258526aaab20",
+      "value": {
+        "document": {
+          "document_url": "DOCUMENT_URL",
+          "document_filename": "Doc1.pdf",
+          "document_binary_url": "DOCUMENT_BINARY_URL"
+        },
+        "description": "appeal form 1"
+      }
+    }
+  ],
+  "appellantHasFixedAddress": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "homeOfficeReferenceNumber": "012345678",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "legalRepIndividualPartyId": "f7159136-7bff-40fb-921a-c8a53633afc8",
+  "legalRepOrganisationPartyId": "71c50709-b802-42c7-ac56-2ef03e6e14e7",
+  "appealSubmissionInternalDate": "2025-07-07",
+  "ccdReferenceNumberForDisplay": "1723 0197 9804 1350",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealSubmission",
+        "document": {
+          "document_url": "DOCUMENT_URL",
+          "document_filename": "HU 50009 2024-FamilyName appealSubmitted-appeal-form.PDF",
+          "document_binary_url": "DOCUMENT_BINARY_URL"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2025-07-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "DOCUMENT_URL",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "DOCUMENT_BINARY_URL"
+        },
+        "description": "nod",
+        "dateUploaded": "2025-07-07"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "Yes",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "a54cc12b-e4a0-42bf-ae79-c4595baae9a7",
+      "value": {
+        "document": {
+          "document_url": "DOCUMENT_URL",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "DOCUMENT_BINARY_URL"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "lastModifiedDirection": {
+    "tag": "respondentEvidence",
+    "dateDue": "2025-07-15",
+    "parties": "respondent",
+    "dateSent": "2025-07-08",
+    "uniqueId": "bfee45b4-3801-43a7-8639-8506d4012dda",
+    "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply your bundle.\n\nThe bundle must comply with (i) Rule 24 of the Tribunal Procedure Rules 2014 and (ii) Practice Direction, Part 3, sections 7.1 - 7.4.\nSpecifically, the bundle must contain:\n\n- The explanation for refusal;\n- the deportation order and/or the notice of decision to make the order (if any);\n- Interview record (if any);\n- Appellant's representations (if any);\n- a copy of any relevant indictment; pre-sentence report and/or OASys/ARNS reports (if any);\n- a copy of the Appellant's criminal record (if any);\n- a copy of the certificate of conviction (if any);\n- a transcript of the Sentencing Judge's Remarks (if any).\n- a copy of any Parole Report or other document relating to the appellant's period in custody and/or release (if any);\n- a copy of any medical report (if any).\n\nParties must ensure they conduct proceedings with procedural rigour.\nThe Tribunal will not overlook breaches of the requirements of the Procedure Rules, Practice Statement or Practice Direction, nor failures to comply with directions issued by the Tribunal. Parties are reminded of the possible sanctions for non-compliance set out in paragraph 5.3 of the Practice Direction.",
+    "directionType": "requestRespondentEvidence",
+    "previousDates": []
+  },
+  "automaticEndAppealTimedEventId": "53882dbb-de5e-4d68-98c7-fc7efac05c1c",
+  "currentCaseStateVisibleToJudge": "awaitingRespondentEvidence",
+  "legalRepresentativeEmailAddress": "ialegalreporgcreator12@mailnesia.com",
+  "uploadHomeOfficeBundleAvailable": "Yes",
+  "currentCaseStateVisibleToCaseOfficer": "awaitingRespondentEvidence",
+  "changeDirectionDueDateActionAvailable": "Yes",
+  "currentCaseStateVisibleToAdminOfficer": "awaitingRespondentEvidence",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "uploadHomeOfficeBundleActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "awaitingRespondentEvidence",
+  "currentCaseStateVisibleToHomeOfficeApc": "awaitingRespondentEvidence",
+  "currentCaseStateVisibleToHomeOfficePou": "awaitingRespondentEvidence",
+  "currentCaseStateVisibleToHomeOfficeLart": "awaitingRespondentEvidence",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "awaitingRespondentEvidence",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "awaitingRespondentEvidence",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "Yes",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "ariaMigrationTaskDueDays": "2"
+}

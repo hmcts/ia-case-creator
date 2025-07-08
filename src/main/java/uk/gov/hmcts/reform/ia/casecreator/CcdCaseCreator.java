@@ -51,8 +51,8 @@ public class CcdCaseCreator {
     //        "appealSubmitted", "awaitingRespondentEvidence", "caseUnderReview", "listing", "prepareForHearing", "decision", "decided",
     //        "ftpaSubmitted", "ftpaDecided_HO_AP", "ftpaDecided", "remitted", "ended");
 
-    private final List<String> stateList = Arrays.asList("appealSubmitted");
-
+    //private final List<String> stateList = Arrays.asList("appealSubmitted");
+    private final List<String> stateList = Arrays.asList("awaitingRespondentEvidenceWithHOBundle");
     @Autowired
     public CcdCaseCreator(CdamDocumentManagementUploader cdamDocumentManagementUploader,
                           AuthorizationHeadersProvider authorizationHeadersProvider,
