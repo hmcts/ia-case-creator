@@ -295,5 +295,6 @@
   "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
   "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "appellantInDetention": "Yes",
   "ariaMigrationTaskDueDays": "2"
 }
