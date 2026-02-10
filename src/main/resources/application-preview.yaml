@@ -16,7 +16,7 @@ spring:
 
 core_case_data:
   api:
-    url: https://ccd-data-store-api-ia-case-api-pr-2525.preview.platform.hmcts.net
+    url: https://ccd-data-store-api-ia-case-api-pr-3023.preview.platform.hmcts.net
 
 auth:
   idam:

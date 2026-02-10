@@ -4,7 +4,7 @@
   "feeCode": "FEE0238",
   "isAdmin": "Yes",
   "paidDate": "2024-08-05",
-  "appealType": "refusalOfHumanRights",
+  "appealType": "euSettlementScheme",
   "feeVersion": "2",
   "paidAmount": "14000",
   "s94bStatus": "No",
@@ -225,5 +225,6 @@
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
   "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
   "remissionType": "hoWaiverRemission",
+  "appellantInDetention": "No",
   "ariaMigrationTaskDueDays": "2"
 }

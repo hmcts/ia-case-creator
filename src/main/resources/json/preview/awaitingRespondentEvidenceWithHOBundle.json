@@ -152,7 +152,7 @@
   "appealSubmissionDate": "2025-07-08",
   "appellantDateOfBirth": "2000-01-01",
   "appellantInDetention": "Yes",
-  "isAriaMigratedFeeExemption": "No",
+  "isAriaMigratedFeeExemption": "Yes",
   "feePaymentAppealType": "Yes",
   "letterSentOrReceived": "Sent",
   "localAuthorityPolicy": {
@@ -296,5 +296,6 @@
   "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
   "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
   "appellantInDetention": "Yes",
-  "ariaMigrationTaskDueDays": "2"
+  "ariaMigrationTaskDueDays": "2",
+  "reviewedHearingRequirements": "Yes"
 }
