@@ -1,0 +1,752 @@
+{
+  "email": "example@test.com",
+  "hmcts": "[userImage:hmcts.png]",
+  "isEjp": "No",
+  "feeCode": "FEE0238",
+  "isAdmin": "Yes",
+  "paidDate": "2024-08-05",
+  "appealType": "refusalOfHumanRights",
+  "directions": [
+    {
+      "id": "5",
+      "value": {
+        "tag": "legalRepresentativeHearingRequirements",
+        "dateDue": "2024-08-12",
+        "parties": "legalRepresentative",
+        "dateSent": "2024-08-07",
+        "uniqueId": "d45270d1-5e47-4378-8acc-cc953da710a1",
+        "explanation": "The appeal is going to a hearing and you should tell the Tribunal if the appellant has any hearing requirements.\n\n# Next steps\n\nVisit the online service and use the HMCTS reference to find the case. You'll be able to submit the hearing requirements by following the instructions on the overview tab.\n\nThe Tribunal will review the hearing requirements and any requests for additional adjustments. You'll then be sent a hearing date.\n\nIf you do not submit the hearing requirements by the date indicated below, the Tribunal may not be able to accommodate the appellant's needs for the hearing.\n",
+        "directionType": "requestHearingRequirementsFeature",
+        "previousDates": []
+      }
+    },
+    {
+      "id": "4",
+      "value": {
+        "tag": "requestResponseReview",
+        "dateDue": "2024-08-12",
+        "parties": "legalRepresentative",
+        "dateSent": "2024-08-07",
+        "uniqueId": "00cc47e5-97e5-4ee6-b001-f9977aa5ce35",
+        "explanation": "The Home Office has replied to your Appeal Skeleton Argument and evidence. You should review their response.\n\n# Next steps\n\nReview the Home Office response. If you want to respond to what they have said, you should email the Tribunal.\n\nIf you do not respond by the date indicated below, the case will automatically go to hearing.",
+        "previousDates": []
+      }
+    },
+    {
+      "id": "3",
+      "value": {
+        "tag": "respondentReview",
+        "dateDue": "2024-08-21",
+        "parties": "respondent",
+        "dateSent": "2024-08-07",
+        "uniqueId": "612a8d92-360a-4c78-95db-c69a8ce74001",
+        "explanation": "You have until the date indicated below to review the appellant's argument and evidence. You must explain whether the appellant makes a valid case for overturning the original decision.\n\nYou must respond to the Tribunal and tell them:\n\n- whether you oppose all or parts of the appellant's case\n- what your grounds are for opposing the case\n- which of the issues are agreed or not agreed\n- whether there are any further issues you wish to raise\n- whether you are prepared to withdraw to grant\n- whether the appeal can be resolved without a hearing\n\nNext steps\n\nIf you do not respond in time the Tribunal will decide how the case should proceed.",
+        "directionType": "requestRespondentReview",
+        "previousDates": []
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "tag": "requestCaseBuilding",
+        "dateDue": "2024-09-18",
+        "parties": "legalRepresentative",
+        "dateSent": "2024-08-07",
+        "uniqueId": "4c35631c-9e4e-4e74-8f07-0caa0db264d0",
+        "explanation": "You must now build your case to enable the respondent to conduct a thorough review of their decision.\n\nYou have until the date indicated below to upload your Appeal Skeleton Argument and evidence.\n\nYour Appeal Skeleton Argument must be set out in three distinct parts to include:\n\n- a concise summary of the appellant’s case\n- a schedule of issues\n- why those issues should be resolved in the appellant’s favour, by reference to the evidence you have (or plan to have) and any legal authorities you rely upon\n\n# Next steps\n\nOnce you've uploaded your Appeal Skeleton Argument and evidence, you should submit your case. The Legal Officer will review everything you've added.\n\nIf your case looks ready, the Tribunal will send it to the respondent to review.",
+        "directionType": "requestCaseBuilding",
+        "previousDates": []
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "respondentEvidence",
+        "dateDue": "2024-08-21",
+        "parties": "respondent",
+        "dateSent": "2024-08-07",
+        "uniqueId": "852283e9-2105-4965-9038-e71f14033d30",
+        "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply the documents.\n\nYou must include:\n- the notice of decision\n- any other document provided to the appellant giving reasons for that decision\n- any statements of evidence\n- the application form\n- any record of interview with the appellant in relation to the decision being appealed\n- any other unpublished documents on which you rely\n- the notice of any other appealable decision made in relation to the appellant",
+        "directionType": "requestRespondentEvidence",
+        "previousDates": []
+      }
+    }
+  ],
+  "feeVersion": "2",
+  "paidAmount": "14000",
+  "s94bStatus": "No",
+  "caseBundles": [
+    {
+      "id": "94109718-bee5-4012-b408-28a07e104a9d",
+      "value": {
+        "id": "a40e6786-52e7-471a-822e-4a30c2831309",
+        "title": "IAC Hearing Bundle",
+        "folders": [
+          {
+            "id": "d9d1f762-402e-4db0-9435-655c74fe6d56",
+            "value": {
+              "name": "Hearing documents",
+              "documents": [
+                {
+                  "id": "ebeb4358-4691-4888-beff-da491d5c3df2",
+                  "value": {
+                    "name": "PA 50219 2023-Johnson-hearing-requirements.PDF",
+                    "sortIndex": 0,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "PA 50219 2023-Johnson-hearing-requirements.PDF",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                },
+                {
+                  "id": "8dc117a0-d181-4fb8-a6b0-7791c28a7867",
+                  "value": {
+                    "name": "HU 50009 2024-FamilyName decision-hearing-notice.PDF",
+                    "sortIndex": 1,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "HU 50009 2024-FamilyName decision-hearing-notice.PDF",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                }
+              ],
+              "sortIndex": 0
+            }
+          },
+          {
+            "id": "f3beb009-2f78-41b7-9149-ae6c92bddb39",
+            "value": {
+              "name": "Appellant documents",
+              "documents": [
+                {
+                  "id": "264b1159-4984-41bb-898d-8ef30c05e14a",
+                  "value": {
+                    "name": "HU 50009 2024-FamilyName decision-appeal-skeleton-argument.PDF",
+                    "sortIndex": 0,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "HU 50009 2024-FamilyName decision-appeal-skeleton-argument.PDF",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                },
+                {
+                  "id": "dda991a0-3162-4686-bc41-04f8b8039a2e",
+                  "value": {
+                    "name": "Appeals events -Happy path.pdf",
+                    "sortIndex": 1,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "Appeals events -Happy path.pdf",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                },
+                {
+                  "id": "79740a98-d6df-43ba-b2fe-b226c7cfb367",
+                  "value": {
+                    "name": "HU 50009 2024-FamilyName decision-appeal-form.PDF",
+                    "sortIndex": 2,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "HU 50009 2024-FamilyName decision-appeal-form.PDF",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                },
+                {
+                  "id": "8c3c63f7-3028-4850-b921-cf1bafa9f61d",
+                  "value": {
+                    "name": "NOD-PA-50219-2023.pdf",
+                    "sortIndex": 3,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "NOD-PA-50219-2023.pdf",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                }
+              ],
+              "sortIndex": 1
+            }
+          },
+          {
+            "id": "5bc13740-2774-41be-a518-723c95905fe9",
+            "value": {
+              "name": "Appeal Reasons",
+              "documents": [],
+              "sortIndex": 2
+            }
+          },
+          {
+            "id": "9cca5001-dd99-4e64-9db7-5b57a9ebe10e",
+            "value": {
+              "name": "Clarifying Questions",
+              "documents": [],
+              "sortIndex": 3
+            }
+          },
+          {
+            "id": "771fc068-d640-45b4-a54c-b0fc5dfe6935",
+            "value": {
+              "name": "Additional evidence from appellant",
+              "documents": [],
+              "sortIndex": 4
+            }
+          },
+          {
+            "id": "8d94412e-c58f-49d2-a608-3b68e54e7ff8",
+            "value": {
+              "name": "Home office documents",
+              "documents": [
+                {
+                  "id": "d010a59f-aaee-4595-9a6b-9e8a42832f50",
+                  "value": {
+                    "name": "Dummy_nod.pdf",
+                    "sortIndex": 0,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "Dummy_nod.pdf",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                },
+                {
+                  "id": "8505940c-836b-4a61-b86e-516550ccc447",
+                  "value": {
+                    "name": "PA 50219 2023-Respondent-HO-Doc.PDF",
+                    "sortIndex": 1,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "PA 50219 2023-Respondent-HO-Doc.PDF",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                }
+              ],
+              "sortIndex": 5
+            }
+          }
+        ],
+        "fileName": "HU 50009 2024-FamilyName decision-hearing-bundle.pdf",
+        "documents": [],
+        "stitchStatus": "DONE",
+        "hasCoversheets": "Yes",
+        "pageNumberFormat": "numberOfPages",
+        "stitchedDocument": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-hearing-bundle.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "coverpageTemplate": "TB-IAC-HRN-ENG-00514.docx",
+        "eligibleForCloning": "no",
+        "fileNameIdentifier": "/case_details/case_data/bundleFileNamePrefix",
+        "hasTableOfContents": "Yes",
+        "eligibleForStitching": "no",
+        "hasFolderCoversheets": "Yes"
+      }
+    }
+  ],
+  "paymentDate": "5 Aug 2024",
+  "datesToAvoid": [],
+  "feeAmountGbp": "14000",
+  "isIntegrated": "No",
+  "witnessCount": 0,
+  "appellantInUk": "Yes",
+  "hearingCentre": "taylorHouse",
+  "inCameraCourt": "No",
+  "isNabaEnabled": "No",
+  "paymentStatus": "Paid",
+  "remissionType": "noRemission",
+  "staffLocation": "Taylor House",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "c896a3d2-3763-4a4a-9249-6885f9a62b4b",
+        "value": {
+          "Name": "GivenName Migration 8 FamilyName decision",
+          "PostCode": "SE10 0XX",
+          "DateOfBirth": "2000-01-01",
+          "AddressLine1": "Flat 101",
+          "EmailAddress": "example@test.com"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "f1aeffac-45ef-4dd6-a1b2-eaad02a639b2",
+        "value": "HU/50009/2024"
+      }
+    ]
+  },
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
+  "hearingChannel": {
+    "value": {
+      "code": "INTER",
+      "label": "In Person"
+    },
+    "list_items": [
+      {
+        "code": "INTER",
+        "label": "In Person"
+      },
+      {
+        "code": "NA",
+        "label": "Not in Attendance"
+      },
+      {
+        "code": "ONPPRS",
+        "label": "On the Papers"
+      },
+      {
+        "code": "TEL",
+        "label": "Telephone"
+      },
+      {
+        "code": "VID",
+        "label": "Video"
+      }
+    ]
+  },
+  "searchPostcode": "SE10 0XX",
+  "singleSexCourt": "No",
+  "hasOtherAppeals": "No",
+  "pastExperiences": "No",
+  "remoteVideoCall": "No",
+  "stitchingStatus": "DONE",
+  "adminDeclaration1": [
+    "hasDeclared"
+  ],
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "SE10 0XX",
+    "PostTown": "London",
+    "AddressLine1": "Flat 101",
+    "AddressLine2": "10 Cutter Lane",
+    "AddressLine3": ""
+  },
+  "appellantPartyId": "45889c92-2cf4-4dae-ae9a-f64aa051d525",
+  "ariaDesiredState": "decision",
+  "hearingDocuments": [
+    {
+      "id": "3",
+      "value": {
+        "tag": "hearingBundle",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-hearing-bundle.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "tag": "caseSummary",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "PA 50219 2023-Johnson-hearing-requirements.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "case summary 1",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "hearingNotice",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-hearing-notice.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "isAppellantMinor": "No",
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "datesToAvoidYesNo": "No",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Human rights",
+  "notificationsSent": [
+    {
+      "id": "1723019798041350_INTERNAL_SUBMIT_APPEAL_WITH_FEE_APPELLANT_LETTER",
+      "value": "b37d58f7-6390-4049-b01e-dd19e1d93708"
+    },
+    {
+      "id": "1723019798041350_APPEAL_SUBMITTED_HOME_OFFICE",
+      "value": "d15ca65a-fdd9-4a9d-aded-9abcc69c7083"
+    },
+    {
+      "id": "1723019798041350_RESPONDENT_EVIDENCE_DIRECTION",
+      "value": "41ee8ae8-0afc-45ba-850e-25b02e891d7c"
+    },
+    {
+      "id": "1723019798041350_INTERNAL_HO_UPLOAD_BUNDLE_APPELLANT_LETTER",
+      "value": "4f554329-f62f-47e6-ac08-3d5f39a48df0"
+    },
+    {
+      "id": "1723019798041350_RESPONDENT_REVIEW_DIRECTION",
+      "value": "b154b34f-35c2-4438-9caf-17686060f361"
+    },
+    {
+      "id": "1723019798041350_INTERNAL_HO_REVIEW_THE_APPEAL_APPELLANT_LETTER",
+      "value": "34fa799c-6c3f-4593-a84a-710d455bfd74"
+    },
+    {
+      "id": "1723019798041350_CASE_LISTED_HOME_OFFICE",
+      "value": "0bb75b19-3fb6-46fe-b400-77cbee785520"
+    },
+    {
+      "id": "1723019798041350_INTERNAL_CASE_LISTED_LETTER_BUNDLE",
+      "value": "13366a34-1d60-458f-bc65-6463376a1a4a"
+    },
+    {
+      "id": "1723019798041350_GENERATE_HEARING_BUNDLE_HOME_OFFICE",
+      "value": "ccab7705-765c-47ea-a9d8-db9a27b028f2"
+    },
+    {
+      "id": "1723019798041350_HEARING_BUNDLE_IS_READY_HOME_OFFICE",
+      "value": "a3b9bb7a-3cc6-432a-a54b-429c968eff8c"
+    }
+  ],
+  "tribunalDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "appealForm",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU/50009/2024-GivenName Migration 8 FamilyName decision-appeal form1.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "appeal form 1",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "additionalRequests": "No",
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "legalRepFamilyName": "",
+  "multimediaEvidence": "No",
+  "nextHearingDetails": {
+    "hearingID": "999",
+    "hearingDateTime": "2024-08-10T12:00:00.000"
+  },
+  "paymentDescription": "Appeal determined with a hearing",
+  "appealReviewOutcome": "decisionMaintained",
+  "appellantFamilyName": "FamilyName decision",
+  "appellantGivenNames": "GivenName Migration 8",
+  "bundleConfiguration": "iac-hearing-bundle-config.yaml",
+  "caseSummaryDocument": {
+    "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+    "document_filename": "PA 50219 2023-Johnson-hearing-requirements.PDF",
+    "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+  },
+  "hearingRequirements": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "hearingRequirements",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-hearing-requirements.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "isFeePaymentEnabled": "Yes",
+  "isHearingLoopNeeded": "No",
+  "isHearingRoomNeeded": "No",
+  "isRemissionsEnabled": "Yes",
+  "listCaseHearingDate": "2024-08-10T12:00:00.000",
+  "respondentDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealResponse",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "Dummy_nod.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "HO appeal response",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "respondentEvidence",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "PA 50219 2023-Respondent-HO-Doc.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "ho bundle",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2024-08-07",
+  "appellantDateOfBirth": "2000-01-01",
+  "ariaListingReference": "LP/12345/2019",
+  "bundleFileNamePrefix": "HU 50009 2024-FamilyName decision",
+  "feePaymentAppealType": "Yes",
+  "isWitnessesAttending": "No",
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "tribunalReceivedDate": "2024-08-05",
+  "additionalPaymentInfo": "Additional paid information",
+  "appealReferenceNumber": "HU/50009/2024",
+  "caseArgumentAvailable": "Yes",
+  "caseNameHmctsInternal": "GivenName Migration 8 FamilyName decision",
+  "hmctsCaseNameInternal": "GivenName Migration 8 FamilyName decision",
+  "isOutOfCountryEnabled": "Yes",
+  "lastModifiedDirection": {
+    "tag": "legalRepresentativeHearingRequirements",
+    "dateDue": "2024-08-12",
+    "parties": "legalRepresentative",
+    "dateSent": "2024-08-07",
+    "uniqueId": "d45270d1-5e47-4378-8acc-cc953da710a1",
+    "explanation": "The appeal is going to a hearing and you should tell the Tribunal if the appellant has any hearing requirements.\n\n# Next steps\n\nVisit the online service and use the HMCTS reference to find the case. You'll be able to submit the hearing requirements by following the instructions on the overview tab.\n\nThe Tribunal will review the hearing requirements and any requests for additional adjustments. You'll then be sent a hearing date.\n\nIf you do not submit the hearing requirements by the date indicated below, the Tribunal may not be able to accommodate the appellant's needs for the hearing.\n",
+    "directionType": "requestHearingRequirementsFeature",
+    "previousDates": []
+  },
+  "letterBundleDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "internalCaseListedLetterBundle",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-internal-case-listed-letter-with-attachment.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "listCaseHearingCentre": "taylorHouse",
+  "listCaseHearingLength": "120",
+  "appellantNationalities": [
+    {
+      "id": "520cd556-39b3-4729-9093-a07513f4b03e",
+      "value": {
+        "code": "GB"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "refusalOfHumanRights",
+      "label": "Refusal of a human rights claim"
+    },
+    "list_items": [
+      {
+        "code": "refusalOfHumanRights",
+        "label": "Refusal of a human rights claim"
+      }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "caseSummaryDescription": "case summary 1",
+  "homeOfficeDecisionDate": "2024-08-05",
+  "internalAppellantEmail": "example@test.com",
+  "isRemoteHearingAllowed": "Granted",
+  "appealGroundsForDisplay": [],
+  "appealResponseAvailable": "Yes",
+  "appellantsRepresentation": "Yes",
+  "appellantNameForDisplay": "GivenName Migration 8 FamilyName decision",
+  "deportationOrderOptions": "No",
+  "isAppealSuitableToFloat": "No",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "3d2867c6-4888-450d-8138-258526aaab20",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "Doc1.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "appeal form 1"
+      }
+    }
+  ],
+  "appellantHasFixedAddress": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "autoHearingRequestEnabled": "No",
+  "homeOfficeReferenceNumber": "012345678",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "legalRepIndividualPartyId": "f7159136-7bff-40fb-921a-c8a53633afc8",
+  "scheduleOfIssuesAgreement": "Yes",
+  "isEvidenceFromOutsideUkOoc": "No",
+  "decisionAndReasonsAvailable": "No",
+  "hearingDateRangeDescription": "Only include dates between 21 Aug 2024 and 30 Oct 2024.",
+  "immigrationHistoryAgreement": "Yes",
+  "isInterpreterServicesNeeded": "No",
+  "legalRepOrganisationPartyId": "71c50709-b802-42c7-ac56-2ef03e6e14e7",
+  "reviewedHearingRequirements": "Yes",
+  "amendResponseActionAvailable": "Yes",
+  "appealSubmissionInternalDate": "2024-08-07",
+  "ccdReferenceNumberForDisplay": "1723 0197 9804 1350",
+  "currentHearingDetailsVisible": "Yes",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "4",
+      "value": {
+        "tag": "submitCaseBundle",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-appeal-skeleton-argument.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "3",
+      "value": {
+        "tag": "caseArgument",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "Appeals events -Happy path.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "appeal skeleton argument 1",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealSubmission",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50009 2024-FamilyName decision-appeal-form.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-07"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "nod",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "listCaseHearingCentreAddress": "Taylor House Tribunal Hearing Centre, Rosebery Avenue, EC1R 4QU",
+  "physicalOrMentalHealthIssues": "No",
+  "sendDirectionActionAvailable": "No",
+  "uploadedHomeOfficeBundleDocs": "- None",
+  "isAppellantGivingOralEvidence": "Yes",
+  "reviewResponseActionAvailable": "No",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "a54cc12b-e4a0-42bf-ae79-c4595baae9a7",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "uploadedLegalRepBuildCaseDocs": "- None",
+  "automaticEndAppealTimedEventId": "fd614594-6b6b-4116-8568-f0d80298486e",
+  "currentCaseStateVisibleToJudge": "decision",
+  "isAdditionalInstructionAllowed": "No",
+  "isAppellantAttendingTheHearing": "Yes",
+  "remoteHearingDecisionForDisplay": "Granted - granted remote",
+  "remoteVideoCallTribunalResponse": "granted remote",
+  "uploadHomeOfficeBundleAvailable": "No",
+  "witness1InterpreterSignLanguage": {},
+  "witness2InterpreterSignLanguage": {},
+  "witness3InterpreterSignLanguage": {},
+  "witness4InterpreterSignLanguage": {},
+  "witness5InterpreterSignLanguage": {},
+  "witness6InterpreterSignLanguage": {},
+  "witness7InterpreterSignLanguage": {},
+  "witness8InterpreterSignLanguage": {},
+  "witness9InterpreterSignLanguage": {},
+  "appellantInterpreterSignLanguage": {},
+  "isEvidenceFromOutsideUkInCountry": "No",
+  "witness10InterpreterSignLanguage": {},
+  "witness1InterpreterSpokenLanguage": {},
+  "witness2InterpreterSpokenLanguage": {},
+  "witness3InterpreterSpokenLanguage": {},
+  "witness4InterpreterSpokenLanguage": {},
+  "witness5InterpreterSpokenLanguage": {},
+  "witness6InterpreterSpokenLanguage": {},
+  "witness7InterpreterSpokenLanguage": {},
+  "witness8InterpreterSpokenLanguage": {},
+  "witness9InterpreterSpokenLanguage": {},
+  "appellantInterpreterSpokenLanguage": {},
+  "reviewHomeOfficeResponseByLegalRep": "Yes",
+  "submitHearingRequirementsAvailable": "Yes",
+  "witness10InterpreterSpokenLanguage": {},
+  "currentCaseStateVisibleToCaseOfficer": "decision",
+  "uploadedHomeOfficeAppealResponseDocs": "- None",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "decision",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "Yes",
+  "currentCaseStateVisibleToHomeOfficeAll": "decision",
+  "currentCaseStateVisibleToHomeOfficeApc": "decision",
+  "currentCaseStateVisibleToHomeOfficePou": "decision",
+  "currentCaseStateVisibleToHomeOfficeLart": "decision",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "decision",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "decision",
+  "markAddendumEvidenceAsReviewedActionAvailable": "Yes",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "Yes",
+  "uploadHomeOfficeAppealResponseActionAvailable": "No",
+  "automaticDirectionRequestingHearingRequirements": "a19ec095-7b1d-4be2-b2e3-47720d483b0f",
+  "isServiceRequestTabVisibleConsideringRemissions": "Yes",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "Yes",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "Yes",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "ariaMigrationTaskDueDays": "2"
+}

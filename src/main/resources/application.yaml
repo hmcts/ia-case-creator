@@ -4,7 +4,7 @@ spring:
     allow-bean-definition-overriding: true
     banner-mode: "off"
   application:
-    name: SSCS-Case-Creator
+    name: IA-Case-Creator
 
 core_case_data:
   caseTypeId: Asylum
@@ -26,4 +26,4 @@ feign:
       default:
         errorDecoder: uk.gov.hmcts.reform.ia.casecreator.ErrorDecoder
 
-idam_user_role: citizen
+idam_user_role: caseworker

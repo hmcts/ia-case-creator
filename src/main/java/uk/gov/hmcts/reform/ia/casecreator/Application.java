@@ -20,7 +20,8 @@ import uk.gov.hmcts.reform.authorisation.generators.AuthTokenGeneratorFactory;
 @SpringBootApplication
 @EnableFeignClients(basePackages =
         {
-                "uk.gov.hmcts.reform.ccd.client",
+                "uk.gov.hmcts.reform.ccd",
+                "uk.gov.hmcts.reform.idam",
                 "uk.gov.hmcts.reform.authorisation",
                 "uk.gov.hmcts.reform.ia.casecreator"
         })
@@ -36,10 +37,10 @@ public class Application implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.setProperty("http.proxyHost", "proxyout.reform.hmcts.net");
-        System.setProperty("http.proxyPort", "8080");
-        System.setProperty("https.proxyHost", "proxyout.reform.hmcts.net");
-        System.setProperty("https.proxyPort", "8080");
+//        System.setProperty("http.proxyHost", "proxyout.reform.hmcts.net");
+//        System.setProperty("http.proxyPort", "8080");
+//        System.setProperty("https.proxyHost", "proxyout.reform.hmcts.net");
+//        System.setProperty("https.proxyPort", "8080");
 
         argumentParser.parse(args);
     }

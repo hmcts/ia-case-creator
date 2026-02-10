@@ -1,0 +1,174 @@
+{
+  "email": "example@test.com",
+  "isEjp": "No",
+  "feeCode": "FEE0238",
+  "isAdmin": "Yes",
+  "appealType": "refusalOfHumanRights",
+  "feeVersion": "2",
+  "s94bStatus": "No",
+  "feeAmountGbp": "14000",
+  "appellantInUk": "Yes",
+  "isNabaEnabled": "No",
+  "paymentStatus": "Payment pending",
+  "remissionType": "noRemission",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "9ce2c39e-add1-4720-ab06-af08f18e487c",
+        "value": {
+          "Name": "GivenName Migration 1 FamilyName pendingPayment 1",
+          "PostCode": "SE10 0XX",
+          "DateOfBirth": "2000-01-01",
+          "AddressLine1": "Flat 101",
+          "EmailAddress": "example@test.com"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "eec39ef3-d2ff-498d-9b39-0dde9810284b",
+        "value": "DRAFT"
+      }
+    ]
+  },
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
+  "searchPostcode": "SE10 0XX",
+  "hasOtherAppeals": "No",
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "SE10 0XX",
+    "PostTown": "London",
+    "AddressLine1": "Flat 101",
+    "AddressLine2": "10 Cutter Lane",
+    "AddressLine3": ""
+  },
+  "appellantPartyId": "45889c92-2cf4-4dae-ae9a-f64aa051d525",
+  "ariaDesiredState": "pendingPayment",
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Human rights",
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "paymentDescription": "Appeal determined with a hearing",
+  "appellantFamilyName": "FamilyName pendingPayment 1",
+  "appellantGivenNames": "GivenName Migration 1",
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "appellantDateOfBirth": "2000-01-01",
+  "feePaymentAppealType": "Yes",
+  "hearingCentre": "taylorHouse",
+  "staffLocation": "Taylor House",
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "tribunalReceivedDate": "2024-08-05",
+  "appealReferenceNumber": "DRAFT",
+  "caseNameHmctsInternal": "GivenName Migration 1 FamilyName pendingPayment 1",
+  "hmctsCaseNameInternal": "GivenName Migration 1 FamilyName pendingPayment 1",
+  "isOutOfCountryEnabled": "Yes",
+  "appellantNationalities": [
+    {
+      "id": "520cd556-39b3-4729-9093-a07513f4b03e",
+      "value": {
+        "code": "GB"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "refusalOfHumanRights",
+      "label": "Refusal of a human rights claim"
+    },
+    "list_items": [
+      {
+        "code": "refusalOfHumanRights",
+        "label": "Refusal of a human rights claim"
+      }
+    ]
+  },
+  "homeOfficeDecisionDate": "2024-08-05",
+  "internalAppellantEmail": "example@test.com",
+  "appealGroundsForDisplay": [],
+  "appellantsRepresentation": "Yes",
+  "appellantNameForDisplay": "GivenName Migration 1 FamilyName pendingPayment 1",
+  "deportationOrderOptions": "No",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "3d2867c6-4888-450d-8138-258526aaab20",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "Doc1.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "appeal form 1"
+      }
+    }
+  ],
+  "appellantHasFixedAddress": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "homeOfficeReferenceNumber": "012345678",
+  "legalRepIndividualPartyId": "f7159136-7bff-40fb-921a-c8a53633afc8",
+  "legalRepOrganisationPartyId": "71c50709-b802-42c7-ac56-2ef03e6e14e7",
+  "ccdReferenceNumberForDisplay": "1723 0197 9804 1350",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "nod",
+        "dateUploaded": "2024-08-07"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "No",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "a54cc12b-e4a0-42bf-ae79-c4595baae9a7",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "currentCaseStateVisibleToJudge": "appealStartedByAdmin",
+  "currentCaseStateVisibleToCaseOfficer": "appealStartedByAdmin",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "appealStartedByAdmin",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "appealStartedByAdmin",
+  "currentCaseStateVisibleToHomeOfficeApc": "appealStartedByAdmin",
+  "currentCaseStateVisibleToHomeOfficePou": "appealStartedByAdmin",
+  "currentCaseStateVisibleToHomeOfficeLart": "appealStartedByAdmin",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "appealStartedByAdmin",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "appealStartedByAdmin",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "submissionOutOfTime": "No",
+  "ariaMigrationTaskDueDays": "2"
+}

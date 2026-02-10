@@ -1,0 +1,185 @@
+{
+  "isEjp": "No",
+  "isAdmin": "Yes",
+  "appealType": "revocationOfProtection",
+  "s94bStatus": "No",
+  "appellantInUk": "Yes",
+  "isNabaEnabled": "No",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "05f078f6-c011-46ab-9c76-64c5c15d77d7",
+        "value": {
+          "Name": "GivenName Migration 20 FamilyName appealSubmitted RP",
+          "PostCode": "SE10 0XX",
+          "DateOfBirth": "1999-01-01",
+          "AddressLine1": "Flat 201"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "5cc61a29-a951-4211-8912-014b9addd8a7",
+        "value": "DRAFT"
+      }
+    ]
+  },
+  "searchPostcode": "SE10 0XX",
+  "hasOtherAppeals": "No",
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "SE10 0XX",
+    "PostTown": "London",
+    "AddressLine1": "Flat 201",
+    "AddressLine2": "10 Cutter Lane",
+    "AddressLine3": ""
+  },
+  "appellantPartyId": "e7702ce8-4f2f-47cd-b31b-1550fade02db",
+  "ariaDesiredState": "appealSubmitted",
+  "isNabaAdaEnabled": "Yes",
+  "isNabaEnabledOoc": "No",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Revocation",
+  "appealOutOfCountry": "No",
+  "appellantStateless": "isStateless",
+  "appellantFamilyName": "FamilyName appealSubmitted RP",
+  "appellantGivenNames": "GivenName Migration 20",
+  "isRemissionsEnabled": "Yes",
+  "appellantDateOfBirth": "1999-01-01",
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "tribunalReceivedDate": "2024-08-20",
+  "appealReferenceNumber": "DRAFT",
+  "caseNameHmctsInternal": "GivenName Migration 20 FamilyName appealSubmitted RP",
+  "hmctsCaseNameInternal": "GivenName Migration 20 FamilyName appealSubmitted RP",
+  "isOutOfCountryEnabled": "Yes",
+  "appellantNationalities": [
+    {
+      "id": "1",
+      "value": {
+        "code": "ZZ"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "revocationOfProtection",
+      "label": "Revocation of a protection status"
+    },
+    "list_items": [
+      {
+        "code": "revocationOfProtection",
+        "label": "Revocation of a protection status"
+      }
+    ]
+  },
+  "homeOfficeDecisionDate": "2024-08-20",
+  "appealGroundsForDisplay": [],
+  "appellantsRepresentation": "Yes",
+  "appellantNameForDisplay": "GivenName Migration 20 FamilyName appealSubmitted RP",
+  "deportationOrderOptions": "No",
+  "rpDcAppealHearingOption": "decisionWithHearing",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "03129771-47dd-4915-a032-757f0e444a07",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "LegalRepDocuments_PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "af"
+      }
+    }
+  ],
+  "appellantHasFixedAddress": "Yes",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "homeOfficeReferenceNumber": "012345678",
+  "legalRepIndividualPartyId": "e76013cb-9382-4a8a-aa83-d80b41fd8768",
+  "isCaseUsingLocationRefData": "Yes",
+  "legalRepOrganisationPartyId": "fc42fcb6-8adc-453d-ab4f-4c2f8035143e",
+  "ccdReferenceNumberForDisplay": "1724 2307 8022 8843",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "nod",
+        "dateUploaded": "2024-08-21"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "No",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "72549040-dc39-46a7-9ec2-eacb4e8d230a",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "NOD-PA-50219-2023.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "currentCaseStateVisibleToJudge": "appealStartedByAdmin",
+  "currentCaseStateVisibleToCaseOfficer": "appealStartedByAdmin",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "appealStartedByAdmin",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "appealStartedByAdmin",
+  "currentCaseStateVisibleToHomeOfficeApc": "appealStartedByAdmin",
+  "currentCaseStateVisibleToHomeOfficePou": "appealStartedByAdmin",
+  "currentCaseStateVisibleToHomeOfficeLart": "appealStartedByAdmin",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "appealStartedByAdmin",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "appealStartedByAdmin",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "staffLocation": "Taylor House",
+  "submissionOutOfTime": "No",
+  "tribunalDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "dateUploaded": "2024-08-07",
+        "description": "appeal form 1",
+        "document": {
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary",
+          "document_filename": "HU/50009/2024-GivenName Migration 20 FamilyName appealSubmitted RP-appeal form1.pdf",
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9"
+        },
+        "tag": "appealForm"
+      }
+    }
+  ],
+  "hearingCentre": "taylorHouse",
+  "isAppellantMinor": "No",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "isFeePaymentEnabled": "Yes",
+  "isIntegrated": "No",
+  "caseManagementLocation": {
+    "baseLocation": "765324",
+    "region": "1"
+  },
+  "ariaMigrationTaskDueDays": "2",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "appealSubmissionDate": "2024-08-07",
+  "appealSubmissionInternalDate": "2024-08-07"
+}

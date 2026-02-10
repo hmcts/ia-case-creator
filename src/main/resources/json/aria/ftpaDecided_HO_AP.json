@@ -1,0 +1,807 @@
+{
+  "email": "test@test.com",
+  "hmcts": "[userImage:hmcts.png]",
+  "feeCode": "FEE0238",
+  "isAdmin": "No",
+  "ftpaList": [
+    {
+      "id": "2",
+      "value": {
+        "ftpaApplicant": "appellant",
+        "ftpaDecisionDate": "2024-08-09",
+        "ftpaApplicationDate": "2024-08-09",
+        "ftpaGroundsDocuments": [
+          {
+            "id": "76e12a72-a2a0-4279-9ef8-d6ac24b9a8e4",
+            "value": {
+              "document": {
+                "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                "document_filename": "qa-8265-ac1.png",
+                "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+              },
+              "description": "LR FTPA"
+            }
+          }
+        ],
+        "ftpaEvidenceDocuments": [],
+        "ftpaDecisionOutcomeType": "granted",
+        "ftpaNewDecisionDocument": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-recordremission-partiallygranted-letter.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "isFtpaNoticeOfDecisionSetAside": "No"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "ftpaApplicant": "respondent",
+        "ftpaDecisionDate": "2024-08-09",
+        "ftpaApplicationDate": "2024-08-09",
+        "ftpaGroundsDocuments": [
+          {
+            "id": "dcab1e0b-2279-44f3-9c37-08e4ef44f5b3",
+            "value": {
+              "document": {
+                "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                "document_filename": "qa-ooc-letter.pdf",
+                "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+              },
+              "description": "HO FTPA"
+            }
+          }
+        ],
+        "ftpaEvidenceDocuments": [],
+        "ftpaDecisionOutcomeType": "partiallyGranted",
+        "ftpaNewDecisionDocument": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-recordremission-refusedletter.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "isFtpaNoticeOfDecisionSetAside": "No"
+      }
+    }
+  ],
+  "caseNotes": [
+    {
+      "id": "3",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2024-08-09",
+        "caseNoteSubject": "Reason for forcing the case progression to submit hearing requirements",
+        "caseNoteDescription": "f"
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2024-08-09",
+        "caseNoteSubject": "Reason for forcing case progression to case under review",
+        "caseNoteDescription": "test"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2024-08-09",
+        "caseNoteSubject": "Force case from Awaiting Respondent Evidence to Case Building",
+        "caseNoteDescription": "test"
+      }
+    }
+  ],
+  "checklist": {
+    "checklist1": [],
+    "checklist2": [
+      "isNotDetained"
+    ],
+    "checklist3": [],
+    "checklist4": [],
+    "checklist5": [],
+    "checklist6": [],
+    "checklist7": []
+  },
+  "appealDate": "2024-08-09",
+  "appealType": "refusalOfHumanRights",
+  "directions": [
+    {
+      "id": "3",
+      "value": {
+        "tag": "respondentReview",
+        "dateDue": "2024-08-23",
+        "parties": "respondent",
+        "dateSent": "2024-08-09",
+        "uniqueId": "6db8b0cd-e35a-4876-aeab-682025e99a4e",
+        "explanation": "You have until the date indicated below to review the appellant's argument and evidence. You must explain whether the appellant makes a valid case for overturning the original decision.\n\nYou must respond to the Tribunal and tell them:\n\n- whether you oppose all or parts of the appellant's case\n- what your grounds are for opposing the case\n- which of the issues are agreed or not agreed\n- whether there are any further issues you wish to raise\n- whether you are prepared to withdraw to grant\n- whether the appeal can be resolved without a hearing\n\nNext steps\n\nIf you do not respond in time the Tribunal will decide how the case should proceed.",
+        "directionType": "requestRespondentReview",
+        "previousDates": []
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "tag": "requestCaseBuilding",
+        "dateDue": "2024-09-20",
+        "parties": "legalRepresentative",
+        "dateSent": "2024-08-09",
+        "uniqueId": "6b82adfd-64f0-46ab-8627-f18c71f86c36",
+        "explanation": "You must now build your case to enable the respondent to conduct a thorough review of their decision.\n\nYou have until the date indicated below to upload your Appeal Skeleton Argument and evidence.\n\nYour Appeal Skeleton Argument must be set out in three distinct parts to include:\n\n- a concise summary of the appellant’s case\n- a schedule of issues\n- why those issues should be resolved in the appellant’s favour, by reference to the evidence you have (or plan to have) and any legal authorities you rely upon\n\n# Next steps\n\nOnce you've uploaded your Appeal Skeleton Argument and evidence, you should submit your case. The Legal Officer will review everything you've added.\n\nIf your case looks ready, the Tribunal will send it to the respondent to review.",
+        "previousDates": []
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "respondentEvidence",
+        "dateDue": "2024-08-23",
+        "parties": "respondent",
+        "dateSent": "2024-08-09",
+        "uniqueId": "2da58099-3245-462b-9b2e-1ac1fff0a6b3",
+        "explanation": "A notice of appeal has been lodged against this decision.\n\nYou must now upload all documents to the Tribunal. The Tribunal will make them accessible to the other party. You have until the date indicated below to supply the documents.\n\nYou must include:\n- the notice of decision\n- any other document provided to the appellant giving reasons for that decision\n- any statements of evidence\n- the application form\n- any record of interview with the appellant in relation to the decision being appealed\n- any other unpublished documents on which you rely\n- the notice of any other appealable decision made in relation to the appellant",
+        "directionType": "requestRespondentEvidence",
+        "previousDates": []
+      }
+    }
+  ],
+  "feeVersion": "2",
+  "s94bStatus": "No",
+  "caseBundles": [
+    {
+      "id": "c69915e4-a1bd-4a78-8c96-4168fa458c53",
+      "value": {
+        "id": "3fdb7741-e9dd-4ef7-96aa-19805d3896ad",
+        "title": "IAC Hearing Bundle",
+        "folders": [
+          {
+            "id": "e6249813-b4ea-44f7-8967-95b56284cca3",
+            "value": {
+              "name": "Hearing documents",
+              "documents": [],
+              "sortIndex": 0
+            }
+          },
+          {
+            "id": "4bd722fc-75ed-448a-baee-e788fa3f5977",
+            "value": {
+              "name": "Appellant documents",
+              "documents": [
+                {
+                  "id": "8b4fea1b-cc83-4562-9066-c706f6400a21",
+                  "value": {
+                    "name": "HU 50013 2024-FamilyName ftpaDecided 2-appeal-form.PDF",
+                    "sortIndex": 0,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-appeal-form.PDF",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                },
+                {
+                  "id": "6ad832d3-06c0-4ccf-ac47-da3543e3a0ef",
+                  "value": {
+                    "name": "qa-8265-ac1.png",
+                    "sortIndex": 1,
+                    "sourceDocument": {
+                      "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+                      "document_filename": "qa-8265-ac1.png",
+                      "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+                    }
+                  }
+                }
+              ],
+              "sortIndex": 1
+            }
+          },
+          {
+            "id": "2442fde1-d25d-4d14-be0b-5b984e36d8e1",
+            "value": {
+              "name": "Appeal Reasons",
+              "documents": [],
+              "sortIndex": 2
+            }
+          },
+          {
+            "id": "f16fa20e-3665-4c2a-9ff9-70fea69510d9",
+            "value": {
+              "name": "Clarifying Questions",
+              "documents": [],
+              "sortIndex": 3
+            }
+          },
+          {
+            "id": "8c9d0c44-596c-4771-80b6-19e2145cfe46",
+            "value": {
+              "name": "Additional evidence from appellant",
+              "documents": [],
+              "sortIndex": 4
+            }
+          },
+          {
+            "id": "f66a871f-2000-4d7c-853f-9fe103474c6c",
+            "value": {
+              "name": "Home office documents",
+              "documents": [],
+              "sortIndex": 5
+            }
+          }
+        ],
+        "fileName": "HU 50013 2024-FamilyName ftpaDecided 2-hearing-bundle.pdf",
+        "documents": [],
+        "stitchStatus": "DONE",
+        "hasCoversheets": "Yes",
+        "pageNumberFormat": "numberOfPages",
+        "stitchedDocument": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-hearing-bundle.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "coverpageTemplate": "TB-IAC-HRN-ENG-00514.docx",
+        "eligibleForCloning": "no",
+        "fileNameIdentifier": "/case_details/case_data/bundleFileNamePrefix",
+        "hasTableOfContents": "Yes",
+        "eligibleForStitching": "no",
+        "hasFolderCoversheets": "Yes"
+      }
+    }
+  ],
+  "feeAmountGbp": "14000",
+  "isIntegrated": "No",
+  "legalRepName": "rohith",
+  "appellantInUk": "Yes",
+  "hasNewMatters": "No",
+  "hearingCentre": "taylorHouse",
+  "isNabaEnabled": "No",
+  "paymentStatus": "Paid",
+  "remissionType": "helpWithFees",
+  "searchParties": [],
+  "staffLocation": "Taylor House",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "a9d05cbd-38f8-4422-b9af-2e8f2ad5d4c4",
+        "value": {
+          "Name": "Mr GivenName Migration 11b FamilyName ftpaDecided 2",
+          "DateOfBirth": "2000-01-01",
+          "EmailAddress": "test@test.com"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "20281df2-7ad2-431e-98ef-95aa33056d13",
+        "value": "HU/50013/2024"
+      }
+    ]
+  },
+  "amountRemitted": "14000",
+  "anonymityOrder": "No",
+  "appealDecision": "Allowed",
+  "appellantTitle": "Mr",
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
+  "amountLeftToPay": "000",
+  "hasOtherAppeals": "No",
+  "legalRepCompany": "ia-legal-rep-org777",
+  "stitchingStatus": "DONE",
+  "appellantPartyId": "8db28083-d115-44fb-a30c-68b1a5ab3b21",
+  "feeRemissionType": "Help with Fees",
+  "hearingDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "hearingBundle",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-hearing-bundle.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "isAppellantMinor": "No",
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "contactPreference": "wantsEmail",
+  "ftpaApplicantType": "respondent",
+  "ftpaFirstDecision": "granted",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "Human rights",
+  "isDecisionAllowed": "allowed",
+  "isFtpaListVisible": "Yes",
+  "notificationsSent": [
+    {
+      "id": "1723201475146062_APPEAL_SUBMITTED_PENDING_PAYMENT_LEGAL_REP",
+      "value": "55c3285a-9ea2-444b-acf5-366c7490db15"
+    },
+    {
+      "id": "1723201475146062_APPEAL_SUBMITTED_PENDING_PAYMENT_HOME_OFFICE",
+      "value": "3f88a1e9-529c-4539-b53d-178b79f70ffa"
+    },
+    {
+      "id": "1723201475146062_APPEAL_SUBMITTED_PENDING_PAYMENT_ADMIN_OFFICER",
+      "value": "f1f4e3dc-9fe1-467d-a0a8-34b908a9c476"
+    },
+    {
+      "id": "1723201475146062_REMISSION_DECISION_APPROVED_ADMIN_OFFICER",
+      "value": "91be746a-c26a-40f5-9906-0dcfd8135a4e"
+    },
+    {
+      "id": "1723201475146062_REMISSION_DECISION_APPROVED_LEGAL_REPRESENTATIVE",
+      "value": "fc7b6f17-9842-49ef-b32a-db6bf19d30c3"
+    },
+    {
+      "id": "1723201475146062_RESPONDENT_EVIDENCE_DIRECTION",
+      "value": "5549b0da-8a72-4a6e-93bd-21e6787014ab"
+    },
+    {
+      "id": "1723201475146062_EVIDENCE_DIRECTION_LEGAL_REPRESENTATIVE",
+      "value": "2c08bca0-4208-49a0-a031-12e4a7e13a2e"
+    },
+    {
+      "id": "1723201475146062_RESPONDENT_FORCE_CASE_PROGRESSION",
+      "value": "b68975ab-ae55-40d6-b79b-2d0d2b131924"
+    },
+    {
+      "id": "1723201475146062_LEGAL_REPRESENTATIVE_REQUEST_CASE_BUILDING",
+      "value": "f861a0b9-28e5-4da8-b96d-055e48675212"
+    },
+    {
+      "id": "1723201475146062_FORCE_CASE_TO_CASE_UNDER_REVIEW_LEGAL_REPRESENTATIVE",
+      "value": "e919deb3-4cd5-4f47-b77c-e6a70e85adbe"
+    },
+    {
+      "id": "1723201475146062_RESPONDENT_FORCE_CASE_PROGRESSION_TO_UNDER_REVIEW",
+      "value": "29b724c7-ed5a-4871-b302-f2cf97843cef"
+    },
+    {
+      "id": "1723201475146062_RESPONDENT_REVIEW_DIRECTION",
+      "value": "7ae7be2b-9afe-4808-b73f-7944295075e0"
+    },
+    {
+      "id": "1723201475146062_LEGAL_REPRESENTATIVE_RESPONDENT_REVIEW_CASE",
+      "value": "3151feb0-5ed1-46a6-8bab-ffed062653d5"
+    },
+    {
+      "id": "1723201475146062_FORCE_CASE_TO_SUBMIT_HEARING_REQUIREMENTS_RESPONDENT",
+      "value": "ba2c5d81-b563-448d-b92f-df61419298af"
+    },
+    {
+      "id": "1723201475146062_HEARING_BUNDLE_IS_READY_HOME_OFFICE",
+      "value": "bd4d807e-bd2c-48d1-bef3-fac37785c05b"
+    },
+    {
+      "id": "1723201475146062_HEARING_BUNDLE_IS_READY_LEGAL_REP",
+      "value": "f09f3d6b-2011-420d-9f2a-f3ee528c21c3"
+    },
+    {
+      "id": "1723201475146062_APPEAL_OUTCOME_HOME_OFFICE",
+      "value": "bf6d3671-8119-4f82-b88d-a2e7b6bfe7bc"
+    },
+    {
+      "id": "1723201475146062_APPEAL_OUTCOME_ADMIN",
+      "value": "57474836-b3c4-477d-8f19-d2ecadf49dbe"
+    },
+    {
+      "id": "1723201475146062_APPEAL_OUTCOME_LEGAL_REPRESENTATIVE",
+      "value": "c7bdb732-4ced-4c5c-8210-273a3020d89c"
+    },
+    {
+      "id": "1723201475146062_FTPA_SUBMITTED_RESPONDENT",
+      "value": "a47f99b4-0a91-458b-b7ff-97821818b0d3"
+    },
+    {
+      "id": "1723201475146062_LEGAL_REP_RESPONDENT_FTPA_SUBMITTED",
+      "value": "90011f85-d3f2-455e-a443-176acdbd9e5c"
+    },
+    {
+      "id": "1723201475146062_FTPA_SUBMITTED_LEGAL_REP",
+      "value": "0d042f06-c0da-49bc-934c-3cfc70192595"
+    },
+    {
+      "id": "1723201475146062_RESPONDENT_APPELLANT_FTPA_SUBMITTED",
+      "value": "adab1fab-9638-4ba7-bc03-aef8a13525d2"
+    },
+    {
+      "id": "1723201475146062_FTPA_APPLICATION_DECISION_HOME_OFFICE_APPELLANT",
+      "value": "d3ccd48e-8648-4ff0-887e-2af006425357"
+    },
+    {
+      "id": "1723201475146062_FTPA_APPLICATION_DECISION_LEGAL_REPRESENTATIVE_APPELLANT",
+      "value": "f0b1359b-3482-4ce6-b372-c6f88e84b770"
+    },
+    {
+      "id": "1723201475146062_FTPA_APPLICATION_DECISION_ADMIN_OFFICER_APPELLANT",
+      "value": "80ba1b5a-f15c-4f19-b5a5-7b750cf5e6c3"
+    },
+    {
+      "id": "1723201475146062_FTPA_APPLICATION_DECISION_HOME_OFFICE_RESPONDENT",
+      "value": "b7867523-fca1-46c1-a5ec-eb66346a0fda"
+    },
+    {
+      "id": "1723201475146062_FTPA_APPLICATION_DECISION_LEGAL_REPRESENTATIVE_RESPONDENT",
+      "value": "f0e87278-7e6c-4868-9c2b-32d2d244e3f1"
+    },
+    {
+      "id": "1723201475146062_FTPA_APPLICATION_DECISION_ADMIN_OFFICER_RESPONDENT",
+      "value": "c558af84-fd0d-4876-902c-f65beaf8c7d4"
+    }
+  ],
+  "remissionDecision": "approved",
+  "appealOutOfCountry": "No",
+  "appellantStateless": "isStateless",
+  "ftpaSecondDecision": "partiallyGranted",
+  "legalRepFamilyName": "tiru",
+  "paymentDescription": "Appeal determined with a hearing",
+  "appellantFamilyName": "FamilyName ftpaDecided 2",
+  "appellantGivenNames": "GivenName Migration 11b",
+  "bundleConfiguration": "iac-hearing-bundle-config.yaml",
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "legalRepCompanyName": "ia-legal-rep-org777",
+  "legalRepDeclaration": [
+    "hasDeclared"
+  ],
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2024-08-09",
+  "appellantDateOfBirth": "2000-01-01",
+  "ariaListingReference": "XX/00000/0000",
+  "ariaDesiredState": "ftpaDecided",
+  "bundleFileNamePrefix": "HU 50013 2024-FamilyName ftpaDecided 2",
+  "feePaymentAppealType": "Yes",
+  "letterSentOrReceived": "Sent",
+  "localAuthorityPolicy": {
+    "Organisation": {
+      "OrganisationID": "D1HRWLA"
+    },
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "appealReferenceNumber": "HU/50013/2024",
+  "caseNameHmctsInternal": "GivenName Migration 11b FamilyName ftpaDecided 2",
+  "hmctsCaseNameInternal": "GivenName Migration 11b FamilyName ftpaDecided 2",
+  "isDlrmSetAsideEnabled": "Yes",
+  "isDocumentSignedToday": {
+    "values": [
+      "isDocumentSignedToday"
+    ]
+  },
+  "isOutOfCountryEnabled": "Yes",
+  "lastModifiedDirection": {
+    "tag": "respondentReview",
+    "dateDue": "2024-08-23",
+    "parties": "respondent",
+    "dateSent": "2024-08-09",
+    "uniqueId": "6db8b0cd-e35a-4876-aeab-682025e99a4e",
+    "explanation": "You have until the date indicated below to review the appellant's argument and evidence. You must explain whether the appellant makes a valid case for overturning the original decision.\n\nYou must respond to the Tribunal and tell them:\n\n- whether you oppose all or parts of the appellant's case\n- what your grounds are for opposing the case\n- which of the issues are agreed or not agreed\n- whether there are any further issues you wish to raise\n- whether you are prepared to withdraw to grant\n- whether the appeal can be resolved without a hearing\n\nNext steps\n\nIf you do not respond in time the Tribunal will decide how the case should proceed.",
+    "directionType": "requestRespondentReview",
+    "previousDates": []
+  },
+  "listCaseHearingCentre": "decisionWithoutHearing",
+  "appellantNationalities": [
+    {
+      "id": "1",
+      "value": {
+        "code": "ZZ"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "refusalOfHumanRights",
+      "label": "Refusal of a human rights claim"
+    },
+    "list_items": [
+      {
+        "code": "refusalOfHumanRights",
+        "label": "Refusal of a human rights claim"
+      }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "765324"
+  },
+  "ftpaAppellantDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "ftpaAppellant",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-8265-ac1.png",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "LR FTPA",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "ftpaAppellantSubmitted": "Yes",
+  "homeOfficeDecisionDate": "2024-08-02",
+  "isFtpaAppellantDecided": "Yes",
+  "isReheardAppealEnabled": "Yes",
+  "legalRepCompanyAddress": {
+    "County": "UK",
+    "Country": "",
+    "PostCode": "E1 7PU",
+    "PostTown": "Aldgate",
+    "AddressLine1": "2",
+    "AddressLine2": "Lemon Street",
+    "AddressLine3": ""
+  },
+  "appealDecisionAvailable": "Yes",
+  "appealGroundsForDisplay": [
+    "humanRightsRefusal"
+  ],
+  "appellantNameForDisplay": "GivenName Migration 11b FamilyName ftpaDecided 2",
+  "appellantRepresentative": "d",
+  "deportationOrderOptions": "No",
+  "ftpaApplicationDeadline": "2024-08-23",
+  "ftpaRespondentDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "ftpaRespondent",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-ooc-letter.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "HO FTPA",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "ftpaRespondentSubmitted": "Yes",
+  "isFtpaRespondentDecided": "Yes",
+  "legalRepReferenceNumber": "123",
+  "legalRepresentativeName": "IAC User1",
+  "appellantHasFixedAddress": "No",
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "respondentRepresentative": "d",
+  "secondFtpaDecisionExists": "Yes",
+  "autoHearingRequestEnabled": "No",
+  "ftpaAppellantDecisionDate": "2024-08-09",
+  "homeOfficeReferenceNumber": "012312312",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "legalRepIndividualPartyId": "b801de9a-f872-43fe-8edb-7e170040e2d9",
+  "legalRepMobilePhoneNumber": "07870135183",
+  "scheduleOfIssuesAgreement": "Yes",
+  "finalDecisionAndReasonsPdf": {
+    "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+    "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-Decision-and-reasons-FINAL.pdf",
+    "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+  },
+  "ftpaRespondentDecisionDate": "2024-08-09",
+  "caseIntroductionDescription": "d",
+  "ftpaFinalDecisionForDisplay": "granted",
+  "helpWithFeesReferenceNumber": "123",
+  "immigrationHistoryAgreement": "Yes",
+  "isFeeConsistentWithDecision": {
+    "values": [
+      "isFeeConsistentWithDecision"
+    ]
+  },
+  "legalRepOrganisationPartyId": "84ff9b24-723d-4bf9-be5f-753897161d45",
+  "sendDecisionsAndReasonsDate": "2024-08-09",
+  "allFtpaAppellantDecisionDocs": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "ftpaDecisionAndReasons",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-recordremission-partiallygranted-letter.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "ftpaDecisionsAndReasonsDocumentDescription",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "ccdReferenceNumberForDisplay": "1723 2014 7514 6062",
+  "ftpaAppellantApplicationDate": "2024-08-09",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealSubmission",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-appeal-form.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-09"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-8265-ac1.png",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "test",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "No",
+  "tempPreviousRemissionDetails": [
+    {
+      "id": "1",
+      "value": {
+        "feeRemissionType": "Help with Fees",
+        "helpWithFeesReferenceNumber": "123"
+      }
+    }
+  ],
+  "allFtpaRespondentDecisionDocs": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "ftpaDecisionAndReasons",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-recordremission-refusedletter.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "ftpaDecisionsAndReasonsDocumentDescription",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "decisionAndReasonsCoverLetter": {
+    "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+    "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-Decision-and-reasons-Cover-letter.PDF",
+    "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+  },
+  "ftpaAppellantGroundsDocuments": [
+    {
+      "id": "76e12a72-a2a0-4279-9ef8-d6ac24b9a8e4",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-8265-ac1.png",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "LR FTPA"
+      }
+    }
+  ],
+  "ftpaRespondentApplicationDate": "2024-08-09",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "955f0ec5-4b3b-4a5e-bb7d-e53760bdc08b",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-8265-ac1.png",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "test"
+      }
+    }
+  ],
+  "currentCaseStateVisibleToJudge": "ftpaDecided",
+  "ftpaAppellantEvidenceDocuments": [],
+  "ftpaRespondentGroundsDocuments": [
+    {
+      "id": "dcab1e0b-2279-44f3-9c37-08e4ef44f5b3",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "qa-ooc-letter.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "description": "HO FTPA"
+      }
+    }
+  ],
+  "ftpaRespondentEvidenceDocuments": [],
+  "legalRepresentativeEmailAddress": "ialegalreporgcreator12@mailnesia.com",
+  "uploadHomeOfficeBundleAvailable": "No",
+  "finalDecisionAndReasonsDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "finalDecisionAndReasonsPdf",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-Decision-and-reasons-FINAL.pdf",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-09"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "decisionAndReasonsCoverLetter",
+        "document": {
+          "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+          "document_filename": "HU 50013 2024-FamilyName ftpaDecided 2-Decision-and-reasons-Cover-letter.PDF",
+          "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-08-09"
+      }
+    }
+  ],
+  "ftpaApplicationAppellantDocument": {
+    "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+    "document_filename": "qa-recordremission-partiallygranted-letter.pdf",
+    "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+  },
+  "ftpaApplicationRespondentDocument": {
+    "document_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9",
+    "document_filename": "qa-recordremission-refusedletter.pdf",
+    "document_binary_url": "http://dm-store-demo.service.core-compute-demo.internal/documents/9a24b5dd-4f66-4164-9f3b-90a6960038e9/binary"
+  },
+  "ftpaAppellantRjDecisionOutcomeType": "granted",
+  "ftpaRespondentRjDecisionOutcomeType": "partiallyGranted",
+  "isAppellantFtpaDecisionVisibleToAll": "Yes",
+  "isFtpaAppellantDocsVisibleInDecided": "Yes",
+  "currentCaseStateVisibleToCaseOfficer": "ftpaDecided",
+  "isFtpaRespondentDocsVisibleInDecided": "Yes",
+  "isRespondentFtpaDecisionVisibleToAll": "Yes",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "ftpaDecided",
+  "isFtpaAppellantDocsVisibleInSubmitted": "No",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "ftpaDecided",
+  "currentCaseStateVisibleToHomeOfficeApc": "ftpaDecided",
+  "currentCaseStateVisibleToHomeOfficePou": "ftpaDecided",
+  "isFtpaAppellantOotDocsVisibleInDecided": "Yes",
+  "isFtpaRespondentDocsVisibleInSubmitted": "No",
+  "appealGroundsDecisionHumanRightsRefusal": {
+    "values": [
+      "humanRightsRefusal"
+    ]
+  },
+  "currentCaseStateVisibleToHomeOfficeLart": "ftpaDecided",
+  "isFtpaAppellantNoticeOfDecisionSetAside": "No",
+  "isFtpaRespondentOotDocsVisibleInDecided": "Yes",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "taylorHouse",
+  "isFtpaAppellantOotDocsVisibleInSubmitted": "No",
+  "isFtpaRespondentNoticeOfDecisionSetAside": "No",
+  "displayMarkAsPaidEventForPartialRemission": "No",
+  "isFtpaRespondentOotDocsVisibleInSubmitted": "No",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "ftpaDecided",
+  "isFtpaAppellantGroundsDocsVisibleInDecided": "Yes",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "isFtpaAppellantEvidenceDocsVisibleInDecided": "Yes",
+  "isFtpaRespondentGroundsDocsVisibleInDecided": "Yes",
+  "currentCaseStateVisibleToLegalRepresentative": "ftpaDecided",
+  "isFtpaAppellantGroundsDocsVisibleInSubmitted": "No",
+  "isFtpaRespondentEvidenceDocsVisibleInDecided": "Yes",
+  "isFtpaAppellantEvidenceDocsVisibleInSubmitted": "No",
+  "isFtpaAppellantOotExplanationVisibleInDecided": "Yes",
+  "isFtpaRespondentGroundsDocsVisibleInSubmitted": "No",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "uploadHomeOfficeAppealResponseActionAvailable": "Yes",
+  "isFtpaRespondentEvidenceDocsVisibleInSubmitted": "No",
+  "isFtpaRespondentOotExplanationVisibleInDecided": "Yes",
+  "isFtpaAppellantOotExplanationVisibleInSubmitted": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "No",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "isFtpaRespondentOotExplanationVisibleInSubmitted": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "ariaMigrationTaskDueDays": "2"
+}

@@ -1,0 +1,344 @@
+{
+  "email": "office-dummy@turpinmiller.co.uk",
+  "hmcts": "[userImage:hmcts.png]",
+  "feeCode": "FEE0372",
+  "caseFlags": [{
+    "id": "1",
+    "value": {
+      "caseFlagType": "anonymity",
+      "caseFlagAdditionalInformation": ""
+    }
+  },
+    {
+      "id": "2",
+      "value": {
+        "caseFlagType": "unacceptableCustomerBehaviour",
+        "caseFlagAdditionalInformation": "Customer misbehaved on call to customer care"
+      }
+    }
+  ],
+  "checklist": {
+    "checklist1": [],
+    "checklist2": ["isNotDetained"],
+    "checklist3": [],
+    "checklist4": [],
+    "checklist5": [],
+    "checklist6": ["isNotStateless"],
+    "checklist7": []
+  },
+  "caseNotes": [
+    {
+      "id": "1",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2023-07-06",
+        "caseNoteSubject": "Case note - History",
+        "caseNoteDocument": {
+          "document_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d",
+          "document_filename": "PA502202023-HistoryNotes.pdf",
+          "document_binary_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d/binary"
+        },
+        "caseNoteDescription": "ARIA migrated case History Note"
+      }
+    },
+    {
+      "id": "2",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2023-07-06",
+        "caseNoteSubject": "Case note - History",
+        "caseNoteDocument": {
+          "document_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d",
+          "document_filename": "PA502202023-HistoryNotes.xlsx",
+          "document_binary_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d/binary"
+        },
+        "caseNoteDescription": "ARIA migrated case History Note Excel Format"
+      }
+    },
+    {
+      "id": "3",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2023-07-06",
+        "caseNoteSubject": "ARIA Migrated Case Additional Details",
+        "caseNoteDescription": "PHYSICALANDMENTALHEALTHISSUES : yes, the person is suffering from depression and takes time to process and respond|FCONumber :  DCNP 4865 0719 5388|ADDITIONAL CATEGORIES&FLAGS : Oakington Case,Family Case,One Stop Appeal,Oakington M Detained|APPELLANTINUK :  Yes|HASNEWMATTERS :  No|HEARINGCENTRE :  taylorHouse|PAYMENTSTATUS :  Payment pending|REMISSIONTYPE :  noRemission|STAFFLOCATION :  Taylor House|APPELLANTTITLE :  Mr|FEEDESCRIPTION :  Appeal determined with a hearing|FEEWITHHEARING : 140|HASOTHERAPPEALS :  No|LEGALREPCOMPANY :  Fake Org Ltd|APPELLANTADDRESS :  {}|ISAPPELLANTMINOR :  No|CONTACTPREFERENCE :  wantsEmail|HMCTSCASECATEGORY :  Protection|APPEALOUTOFCOUNTRY :  No|APPELLANTSTATELESS :  isStateless|PAYMENTDESCRIPTION :  Appeal determined with a hearing|APPELLANTFAMILYNAME :  Doe|APPELLANTGIVENNAMES :  John|ISFEEPAYMENTENABLED :  Yes|ISREMISSIONSENABLED :  Yes|LEGALREPCOMPANYNAME :  Fake Org Ltd|LEGALREPDECLARATION :  [hasDeclared]|SUBMISSIONOUTOFTIME :  No|APPEALSUBMISSIONDATE :  2023-05-19|APPELLANTDATEOFBIRTH :  1999-01-01|FEEPAYMENTAPPEALTYPE :  Yes|APPEALREFERENCENUMBER :  PA/50019/2023|APPEALTYPEDESCRIPTION :  Refusal of protection claim|CASENAMEHMCTSINTERNAL :  John Doe|HMCTSCASENAMEINTERNAL :  John Doe|ISOUTOFCOUNTRYENABLED :  Yes|HOMEOFFICEDECISIONDATE :  2023-05-16|HOMEOFFICESEARCHSTATUS :  SUCCESS|APPELLANTNAMEFORDISPLAY :  John Doe|CASEFLAGANONYMITYEXISTS :  Yes|DEPORTATIONORDEROPTIONS :  No|LEGALREPREFERENCENUMBER :  Ref|LEGALREPRESENTATIVENAME :  Org Creator Legal Rep|APPEALGROUNDSHUMANRIGHTS :  {}|APPELLANTHASFIXEDADDRESS :  No|DECISIONHEARINGFEEOPTION :  decisionWithHearing|HOMEOFFICEREFERENCENUMBER : 1234567|CONTACTPREFERENCEDESCRIPTION :  Email|LEGALREPRESENTATIVEEMAILADDRESS :  ia-law-firm-org-sc@fake.hmcts.net|APPELLANTNATIONALITIESDESCRIPTION :  Stateless|APPLICATIONCHANGEDESIGNATEDHEARINGCENTRE :  taylorHouse|HMCTS :  [userImage:hmcts.png]|DATESTOAVOID :  []|WITNESSCOUNT : 0|INCAMERACOURT :  No|SEARCHPARTIES :  []|ANONYMITYORDER :  Yes|SINGLESEXCOURT :  No|WITNESSDETAILS :  []|PASTEXPERIENCES :  No|REMOTEVIDEOCALL :  No|STITCHINGSTATUS :  DONE|APPELLANTFULLNAME :  John Doe|DATESTOAVOIDYESNO :  No|ADDITIONALREQUESTS :  No|MULTIMEDIAEVIDENCE :  No|APPEALREVIEWOUTCOME :  decisionMaintained|BUNDLECONFIGURATION :  iac-hearing-bundle-config.yaml|INTERPRETERLANGUAGE :  []|ISHEARINGLOOPNEEDED :  No|ISHEARINGROOMNEEDED :  No|LISTCASEHEARINGDATE : 2023-05-25T12:00:00.000|ARIALISTINGREFERENCE :  LP/12345/2019|BUNDLEFILENAMEPREFIX :  PA 50019 2023-Doe|ISWITNESSESATTENDING :  No|CASEARGUMENTAVAILABLE :  Yes|LISTCASEHEARINGCENTRE :  taylorHouse|LISTCASEHEARINGLENGTH : 90|CASESUMMARYDESCRIPTION :  case summary1|WITNESSDETAILSREADONLY :  |APPEALGROUNDSFORDISPLAY :  [protectionHumanitarianProtection, protectionRefugeeConvention]|APPEALRESPONSEAVAILABLE :  Yes|HOMEOFFICESEARCHNOMATCH :  NO_MATCH|HASSERVICEREQUESTALREADY :  Yes|HOMEOFFICEINSTRUCTSTATUS :  OK|PAAPPEALTYPEPAYMENTOPTION :  payLater|SCHEDULEOFISSUESAGREEMENT :  Yes|ISEVIDENCEFROMOUTSIDEUKOOC :  No|DECISIONANDREASONSAVAILABLE :  Yes|HEARINGDATERANGEDESCRIPTION :  Only include dates between 5 Jun 2023 and 14 Aug 2023.|IMMIGRATIONHISTORYAGREEMENT :  Yes|INTERPRETERLANGUAGEREADONLY :  ,|ISINTERPRETERSERVICESNEEDED :  No|REVIEWEDHEARINGREQUIREMENTS :  Yes|AMENDRESPONSEACTIONAVAILABLE :  Yes||CURRENTHEARINGDETAILSVISIBLE :  Yes|PHYSICALORMENTALHEALTHISSUES :  No|SENDDIRECTIONACTIONAVAILABLE :  No"
+      }
+    },
+    {
+      "id": "4",
+      "value": {
+        "user": "Case Officer",
+        "dateAdded": "2023-07-06",
+        "caseNoteSubject": "Case note - Additional Details",
+        "caseNoteDocument": {
+          "document_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d",
+          "document_filename": "Aria-Migrated-Case-PA-50220-2023-AdditionalDetails.txt",
+          "document_binary_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d/binary"
+        },
+        "caseNoteDescription": "ARIA migrated case Additional Details text Format"
+      }
+    }
+
+  ],
+  "appealType": "protection",
+  "directions": [],
+  "feeVersion": "2",
+  "caseBundles": [],
+  "datesToAvoid": [],
+  "feeAmountGbp": "8000",
+  "legalRepName": "Turpin & Miller LLP (Oxford)",
+  "witnessCount": 0,
+  "appellantInUk": "Yes",
+  "hasNewMatters": "No",
+  "hearingCentre": "birmingham",
+  "inCameraCourt": "No",
+  "paymentStatus": "Payment pending",
+  "remissionType": "noRemission",
+  "searchParties": [],
+  "staffLocation": "Birmingham",
+  "anonymityOrder": "Yes",
+  "appellantTitle": "Mr",
+  "feeDescription": "Appeal determined without a hearing",
+  "feeWithoutHearing": "80",
+  "singleSexCourt": "No",
+  "witnessDetails": [],
+  "hasOtherAppeals": "No",
+  "legalRepCompany": "Turpin & Miller LLP (Oxford)",
+  "pastExperiences": "No",
+  "remoteVideoCall": "No",
+  "stitchingStatus": "DONE",
+  "appellantAddress": {
+    "County": "",
+    "Country": "United Kingdom",
+    "PostCode": "OX4 1RE",
+    "PostTown": "Oxford",
+    "AddressLine1": "c/o Asylum Welcome",
+    "AddressLine2": "Unit 7, Newtec Place",
+    "AddressLine3": "Magdalen Road"
+  },
+  "hearingDocuments": [],
+  "isAppellantMinor": "No",
+  "appellantFullName": "Jamil Johnson",
+  "contactPreference": "wantsEmail",
+  "datesToAvoidYesNo": "No",
+  "hmctsCaseCategory": "Protection",
+  "notificationsSent": [],
+  "additionalRequests": "No",
+  "appealOutOfCountry": "No",
+  "appellantStateless": "hasNationality",
+  "multimediaEvidence": "No",
+  "paymentDescription": "Appeal determined without a hearing",
+  "appealReviewOutcome": "decisionMaintained",
+  "appellantFamilyName": "Johnson",
+  "appellantGivenNames": "Jamil",
+  "bundleConfiguration": "iac-hearing-bundle-config.yaml",
+  "caseSummaryDocument": {
+    "document_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d",
+    "document_filename": "CaseSummaryDocumentPA-50220-2023.pdf",
+    "document_binary_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d/binary"
+  },
+  "hearingRequirements": [{
+    "id": "1",
+    "value": {
+      "tag": "hearingRequirements",
+      "document": {
+        "document_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d",
+        "document_filename": "PA 50220 2023-Johnson-hearing-requirements.PDF",
+        "document_binary_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d/binary"
+      },
+      "suppliedBy": "",
+      "description": "",
+      "dateUploaded": "2023-05-22"
+    }
+  }
+  ],
+  "interpreterLanguage": [],
+  "isFeePaymentEnabled": "Yes",
+  "isHearingLoopNeeded": "No",
+  "isHearingRoomNeeded": "No",
+  "isRemissionsEnabled": "Yes",
+  "legalRepCompanyName": "Turpin & Miller LLP (Oxford)",
+  "legalRepDeclaration": ["hasDeclared"],
+  "listCaseHearingDate": "2023-05-25T12:00:00.000",
+  "respondentDocuments": [],
+  "submissionOutOfTime": "Yes",
+  "outOfTimeDecisionType": "approved",
+  "outOfTimeDecisionMaker": "Tribunal Caseworker",
+  "recordedOutOfTimeDecision": "Yes",
+  "appealSubmissionDate": "2023-04-29",
+  "appellantDateOfBirth": "1992-07-04",
+  "ariaListingReference": "LP/12345/2023",
+  "bundleFileNamePrefix": "PA 50220 2023-Johnson",
+  "feePaymentAppealType": "Yes",
+  "isWitnessesAttending": "No",
+  "appealReferenceNumber": "PA/50220/2023",
+  "appealTypeDescription": "Refusal of protection claim",
+  "caseArgumentAvailable": "Yes",
+  "caseNameHmctsInternal": "Jamil Johnson",
+  "hmctsCaseNameInternal": "Jamil Johnson",
+  "isOutOfCountryEnabled": "Yes",
+  "listCaseHearingCentre": "birmingham",
+  "listCaseHearingLength": "90",
+  "appellantNationalities": [{
+    "id": "1",
+    "value": {
+      "code": "IQ"
+    }
+  }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "protection",
+      "label": "Refusal of protection claim"
+    },
+    "list_items": [{
+      "code": "protection",
+      "label": "Refusal of protection claim"
+    }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "231596"
+  },
+  "homeOfficeDecisionDate": "2019-10-16",
+  "homeOfficeSearchStatus": "SUCCESS",
+  "legalRepCompanyAddress": {
+    "AddressLine1": "",
+    "AddressLine2": "",
+    "AddressLine3": "",
+    "PostTown": "",
+    "County": "",
+    "PostCode": "",
+    "Country": ""
+  },
+  "appealGroundsForDisplay": ["protectionHumanitarianProtection", "protectionRefugeeConvention"],
+  "appealGroundsProtection": {
+    "values": ["protectionHumanitarianProtection", "protectionRefugeeConvention"]
+  },
+  "appealResponseAvailable": "Yes",
+  "appellantNameForDisplay": "Jamil Johnson",
+  "caseFlagAnonymityExists": "Yes",
+  "deportationOrderOptions": "No",
+  "homeOfficeSearchNoMatch": "NO_MATCH",
+  "legalRepReferenceNumber": "S01379-0007",
+  "legalRepresentativeName": "Ms Sarah Escritt",
+  "appealGroundsHumanRights": {
+    "values": [
+      "protectionHumanRights"
+    ]
+  },
+  "appellantHasFixedAddress": "No",
+  "decisionHearingFeeOption": "decisionWithoutHearing",
+  "hasServiceRequestAlready": "No",
+  "homeOfficeAppellantsList": {
+    "value": {
+      "code": "NoMatch",
+      "label": "No Match"
+    },
+    "list_items": [{
+      "code": "NoMatch",
+      "label": "No Match"
+    }
+    ]
+  },
+  "homeOfficeCaseStatusData": {
+    "person": {
+      "gender": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "fullName": "No match",
+      "givenName": "No match",
+      "dayOfBirth": 0,
+      "familyName": "No match",
+      "nationality": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "yearOfBirth": 0,
+      "monthOfBirth": 0
+    },
+    "applicationStatus": {
+      "roleType": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "roleSubType": {
+        "code": "No match",
+        "description": "No match"
+      },
+      "ccdRejectionReasons": [],
+      "ccdHomeOfficeMetadata": []
+    },
+    "displayDateOfBirth": "No match",
+    "displayAppellantDetailsTitle": "<h2>Appellant details</h2>",
+    "displayApplicationDetailsTitle": "<h2>Application details</h2>"
+  },
+  "homeOfficeInstructStatus": "OK",
+  "homeOfficeReferenceNumber": "00A1363461",
+  "paAppealTypePaymentOption": "payLater",
+  "scheduleOfIssuesAgreement": "Yes",
+  "isEvidenceFromOutsideUkOoc": "No",
+  "decisionAndReasonsAvailable": "Yes",
+  "immigrationHistoryAgreement": "Yes",
+  "isInterpreterServicesNeeded": "No",
+  "reviewedHearingRequirements": "Yes",
+  "amendResponseActionAvailable": "Yes",
+  "contactPreferenceDescription": "Email",
+  "currentHearingDetailsVisible": "Yes",
+  "legalRepresentativeDocuments": [],
+  "physicalOrMentalHealthIssues": "No",
+  "sendDirectionActionAvailable": "No",
+  "homeOfficeSearchStatusMessage": "**Note:** The service was unable to retrieve any appellant details from the Home Office because the Home Office data does not include a main applicant. You can contact the Home Office if you need this information to validate the appeal.\n## Do this next\r\n- Contact the Home Office to get the correct details\r\n- Use [Edit appeal](/case/IA/Asylum/${[CASE_REFERENCE]}/trigger/editAppealAfterSubmit) to update the details as required\r\n- [Request Home Office data](/case/IA/Asylum/${[CASE_REFERENCE]}/trigger/requestHomeOfficeData) to match the appellant details with the Home Office details",
+  "isAppellantGivingOralEvidence": "Yes",
+  "matchingAppellantDetailsFound": "No",
+  "reviewResponseActionAvailable": "No",
+  "uploadTheNoticeOfDecisionDocs": [{
+    "id": "eb42b37c-9075-463e-bee9-ca312be0d52d",
+    "value": {
+      "document": {
+        "document_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d",
+        "document_filename": "Dummy_nod.pdf",
+        "document_binary_url": "http://dm-store:8080/documents/05ed3217-6b7c-456a-a4cb-dafa1f3e587d/binary"
+      },
+      "description": "Nod for ARIA Migrated Case"
+    }
+  }
+  ],
+  "currentCaseStateVisibleToJudge": "decision",
+  "isAppellantAttendingTheHearing": "Yes",
+  "isHomeOfficeIntegrationEnabled": "Yes",
+  "homeOfficeHearingInstructStatus": "OK",
+  "homeOfficeNotificationsEligible": "Yes",
+  "legalRepresentativeEmailAddress": "ia-law-firm-org-sc@fake.hmcts.net",
+  "uploadHomeOfficeBundleAvailable": "No",
+  "draftDecisionAndReasonsDocuments": [],
+  "isEvidenceFromOutsideUkInCountry": "No",
+  "appellantNationalitiesDescription": "Iraq",
+  "reviewHomeOfficeResponseByLegalRep": "Yes",
+  "submitHearingRequirementsAvailable": "Yes",
+  "currentCaseStateVisibleToCaseOfficer": "decision",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "decision",
+  "homeOfficeRequestReviewInstructStatus": "OK",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "Yes",
+  "currentCaseStateVisibleToHomeOfficeAll": "decision",
+  "currentCaseStateVisibleToHomeOfficeApc": "decision",
+  "currentCaseStateVisibleToHomeOfficePou": "decision",
+  "currentCaseStateVisibleToHomeOfficeLart": "decision",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "birmingham",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "decision",
+  "homeOfficeHearingBundleReadyInstructStatus": "OK",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "decision",
+  "markAddendumEvidenceAsReviewedActionAvailable": "Yes",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "Yes",
+  "uploadHomeOfficeAppealResponseActionAvailable": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "Yes",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "Yes",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "Yes",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No"
+}

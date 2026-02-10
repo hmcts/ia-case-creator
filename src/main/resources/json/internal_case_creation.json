@@ -1,0 +1,201 @@
+{
+  "isEjp": "No",
+  "feeCode": "FEE0238",
+  "isAdmin": "Yes",
+  "paidDate": "2024-07-09",
+  "appealType": "refusalOfEu",
+  "feeVersion": "2",
+  "hasSponsor": "No",
+  "paidAmount": "18000",
+  "paymentDate": "9 Jul 2024",
+  "feeAmountGbp": "14000",
+  "appellantInUk": "No",
+  "countryAdminJ": "Spain",
+  "isNabaEnabled": "No",
+  "paymentStatus": "Paid",
+  "remissionType": "noRemission",
+  "staffLocation": "Newport",
+  "SearchCriteria": {
+    "SearchParties": [
+      {
+        "id": "4d0fe21e-7595-4788-8a98-0a1196c74aec",
+        "value": {
+          "Name": "gname fname",
+          "DateOfBirth": "1999-01-01"
+        }
+      }
+    ],
+    "OtherCaseReferences": [
+      {
+        "id": "71bc9ac1-16b3-4ea5-a0f9-c27b6ac255fa",
+        "value": "EA/50001/2024"
+      }
+    ]
+  },
+  "feeDescription": "Appeal determined with a hearing",
+  "feeWithHearing": "140",
+  "hasOtherAppeals": "No",
+  "oocAppealAdminJ": "entryClearanceDecision",
+  "adminDeclaration1": [
+    "hasDeclared"
+  ],
+  "isNabaAdaEnabled": "No",
+  "isNabaEnabledOoc": "No",
+  "hearingTypeResult": "No",
+  "hmctsCaseCategory": "EEA",
+  "tribunalDocuments": [
+    {
+      "id": "1",
+      "value": {
+        "tag": "appealForm",
+        "document": {
+          "document_url": "http://dm-store:8080/documents/dc12c80f-5741-49d2-9dc5-06d461f32b23",
+          "document_filename": "EA/50001/2024-gname fname-appeal form1.pdf",
+          "document_binary_url": "http://dm-store:8080/documents/dc12c80f-5741-49d2-9dc5-06d461f32b23/binary"
+        },
+        "description": "af",
+        "dateUploaded": "2024-07-10"
+      }
+    }
+  ],
+  "addressLine1AdminJ": "Flat 111",
+  "addressLine2AdminJ": "line 222",
+  "addressLine3AdminJ": "line 333",
+  "addressLine4AdminJ": "line 444",
+  "appealOutOfCountry": "Yes",
+  "appellantStateless": "isStateless",
+  "gwfReferenceNumber": "123456789",
+  "paymentDescription": "Appeal determined with a hearing",
+  "appellantFamilyName": "fname",
+  "appellantGivenNames": "gname",
+  "isFeePaymentEnabled": "Yes",
+  "isRemissionsEnabled": "Yes",
+  "submissionOutOfTime": "No",
+  "appealSubmissionDate": "2024-07-10",
+  "appellantDateOfBirth": "1999-01-01",
+  "appellantInDetention": "No",
+  "feePaymentAppealType": "Yes",
+  "letterSentOrReceived": "Received",
+  "localAuthorityPolicy": {
+    "Organisation": {},
+    "OrgPolicyCaseAssignedRole": "[LEGALREPRESENTATIVE]"
+  },
+  "tribunalReceivedDate": "2024-07-05",
+  "caseNameHmctsInternal": "gname fname",
+  "hmctsCaseNameInternal": "gname fname",
+  "isOutOfCountryEnabled": "Yes",
+  "appellantNationalities": [
+    {
+      "id": "1",
+      "value": {
+        "code": "ZZ"
+      }
+    }
+  ],
+  "caseManagementCategory": {
+    "value": {
+      "code": "refusalOfEu",
+      "label": "Refusal of application under the EEA regulations"
+    },
+    "list_items": [
+      {
+        "code": "refusalOfEu",
+        "label": "Refusal of application under the EEA regulations"
+      }
+    ]
+  },
+  "caseManagementLocation": {
+    "region": "1",
+    "baseLocation": "227101"
+  },
+  "appealGroundsForDisplay": [],
+  "appellantsRepresentation": "Yes",
+  "appellantNameForDisplay": "gname fname",
+  "deportationOrderOptions": "No",
+  "uploadTheAppealFormDocs": [
+    {
+      "id": "0cabd9dc-fa73-40fe-9bd0-aa5ea4fc0817",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store:8080/documents/dc12c80f-5741-49d2-9dc5-06d461f32b23",
+          "document_filename": "Appeals events -Happy path - coloured.pdf",
+          "document_binary_url": "http://dm-store:8080/documents/dc12c80f-5741-49d2-9dc5-06d461f32b23/binary"
+        },
+        "description": "af"
+      }
+    }
+  ],
+  "decisionHearingFeeOption": "decisionWithHearing",
+  "hasServiceRequestAlready": "No",
+  "isDlrmFeeRemissionEnabled": "Yes",
+  "dateEntryClearanceDecision": "2024-07-05",
+  "appealSubmissionInternalDate": "2024-07-10",
+  "ccdReferenceNumberForDisplay": "1720 4300 1583 0801",
+  "legalRepresentativeDocuments": [
+    {
+      "id": "2",
+      "value": {
+        "tag": "appealSubmission",
+        "document": {
+          "document_url": "http://dm-store:8080/documents/4397f643-8604-4899-b5a3-988c1f6d152a",
+          "document_filename": "EA 50001 2024-fname-appeal-form.PDF",
+          "document_binary_url": "http://dm-store:8080/documents/4397f643-8604-4899-b5a3-988c1f6d152a/binary"
+        },
+        "suppliedBy": "",
+        "description": "",
+        "dateUploaded": "2024-07-10"
+      }
+    },
+    {
+      "id": "1",
+      "value": {
+        "tag": "homeOfficeDecisionLetter",
+        "document": {
+          "document_url": "http://dm-store:8080/documents/5e3a87dd-9eb7-4b58-8717-235e4a5f6e74",
+          "document_filename": "Appeals events -Happy path.pdf",
+          "document_binary_url": "http://dm-store:8080/documents/5e3a87dd-9eb7-4b58-8717-235e4a5f6e74/binary"
+        },
+        "description": "nod",
+        "dateUploaded": "2024-07-08"
+      }
+    }
+  ],
+  "sendDirectionActionAvailable": "Yes",
+  "uploadTheNoticeOfDecisionDocs": [
+    {
+      "id": "2c33e24b-9ba9-41c2-82aa-0a2db8288cff",
+      "value": {
+        "document": {
+          "document_url": "http://dm-store:8080/documents/5e3a87dd-9eb7-4b58-8717-235e4a5f6e74",
+          "document_filename": "Appeals events -Happy path.pdf",
+          "document_binary_url": "http://dm-store:8080/documents/5e3a87dd-9eb7-4b58-8717-235e4a5f6e74/binary"
+        },
+        "description": "nod"
+      }
+    }
+  ],
+  "appellantHasFixedAddressAdminJ": "Yes",
+  "automaticEndAppealTimedEventId": "51aa29f4-6eba-47db-b1ab-76a6f5ca34d5",
+  "currentCaseStateVisibleToJudge": "appealSubmitted",
+  "currentCaseStateVisibleToCaseOfficer": "appealSubmitted",
+  "changeDirectionDueDateActionAvailable": "No",
+  "currentCaseStateVisibleToAdminOfficer": "appealSubmitted",
+  "markEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceActionAvailable": "No",
+  "currentCaseStateVisibleToHomeOfficeAll": "appealSubmitted",
+  "currentCaseStateVisibleToHomeOfficeApc": "appealSubmitted",
+  "currentCaseStateVisibleToHomeOfficePou": "appealSubmitted",
+  "currentCaseStateVisibleToHomeOfficeLart": "appealSubmitted",
+  "uploadAdditionalEvidenceActionAvailable": "No",
+  "applicationChangeDesignatedHearingCentre": "newport",
+  "currentCaseStateVisibleToHomeOfficeGeneric": "appealSubmitted",
+  "haveHearingAttendeesAndDurationBeenRecorded": "No",
+  "currentCaseStateVisibleToLegalRepresentative": "appealSubmitted",
+  "markAddendumEvidenceAsReviewedActionAvailable": "No",
+  "uploadAddendumEvidenceLegalRepActionAvailable": "No",
+  "isServiceRequestTabVisibleConsideringRemissions": "Yes",
+  "uploadAddendumEvidenceHomeOfficeActionAvailable": "No",
+  "uploadAddendumEvidenceAdminOfficerActionAvailable": "No",
+  "uploadAdditionalEvidenceHomeOfficeActionAvailable": "No",
+  "ariaDesiredState": "appealSubmitted"
+}
